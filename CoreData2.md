@@ -13,6 +13,17 @@ stores. A single managed object instance exists in one and only one context,
 but multiple copies of an object can exist in different contexts. Thus object
 uniquing is scoped to a particular context.
 
+### NSPersistentStore
+
+This class is the abstract base class for all Core Data persistent stores.
+
+Core Data provides four store types—SQLite, Binary, XML, and In-Memory (the XML
+store is not available on iOS); these are described in Persistent Store
+Features. Core Data also provides subclasses of `NSPersistentStore` that you
+can use to define your own store types: `NSAtomicStore` and
+`NSIncrementalStore`. The Binary and XML stores are examples of atomic stores
+that inherit functionality from `NSAtomicStore`.
+
 ### NSPersistentContainer
 
 `NSPersistentContainer` simplifies the creation and management of the Core Data
@@ -37,18 +48,16 @@ framework uses this description in several ways:
 
 ### NSPersistentStoreCoordinator
 
-Instances of `NSPersistentStoreCoordinator` associate persistent stores (by type)
-with a model (or more accurately, a configuration of a model) and serve to
-mediate between the persistent store or stores and the managed object context
-or contexts. Instances of `NSManagedObjectContext` use a coordinator to save
-object graphs to persistent storage and to retrieve model information. A
+Instances of `NSPersistentStoreCoordinator` associate persistent stores (by
+type) with a model (or more accurately, a configuration of a model) and serve
+to mediate between the persistent store or stores and the managed object
+context or contexts. Instances of `NSManagedObjectContext` use a coordinator to
+save object graphs to persistent storage and to retrieve model information. A
 context without a coordinator is not fully functional as it cannot access a
 model except through a coordinator. The coordinator is designed to present a
 façade to the managed object contexts such that a group of persistent stores
 appears as an aggregate store. A managed object context can then create an
 object graph based on the union of all the data stores the coordinator covers.
-
-### Filemanager
 
 ### NSEntityDescription
 
@@ -89,13 +98,9 @@ from a Core Data fetch request to provide data for a `UITableView` object.
 
 A description of search criteria used to retrieve data from a persistent store
 
-### NSPersistentStore
+### NSSortDescriptor
 
-This class is the abstract base class for all Core Data persistent stores.
-
-Core Data provides four store types—SQLite, Binary, XML, and In-Memory (the XML
-store is not available on iOS); these are described in Persistent Store
-Features. Core Data also provides subclasses of `NSPersistentStore` that you can
-use to define your own store types: `NSAtomicStore` and `NSIncrementalStore`. The
-Binary and XML stores are examples of atomic stores that inherit functionality
-from `NSAtomicStore`.
+An NSSortDescriptor object describes a basis for ordering objects by specifying
+the property to use to compare the objects, the method to use to compare the
+properties, and whether the comparison should be ascending or descending.
+Instances of NSSortDescriptor are immutable.
