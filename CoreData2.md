@@ -13,6 +13,12 @@ stores. A single managed object instance exists in one and only one context,
 but multiple copies of an object can exist in different contexts. Thus object
 uniquing is scoped to a particular context.
 
+A context is not thread safe. You can only access it on the same thread that it was created.
+
+## @NSManaged
+`@NSManaged` now says 'compiler, don't check those properties as I have Core Data to take care of the implementation - it will be there at runtime'
+
+
 ### NSPersistentStore
 
 This class is the abstract base class for all Core Data persistent stores.
@@ -59,6 +65,10 @@ façade to the managed object contexts such that a group of persistent stores
 appears as an aggregate store. A managed object context can then create an
 object graph based on the union of all the data stores the coordinator covers.
 
+`NSPersistentStoreCoordinator` is the bridge between the managed object model and the persistent store. It’s responsible for using the model and the persistent stores to do most of the hard work in Core Data. It understands the `NSManagedObjectModel` and knows how to send information to, and fetch information from, the `NSPersistentStore`.
+
+Because of the work the `NSPersistentStoreCoordinator` does, the `NSManagedObjetContext` does not need to worry about what kind of store is backing it.
+
 ### NSEntityDescription
 
 An `NSEntityDescription` object describes an entity in Core Data. Entities are
@@ -98,9 +108,53 @@ from a Core Data fetch request to provide data for a `UITableView` object.
 
 A description of search criteria used to retrieve data from a persistent store
 
+5 different ways to set up a `NSFetchRequest`
+
+1 - use the generic type and then set the entity
+
+    let fetchRequest1 = NSFetchRequest<Venue>()
+    let entity = NSEntityDescription.entity(forEntityName: "Venue", in: managedContext)!
+    fetchRequest1.entity = entity
+
+2 - use the convenience initializer
+
+    let fetchRequest2 = NSFetchRequest<Venue>(entityName: "Venue")
+
+3 - use the auto-generated class method xcode makes
+
+    let fetchRequest3: NSFetchRequest<Venue> = Venue.fetchRequest()
+4 - get it from the model and template
+
+    let fetchRequest4 = managedObjectModel.fetchRequestTemplate(forName: "venueFR")
+
+5 - get it from the model and template and do substitution
+
+    let fetchRequest5 = managedObjectModel.fetchRequestFromTemplate( withName: "venueFR", substitutionVariables: ["NAME" : "Vivi Bubble Tea"])
+
+
 ### NSSortDescriptor
 
 An NSSortDescriptor object describes a basis for ordering objects by specifying
 the property to use to compare the objects, the method to use to compare the
 properties, and whether the comparison should be ascending or descending.
 Instances of NSSortDescriptor are immutable.
+
+## NSManagedObjectID
+An `NSManagedObjectID` object is a compact, universal identifier for a managed
+object. This forms the basis for uniquing in the Core Data Framework. A managed
+object ID uniquely identifies the same managed object both between managed
+object contexts in a single application, and in multiple applications (as in
+distributed systems). Identifiers contain the information needed to exactly
+describe an object in a persistent store (like the primary key in the
+database), although the detailed information is not exposed. The framework
+completely encapsulates the “external” information and presents a clean object
+oriented interface.
+
+## NSPersistentStoreDescription
+A description object used to create and/or load a persistent store.
+
+
+## NSAsynchronousFetchRequest
+
+
+## NSBatchUpdateRequest
