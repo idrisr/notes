@@ -132,6 +132,14 @@ A description of search criteria used to retrieve data from a persistent store
     let fetchRequest5 = managedObjectModel.fetchRequestFromTemplate( withName: "venueFR", substitutionVariables: ["NAME" : "Vivi Bubble Tea"])
 
 
+### NSFetchRequestResult
+protocol, not a class
+
+
+    /* Protocol conformance for possible result types a fetch request can return.  */
+    public protocol NSFetchRequestResult : NSObjectProtocol {
+    }
+
 ### NSSortDescriptor
 
 An NSSortDescriptor object describes a basis for ordering objects by specifying

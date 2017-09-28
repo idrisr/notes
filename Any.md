@@ -35,8 +35,6 @@ You can use the AnyClass protocol as the concrete type for an instance of any cl
         return c.getDefaultValue?()
     }
 
-
-
 ## AnyObject
 
 ---
