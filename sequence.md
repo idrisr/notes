@@ -13,7 +13,8 @@
       /// A type that represents a subsequence of some of the sequence's elements.
       associatedtype SubSequence
 
-      makeIterator?
+      /// Returns an iterator over the elements of this sequence.
+public func makeIterator() -> Self.Iterator
   }
 ```
 
