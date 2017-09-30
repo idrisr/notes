@@ -14,7 +14,7 @@
       associatedtype SubSequence
 
       /// Returns an iterator over the elements of this sequence.
-public func makeIterator() -> Self.Iterator
+      public func makeIterator() -> Self.Iterator
   }
 ```
 
