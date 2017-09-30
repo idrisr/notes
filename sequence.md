@@ -12,6 +12,8 @@
 
       /// A type that represents a subsequence of some of the sequence's elements.
       associatedtype SubSequence
+
+      makeIterator?
   }
 ```
 
@@ -23,3 +25,15 @@
       public mutating func next() -> Self.Element?
   }
 ```
+
+## Collection
+
+```swift
+  protocol Collection
+```
+
+A sequence whose elements can be traversed multiple times, nondestructively, and accessed by indexed subscript.
+
+
+
+## Sequence vs Collection
