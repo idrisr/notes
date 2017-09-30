@@ -1,4 +1,4 @@
-# Sequence
+## Sequence
 
 ```swift
   public protocol Sequence {
@@ -12,5 +12,14 @@
 
       /// A type that represents a subsequence of some of the sequence's elements.
       associatedtype SubSequence
+  }
+```
+
+## IteratorProtocol
+
+```swift
+  public protocol IteratorProtocol {
+      associatedtype Element
+      public mutating func next() -> Self.Element?
   }
 ```
