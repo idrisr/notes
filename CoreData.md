@@ -1,8 +1,3 @@
-# Parent Child Context
-
-
-
-
 ### NSManagedObjectContext
 
 An instance of `NSManagedObjectContext` represents a single “object space” or
@@ -166,3 +161,7 @@ A description object used to create and/or load a persistent store.
 
 
 ## NSBatchUpdateRequest
+
+## NSValueTransformer
+
+An abstract class used to transform values from one representation to another.
