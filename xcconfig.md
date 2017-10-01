@@ -16,3 +16,4 @@ set of settings which can span multiple targets.
 Debug can be a configuration with compiler flags and settings, which gives you as much information about the software as possible to simplify bug hunting and development, while a release target might strip all those debug-logs and focus on optimization.
 
 A configuration can be created on a project level and on a target level.
+
