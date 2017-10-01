@@ -69,4 +69,4 @@ it also signs the app so you can know where it came from
 
 # Development Team
 
-see [Development Team](./development_team)
+see [Development Team](./development_team.md)
