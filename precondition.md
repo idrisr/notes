@@ -1,6 +1,9 @@
 # Precondition
 
-Checks a necessary condition before proceeding. Has no effect on release code, as definied by the `-O` flag.
+Checks a necessary condition before proceeding. 
+
+* in a debug mode it'll print the error if condition not satisfied and put you in a debugger state
+* in release it'll crash and burn
 
 ```swift
     /// Checks a necessary condition for making forward progress.
