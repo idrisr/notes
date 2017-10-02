@@ -20,6 +20,7 @@ infinite.
 
 ```swift
 public protocol Collection : _Indexable, Sequence {
+  // notice how the associatetype's have default values
   associatedtype IndexDistance : SignedInteger = Int
   associatedtype Iterator : IteratorProtocol = IndexingIterator<Self>
   func makeIterator() -> Iterator
