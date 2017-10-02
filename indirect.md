@@ -1,11 +1,11 @@
 # Indirect in Enum
 
 ```swift
-		/// A simple linked list enum
-		enum List<Element> {
-			case end
-			indirect case node(Element, next: List<Element>)
-		}
+/// A simple linked list enum
+enum List<Element> {
+	case end
+	indirect case node(Element, next: List<Element>)
+}
 ```
 
 The use of the `indirect` keyword here indicates that the compiler should
