@@ -1,4 +1,4 @@
-# Indirect in Enum
+# `indirect` in `enum`
 
 ```swift
 /// A simple linked list enum
