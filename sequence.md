@@ -42,3 +42,7 @@ A sequence whose elements can be traversed multiple times, nondestructively, and
 A `sequence` can be infinite, while a `collection` can not.
 
 A `collection` makes the guarantee that if you iterate it again it'll return you the same stuff.
+
+## Sequence vs Collection
+
+Sequence have no guarantee of not being destroyed after iteration. A [collection](./collection.md) by definition is guaranteed to survive iteration.
