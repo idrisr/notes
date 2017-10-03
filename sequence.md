@@ -1,5 +1,7 @@
 ## Sequence
 
+no guarantee on what happens if you iterate the `sequence` a second time.
+
 ```swift
   public protocol Sequence {
 
@@ -35,6 +37,8 @@
 
 A sequence whose elements can be traversed multiple times, nondestructively, and accessed by indexed subscript.
 
-
-
 ## Sequence vs Collection
+
+A `sequence` can be infinite, while a `collection` can not.
+
+A `collection` makes the guarantee that if you iterate it again it'll return you the same stuff.
