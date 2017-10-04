@@ -1,5 +1,7 @@
 # CloudKit Framework
 
+CloudKit is Apple’s remote data storage service based on iCloud. It provides a low-cost option to store and share app data using your users’ iCloud accounts as a back-end storage service.
+
 from [here](https://developer.apple.com/documentation/cloudkit)
 
 Store structured app and user data in iCloud containers that can be shared by all users of your app.
