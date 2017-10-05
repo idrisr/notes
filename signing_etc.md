@@ -70,3 +70,9 @@ it also signs the app so you can know where it came from
 # Development Team
 
 see [Development Team](./development_team.md)
+
+## `codesign`
+
+You can codesign your code yourself. You'd use the `codesign` command line utility which is the same utility that xcode is using behind the scenes.
+
+`sudo codesign -f -s xcodesigner2 /Application/Xcode.app` is an example of using a custom identity named `xcodesigner` in the Keychain to sign Xcode.
