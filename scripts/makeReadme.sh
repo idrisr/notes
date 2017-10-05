@@ -8,5 +8,5 @@ do
     filename=$(basename "$")
     extension="${f##*.}"
     filename_noext="${f%.*}"
-    echo [${filename_noext}]\(\.\/${filename_noext}.md\)
+    echo \* [${filename_noext}]\(\.\/${filename_noext}.md\)
 done
