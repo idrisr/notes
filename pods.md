@@ -44,4 +44,14 @@ CocoaPods is a library dependency management tool for OS X and iOS applications.
 
 4. Generate `pods.xcodeproj`, and the accompanying files.
 
-# `Podfile.lock`
+## `~/.cocoapods`
+`podspecs` stored locally here
+
+## `Podfile.lock`
+contains `openssl sha1` hashes of the podspecs used and of the podfile
+
+## `Manifest.lock`
+
+## `Podfile.lock`
+
+## `Podfile.lock`

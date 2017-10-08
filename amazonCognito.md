@@ -27,3 +27,17 @@ An identity in a pool gets access to the AWS resources used by your app by being
 3. Import AWScore and Amazon Cognito APIs
 4. Initialize the Amazon Cognito credentials provider
 5. Retrieve Amazon Cognito IDs and AWS Credentials
+
+## API Gateway
+
+
+
+
+## Data Sync
+sync user's data across devices, like when they upgrade their phone
+
+## Cognito Identity
+* userpool - gives you sig-up and sign-in
+* federated identities - use identity where a different service does the sign-up and sign-in. like google, facebook, Active Directory
+
+![cognito](https://i.imgur.com/MAA7JdD.png)
