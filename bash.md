@@ -2,6 +2,16 @@
 
 from [here](https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/)
 
+
+## `$#`
+number of arguments
+
+## `$@`
+what parameters were passed
+
+## `$?`
+was last command successful
+
 ## `pipefail`
 set -o pipefail
 The bash shell normally only looks at the exit code of the last command of a
@@ -11,7 +21,7 @@ comes in. This particular option sets the exit code of a pipeline to that of
 the rightmost command to exit with a non-zero status, or zero if all commands
 of the pipeline exit successfully.
 
-## `set e`
+## `set -e`
 The -e option will cause a bash script to exit immediately when a command fails
 
 ## `set -u`
@@ -24,3 +34,35 @@ The -x option causes bash to print each command before executing it. This can
 be of great help when you have to try and debug a bash script failure through
 its logs. Note that arguments get expanded before a command gets printed. This
 causes our logs to display the actual argument values at the time of execution!
+
+## `set -f`
+A `set -f` command disables globbing
+
+## globbing
+if you don't double quote your variables, you're going to get glob expansion.
+
+from [here](http://tldp.org/LDP/abs/html/globbingref.html)
+
+Bash does carry out filename expansion -- a process known as globbing --
+but this does not use the standard RE set. Instead, globbing recognizes and
+expands wild cards. Globbing interprets the standard wild card characters
+-- * and ?, character lists in square brackets, and certain other special
+characters (such as ^ for negating the sense of a match). There are important
+limitations on wild card characters in globbing, however. Strings containing *
+will not match filenames that start with a dot, as, for example, .bashrc.
+Likewise, the ? has a different meaning in globbing than as part of an RE.
+
+## word splitting
+Double quoting an expansion suppresses word splitting, except in the special cases of `"$@"` and `"${array[@]}":`
+
+## expansion
+
+The shell's parser performs several operations on your commands before finally executing them. Understanding how your original command will be transformed by the shell is of paramount importance in writing robust scripts. From the bash man page:
+
+The order of expansions is:
+* brace expansion,
+* tilde expansion,
+* parameter, variable and arithmetic expansion and
+* command substitution (done in a left-to-right fashion),
+* word splitting,
+* and pathname expansion.
