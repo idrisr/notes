@@ -42,4 +42,6 @@ CocoaPods is a library dependency management tool for OS X and iOS applications.
 
 3. go download the source. get the source as listed in the `.podspec`. Store the source in the `Pods` directory.
 
-4. Generate `pods.xcodeproj`
+4. Generate `pods.xcodeproj`, and the accompanying files.
+
+# `Podfile.lock`
