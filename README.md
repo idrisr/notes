@@ -73,4 +73,3 @@
 * [unsafe](./unsafe.md)
 * [newInFoundation212](./newInFoundation212.md)
 * [xcconfig](./xcconfig.md)
-* [yo](./yo.md)
