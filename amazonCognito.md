@@ -30,9 +30,6 @@ An identity in a pool gets access to the AWS resources used by your app by being
 
 ## API Gateway
 
-
-
-
 ## Data Sync
 sync user's data across devices, like when they upgrade their phone
 
@@ -41,3 +38,33 @@ sync user's data across devices, like when they upgrade their phone
 * federated identities - use identity where a different service does the sign-up and sign-in. like google, facebook, Active Directory
 
 ![cognito](https://i.imgur.com/MAA7JdD.png)
+
+## Refresh token
+
+The idea of refresh tokens is that if an access token is compromised, because it is short-lived, the attacker has a limited window in which to abuse it.
+
+
+### API Docs
+
+from [here](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/cognito-user-identity-pools-apiref.pdf#CommonParameters)
+
+* admin
+* attributes
+* confirmation code
+* device
+* device
+* global
+* group
+* identity provider
+* import job
+* initiate auth
+* list
+* password
+* resource server
+* sign-out
+* signup
+* ui customization
+* update
+* user
+* user pool
+* user pool domain
