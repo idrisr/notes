@@ -1,5 +1,4 @@
 # Mesh
-
 A mesh is a description of an object's shape. It uses a a series of `x, y, and z` points in space to represent the outline of a the object's shape.
 
 ## Mesh Filter

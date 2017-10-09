@@ -42,3 +42,22 @@ This makes no such guarantees about atomicity (which is quite a cool word) as no
 * assign
 * retain
 * unsafe_unretained
+
+## objc generics
+
+TODO: read this
+from [here](https://www.mikeash.com/pyblog/friday-qa-2015-11-20-covariance-and-contravariance.html)
+
+Subtypes and supertypes are a common part of modern programming. Covariance and contravariance tell us where subtypes are accepted and where supertypes are accepted in place of the original type. This shows up frequently in most of the programming most of us do, but many developers are unaware of the concepts beyond a loose instinctual sense. Today I'm going to discuss it in detail.
+
+Covariance and Contravariance
+The astute reader may notice that the title of the article contains these two terms which I have carefully avoided using this whole time. Now that we're firm on the concepts, let's talk about the terminology.
+
+### variances
+
+* Covariance is when subtypes are accepted. Overridden read-only properties are covariant.
+* Contravariance is when supertypes are accepted. The parameters of overridden methods are contravariant.
+* Invariance is when neither supertypes nor subtypes are accepted. Swift generics are invariant.
+* Bivariance is when both supertypes and subtypes are accpted. I can't think of any examples of bivariance in Objective-C or Swift.
+
+You may find the terminology hard to remember. That's OK! It's not really that important. As long as you understand subtyping, supertyping, and what causes a subtype or supertype to be acceptable in any given place, you can just look up the terminology in the unlikely event that you need it.

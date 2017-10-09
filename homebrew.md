@@ -23,6 +23,12 @@ where the kegs are installed, ie `/usr/local/Cellar`
 
 the install prefix of a formula
 
+### keg-only
+
+For a software to be "keg-only" means it is installed in /usr/local/Cellar but not linked into places like /usr/local/bin, /usr/local/lib, etc. That means other software that depends on it has to be compiled with specific instructions to use the files in /usr/local/Cellar. That's done automatically by brew install when a formula specifies keg-only dependencies.
+
+Formulas that specify keg-only dependencies make sure that the equivalent system libraries are not used. Your installation of vips is linked against a specific version of pixman in /usr/local/Cellar/pixman/version, so it isn't affected by the system version of pixman or any other Homebrew versions of pixman you might install.
+
 ## Formula
 
 The package definition
