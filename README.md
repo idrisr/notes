@@ -26,13 +26,10 @@
 * [grand-central-dispatch](./grand-central-dispatch.md)
 * [homebrew](./homebrew.md)
 * [hooktest](./hooktest.md)
-<<<<<<< HEAD
 * [hostname](./hostname.md)
-=======
->>>>>>> ddf3412af93c430e2b6e07f8e258e157caf46638
 * [indexingoperator](./indexingoperator.md)
 * [indirect](./indirect.md)
-* [iosmusicpods](./iosmusicpods.md)
+* [iosMusicPods](./iosMusicPods.md)
 * [jenkins](./jenkins.md)
 * [linode](./linode.md)
 * [linter](./linter.md)
@@ -44,7 +41,7 @@
 * [objc-attributes](./objc-attributes.md)
 * [opaqueTypes](./opaqueTypes.md)
 * [operator](./operator.md)
-* [packagesmodules](./packagesmodules.md)
+* [packagesModules](./packagesModules.md)
 * [pods](./pods.md)
 * [posix](./posix.md)
 * [precompiledHeader](./precompiledHeader.md)
@@ -62,26 +59,18 @@
 * [selfVsSelf](./selfVsSelf.md)
 * [sequence](./sequence.md)
 * [signing_etc](./signing_etc.md)
-<<<<<<< HEAD
 * [socket](./socket.md)
+* [staticAnalysis](./staticAnalysis.md)
 * [storyboardStuff](./storyboardStuff.md)
 * [swapDisk](./swapDisk.md)
 * [swift4](./swift4.md)
 * [swiftAccessLevels](./swiftAccessLevels.md)
 * [swiftPackageManager](./swiftPackageManager.md)
-=======
-* [staticAnalysis](./staticAnalysis.md)
-* [storyboardStuff](./storyboardStuff.md)
-* [swapDisk](./swapDisk.md)
-* [swift4](./swift4.md)
-* [swiftaccesslevels](./swiftaccesslevels.md)
->>>>>>> ddf3412af93c430e2b6e07f8e258e157caf46638
 * [tar](./tar.md)
 * [toll-free-bridging](./toll-free-bridging.md)
 * [transitions](./transitions.md)
 * [typeStuff](./typeStuff.md)
 * [uiAppearance](./uiAppearance.md)
-<<<<<<< HEAD
 * [billboarding](./billboarding.md)
 * [camera](./camera.md)
 * [collider](./collider.md)
@@ -90,11 +79,8 @@
 * [shader](./shader.md)
 * [textures](./textures.md)
 * [transform](./transform.md)
-* [unownedUnsafe](./unownedUnsafe.md)
-=======
 * [unixUsers](./unixUsers.md)
-* [unownedunsafe](./unownedunsafe.md)
->>>>>>> ddf3412af93c430e2b6e07f8e258e157caf46638
+* [unownedUnsafe](./unownedUnsafe.md)
 * [unsafe](./unsafe.md)
 * [vim](./vim.md)
 * [newInFoundation212](./newInFoundation212.md)
