@@ -68,3 +68,16 @@ from [here](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 * user
 * user pool
 * user pool domain
+
+## Common Parameters for all requests
+
+The following list contains the parameters that all actions use for signing Signature Version 4 requests with a query string. Any action-specific parameters are listed in the topic for that action. For more information about Signature Version 4, see Signature Version 4 Signing Process in the Amazon Web Services General Reference.
+
+* action
+* version
+* x-amz-algorithm
+* x-amz-credential
+* x-amz-date
+* x-amz-security-token
+* x-amz-signature
+* x-amz-signedheaders
