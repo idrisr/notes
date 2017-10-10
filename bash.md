@@ -60,7 +60,10 @@ Double quoting an expansion suppresses word splitting, except in the special cas
 The shell's parser performs several operations on your commands before finally executing them. Understanding how your original command will be transformed by the shell is of paramount importance in writing robust scripts. From the bash man page:
 
 The order of expansions is:
-* brace expansion,
+* [brace expansion](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
+
+
+
 * tilde expansion,
 * parameter, variable and arithmetic expansion and
 * command substitution (done in a left-to-right fashion),
