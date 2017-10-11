@@ -1,7 +1,5 @@
 # `.vimrc` wtf
 
-
-
 ## `set`
 `set` is for setting options
 
@@ -33,3 +31,8 @@
 
 ## `statusline`
 the status line at the bottom of the window
+
+## Python stuff
+
+* use linters through syntastic plugin
+* todo - code completion and definition jumping?

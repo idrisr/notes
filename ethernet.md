@@ -132,3 +132,11 @@ all that means is you just switch the adapter into promiscuous mode, and that
 says just receive everything. And so that's what these sniffers do. Any
 sniffing tool simply puts the NIC into promiscuous mode, and everything on the
 wire comes in and gets logged and decoded and checked out.
+
+from [here](https://www.grc.com/nat/arp.htm)
+
+## LAN
+Ethernet, by comparison, is a "Local Area Network", or LAN technology because it utilizes a "flat addressing model" where every Network Interface Controller (NIC) on the local network is guaranteed to have a unique Media Access Control (MAC) address and traffic is either sent directly to the destination NIC, or broadcast and received by all NICs.
+
+## WAN
+The Internet is a so-called "Wide Area Network" or WAN because its Internet Protocol (IP) uses a hierarchal addressing system (IP addresses) that was designed to allow its data packets to be efficiently "routed" among billions of machines.
