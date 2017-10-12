@@ -1,6 +1,8 @@
 Python topics
 
 ## Decorators
+todo - deep dive into this and really grok decorators
+
 A function returning another function, usually applied as a function transformation using the `@wrapper` syntax. Common examples for decorators are `classmethod()` and `staticmethod()`.
 
 The decorator syntax is merely syntactic sugar, the following two function definitions are semantically equivalent:
@@ -132,3 +134,8 @@ is the module name with the suffix .py appended. Within a module, the module’s
 name (as a string) is available as the value of the global variable __name__.
 For instance, use your favorite text editor to create a file called fibo.py in
 the current directory with the following contents:
+
+## wheel & egg
+from [here](https://pypi.python.org/pypi/wheel)
+
+The new distribution format for python, replacing eggs.
