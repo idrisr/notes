@@ -91,9 +91,35 @@ The following list contains the parameters that all actions use for signing Sign
 
 
 ### WTF These used for?
-* CognitoUserPoolAppClientId Your app client id, i.e 81q37d9nfu607gil4uhopekm4b
-* CognitoUserPoolAppClientSecret Optional Your app client secret, i.e. 45dpc0bk45v8alftrjv4afeu4nduz1b7do5mjqtia36r7cbnl4d9. If you don't have a client secret, completely remove this key/string pair.
-* CognitoAuthWebDomain Your domain, i.e. https://yourdomain.auth.region.amazoncognito.com
-* CognitoAuthSignInRedirectUri Your sign in redirect uri, i.e myapp://signin
-* CognitoAuthSignOutRedirectUri Your sign out redirect uri, i.e. myapp://signout
-* CognitoAuthScopes Array containing scopes to request, i.e. aws.cognito.signin.user.admin
+* `CognitoUserPoolAppClientId` Your app client id, i.e 81q37d9nfu607gil4uhopekm4b
+* `CognitoUserPoolAppClientSecret` Optional Your app client secret, i.e. `45dpc0bk45v8alftrjv4afeu4nduz1b7do5mjqtia36r7cbnl4d9`. If you don't have a client secret, completely remove this key/string pair.
+* `CognitoAuthWebDomain` Your domain, i.e. https://yourdomain.auth.region.amazoncognito.com
+
+#### These two are ios redirect URIs I believe
+* `CognitoAuthSignInRedirectUri` Your sign in redirect uri, i.e myapp://signin
+* `CognitoAuthSignOutRedirectUri` Your sign out redirect uri, i.e. myapp://signout
+---
+
+- `CognitoAuthScopes` Array containing scopes to request, i.e. `aws.cognito.signin.user.admin` i.e. `aws.cognito.signin.user.admin`
+
+### Redirect URI
+todo
+
+### Secure Remote Password (SRP) protocol
+from [wikipedia](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol), [stanford](http://srp.stanford.edu/whatisit.html)
+
+The Secure Remote Password protocol (SRP) is an augmented password-authenticated
+key agreement (PAKE) protocol, specifically designed to work around existing
+patents.[1] Like all PAKE protocols, an eavesdropper or man in the middle cannot
+obtain enough information to be able to brute force guess a password without
+further interactions with the parties for each guess. This means that strong
+security can be obtained using weak passwords. Furthermore, being an augmented
+PAKE protocol, the server does not store password-equivalent data. This means
+that an attacker who steals the server data cannot masquerade as the client
+unless they first perform a brute force search for the password. In layman's
+terms, given two parties who both know a password, SRP (or any other PAKE
+protocol) is a way for one party (the "client" or "user") to demonstrate to
+another party (the "server") that they know the password, without sending the
+password itself, nor any other information from which the password can be
+broken. Further, it is not possible to conduct an offline brute force search for
+the password.
