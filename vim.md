@@ -50,10 +50,3 @@ the status line at the bottom of the window
 
 * use linters through syntastic plugin
 * todo - code completion and definition jumping?
-
-## `jumplist`
-
-Jumps are remembered in a jump list.  With the `CTRL-O` and `CTRL-I` command you can
-go to cursor positions before older jumps, and back again.  Thus you can move up
-and down the list.  There is a separate jump list for each window. The maximum
-number of entries is fixed at 100.
