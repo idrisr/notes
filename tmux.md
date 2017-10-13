@@ -1,8 +1,8 @@
 # tmux
 
-todo
+[todo]https://robots.thoughtbot.com/a-tmux-crash-course
 
-https://robots.thoughtbot.com/a-tmux-crash-course
+tmux [course](https://thoughtbot.com/upcase/tmux?utm_campaign=ad&utm_medium=referral&utm_source=robots.thoughtbot.com&utm_term=https://robots.thoughtbot.com/a-tmux-crash-course)
 
 * auto start / config on iterm launch
 * change color when sshing elsewhere
