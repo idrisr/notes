@@ -2,6 +2,9 @@
 
 ## `connection`
 
+a connection just opens a line of contact between your client and the database,
+and it might be a network connection but doesnt necessarily have to be. your
+connection could be local
 
 ## `cursor`
 To use cursors in SQL procedures, you need to do the following:
@@ -11,3 +14,7 @@ To use cursors in SQL procedures, you need to do the following:
 1. Close the cursor when done.
 
 ## `execute`
+
+
+
+## `commit`
