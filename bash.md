@@ -18,7 +18,7 @@ what parameters were passed
 was last command successful
 
 ## `pipefail`
-set -o pipefail
+`set -o pipefail`
 The bash shell normally only looks at the exit code of the last command of a
 pipeline. This behavior is not ideal as it causes the -e option to only be able
 to act on the exit code of a pipeline’s last command. This is where -o pipefail
@@ -75,10 +75,22 @@ The order of expansions is:
 * word splitting,
 * and pathname expansion.
 
-# Flags
+## `test`
 more part of `test` than `bash`. do a `man test`
 
-### `-n` 
+```shell
+NAME
+     test, [ -- condition evaluation utility
+
+SYNOPSIS
+     test expression
+     [ expression ]
+```
+
+### `-n` non zero length string
 `if [ -n $1 ]`
 
-`-n string     True if the length of string is nonzero.`
+-n string     True if the length of string is nonzero.
+
+### `-d` directory exists
+-d file       True if file exists and is a directory.

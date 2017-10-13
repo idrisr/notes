@@ -6,3 +6,5 @@ todo - generate docset for AWS documentation
 ## docsets
 
 dash - [here](https://kapeli.com/docsets#objectivec)
+
+- http://appledoc.gentlebytes.com/
