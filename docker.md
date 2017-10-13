@@ -32,6 +32,11 @@ To run the daemon with debug output, use `dockerd -D` or add debug: true to the
 
 ## dockerfile
 
+### `ENV`
+set environment variables
+
+`ENV FLASK_DEBUG=1`
+
 ### `CMD`
 
 There can only be one `CMD` instruction in a Dockerfile. If you list more than one `CMD` then only the last `CMD` will take effect.
