@@ -76,3 +76,7 @@ Webhooks: A feature of Automated Builds,
 current workflows.
 
 ## attach
+
+The `attach` command will display the output of the `ENTRYPOINT/CMD` process.
+This can appear as if the `attach` command is hung when in fact the process may
+simply not be interacting with the terminal at that time.

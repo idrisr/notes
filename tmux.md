@@ -11,3 +11,7 @@ tmux [course](https://thoughtbot.com/upcase/tmux?utm_campaign=ad&utm_medium=refe
 * active window background
 * fix clipboard shit
 * auto renumber
+
+## iterm
+
+![iterm](https://i.imgur.com/lsJwZ5b.png)
