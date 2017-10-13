@@ -2,6 +2,11 @@
 
 from [here](https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/)
 
+## `1>&2`
+1 is `stdout`
+2 is `stderr`
+
+this means redirect `stdout` to `stderr`
 
 ## `$#`
 number of arguments
@@ -69,3 +74,11 @@ The order of expansions is:
 * command substitution (done in a left-to-right fashion),
 * word splitting,
 * and pathname expansion.
+
+# Flags
+more part of `test` than `bash`. do a `man test`
+
+### `-n` 
+`if [ -n $1 ]`
+
+`-n string     True if the length of string is nonzero.`
