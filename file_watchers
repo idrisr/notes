@@ -1,0 +1,5 @@
+# File Watchers
+
+* [Watchman](https://github.com/facebook/watchman)
+* [gulp](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob-opts-tasks)
+* [entr](http://entrproject.org/)

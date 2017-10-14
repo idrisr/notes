@@ -4,7 +4,7 @@
 give your image a human friendly name
 
 ## container
-a running instance of an image
+ running instance of an image
 
 ## image
 a specific snapshot of an environment

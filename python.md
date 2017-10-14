@@ -53,9 +53,10 @@ todo process
 ## iterator
 
 ## iterable
+The `__iter__` method is what makes an `object` iterable. Behind the scenes, the
+`iter` function calls `__iter__` method on the given `object`.
 
 # Packages and Modules
-
 from [here](https://docs.python.org/3.6/tutorial/modules.html#tut-packages)
 
 packages are a higher level than modules. A module is just a file. A package is
@@ -141,3 +142,9 @@ from [here](https://pypi.python.org/pypi/wheel)
 The new distribution format for python, replacing eggs.
 
 ### `raise`
+
+
+### `callable`
+
+### `obj`
+The underlying `object` of the `memoryview`
