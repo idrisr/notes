@@ -94,3 +94,11 @@ SYNOPSIS
 
 ### `-d` directory exists
 -d file       True if file exists and is a directory.
+
+#### `command`
+
+```shell
+if command -v most > /dev/null 2>&1; then
+    export PAGER="most"
+fi
+```
