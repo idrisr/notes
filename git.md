@@ -1,6 +1,3 @@
-
-
-
 ## Hooks
 
 ### Client side
@@ -29,3 +26,27 @@ todo
 todo
 #### writing objects
 todo
+
+## Under the Hood
+from [here](https://wildlyinaccurate.com/a-hackers-guide-to-git/)
+todo - continue at `Tree Objects`
+
+* Blobs, which are the most basic data type in Git. Essentially, a blob is just a bunch of bytes; usually a binary representation of a file.
+* Tree objects, which are a bit like directories. Tree objects can contain pointers to blobs and other tree objects.
+* Commit objects, which point to a single tree object, and contain some metadata including the commit author and any parent commits.
+* Tag objects, which point to a single commit object, and contain some metadata.
+* References, which are pointers to a single object (usually a commit or tag object).
+
+```shell
+$ git init
+$ ls -l .git
+total 32
+drwxrwxr-x 2 demo demo 4096 May 24 20:10 branches
+-rw-rw-r-- 1 demo demo 92 May 24 20:10 config
+-rw-rw-r-- 1 demo demo 73 May 24 20:10 description
+-rw-rw-r-- 1 demo demo 23 May 24 20:10 HEAD
+drwxrwxr-x 2 demo demo 4096 May 24 20:10 hooks
+drwxrwxr-x 2 demo demo 4096 May 24 20:10 info
+drwxrwxr-x 4 demo demo 4096 May 24 20:10 objects // good stuff
+drwxrwxr-x 4 demo demo 4096 May 24 20:10 refs    // good stuff
+```
