@@ -31,3 +31,10 @@ and leaves all that up to the developer.
 ### `request`
 
 http://flask.pocoo.org/docs/0.12/api/#flask.Request
+
+### app structure
+
+* https://www.digitalocean.com/community/tutorials/how-to-structure-large-flask-applications
+
+
+### blueprints

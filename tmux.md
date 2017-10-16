@@ -64,3 +64,10 @@ and switch panes using the mouse.
 ### scripting
 `bind-key c command-prompt -p "Name of new window: " "new-window -n '%%'"`
 the `%%` is replaced by whatever is supplied in the prompt
+
+### `bind-key -T`
+binds a key to a command in a `key-table`
+
+do a `tmux list-keys` to see the commands
+
+### `copy-mode-vi`
