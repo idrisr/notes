@@ -32,14 +32,17 @@ address responds to it.
 
 ## Hub
 
-So when we are using a hub, everything that everyone sends into the hub over their transmission wires, the
-hub simply rebroadcasts brainlessly. It doesn't do any thinking about it at all. It just basically, all of the
-incoming wires are received, and everything is oared together and then sent back out. Well, naturally you
-can still have collisions because, again, two cards could be transmitting at the same time. They would collide
-in the hub. The hub would send out this garbled nothing message, and they would both go, oops. Because
-they're listening to everything that the hub is sending, they would realize their message had not gotten
-through, and they do the same back-off and resend. So switching to the original 10BaseT technology did not
-help with this Ethernet saturation and collision problem.
+So when we are using a hub, everything that everyone sends into the hub over
+their transmission wires, the hub simply rebroadcasts brainlessly. It doesn't do
+any thinking about it at all. It just basically, all of the incoming wires are
+received, and everything is oared together and then sent back out. Well,
+naturally you can still have collisions because, again, two cards could be
+transmitting at the same time. They would collide in the hub. The hub would send
+out this garbled nothing message, and they would both go, oops. Because they're
+listening to everything that the hub is sending, they would realize their
+message had not gotten through, and they do the same back-off and resend. So
+switching to the original 10BaseT technology did not help with this Ethernet
+saturation and collision problem.
 
 ## Switch
 
