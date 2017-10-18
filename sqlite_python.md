@@ -33,3 +33,18 @@ t = ('RHAT',)
 c.execute('SELECT * FROM stocks WHERE symbol=?', t)
 print c.fetchone()
 ```
+
+## converters and adapters
+convert more easily from sql to your python objects
+
+todo - do this
+[converters and adapters](https://docs.python.org/3/library/sqlite3.html#default-adapters-and-converters)
+
+Please note that the `commit` function is invoked on the `db` object.
+
+### `PARSE_DECLTYPES`
+
+
+
+
+### `PARSE_COLNAMES`
