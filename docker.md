@@ -16,13 +16,14 @@ These in turn can increase build time, time to pull and push the image, and the
 runtime size of containers. To see how big your build context is, look for a
 message like the following, when you build your Dockerfile.
 
+## multi-stage builds
 
 
 ## tag
 give your image a human friendly name
 
 ## container
- running instance of an image
+running instance of an image
 
 ## image
 a specific snapshot of an environment
