@@ -3,8 +3,8 @@
 from [here](https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/)
 
 ## `1>&2`
-1 is `stdout`
-2 is `stderr`
+`1` is `stdout`
+`2` is `stderr`
 
 this means redirect `stdout` to `stderr`
 
@@ -27,7 +27,7 @@ the rightmost command to exit with a non-zero status, or zero if all commands
 of the pipeline exit successfully.
 
 ## `set -e`
-The -e option will cause a bash script to exit immediately when a command fails
+The `-e` option will cause a bash script to exit immediately when a command fails
 
 ## `set -u`
 This option causes the bash shell to treat unset variables as an error and exit
@@ -35,7 +35,7 @@ immediately. This brings us much closer to the behavior of higher-level
 languages.
 
 ## `set -x`
-The -x option causes bash to print each command before executing it. This can
+The `-x` option causes bash to print each command before executing it. This can
 be of great help when you have to try and debug a bash script failure through
 its logs. Note that arguments get expanded before a command gets printed. This
 causes our logs to display the actual argument values at the time of execution!
