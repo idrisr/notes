@@ -58,11 +58,15 @@ will not match filenames that start with a dot, as, for example, .bashrc.
 Likewise, the ? has a different meaning in globbing than as part of an RE.
 
 ## word splitting
-Double quoting an expansion suppresses word splitting, except in the special cases of `"$@"` and `"${array[@]}":`
+Double quoting an expansion suppresses word splitting, except in the special
+cases of `"$@"` and `"${array[@]}":`
 
 ## expansion
 
-The shell's parser performs several operations on your commands before finally executing them. Understanding how your original command will be transformed by the shell is of paramount importance in writing robust scripts. From the bash man page:
+The shell's parser performs several operations on your commands before finally
+executing them. Understanding how your original command will be transformed by
+the shell is of paramount importance in writing robust scripts. From the bash
+man page:
 
 The order of expansions is:
 * [brace expansion](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
