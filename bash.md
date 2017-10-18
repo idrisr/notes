@@ -106,3 +106,13 @@ if command -v most > /dev/null 2>&1; then
     export PAGER="most"
 fi
 ```
+
+### `let`
+`let` is very similar to `((` - the only difference being let is a builtin
+(simple
+command), and `((` is a compound command. The arguments to `let` are therefore
+subject to all the same expansions and substitutions as any other simple command -
+requiring proper quoting and escaping - whereas the contents of `((` aren't
+subject to word-splitting or pathname expansion (almost never desirable for
+arithmetic). For this reason, the arithmetic compound command should generally
+be preferred over `let`

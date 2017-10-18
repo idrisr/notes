@@ -32,38 +32,47 @@ address responds to it.
 
 ## Hub
 
-So when we are using a hub, everything that everyone sends into the hub over their transmission wires, the
-hub simply rebroadcasts brainlessly. It doesn't do any thinking about it at all. It just basically, all of the
-incoming wires are received, and everything is oared together and then sent back out. Well, naturally you
-can still have collisions because, again, two cards could be transmitting at the same time. They would collide
-in the hub. The hub would send out this garbled nothing message, and they would both go, oops. Because
-they're listening to everything that the hub is sending, they would realize their message had not gotten
-through, and they do the same back-off and resend. So switching to the original 10BaseT technology did not
-help with this Ethernet saturation and collision problem.
+So when we are using a hub, everything that everyone sends into the hub over
+their transmission wires, the hub simply rebroadcasts brainlessly. It doesn't do
+any thinking about it at all. It just basically, all of the incoming wires are
+received, and everything is oared together and then sent back out. Well,
+naturally you can still have collisions because, again, two cards could be
+transmitting at the same time. They would collide in the hub. The hub would send
+out this garbled nothing message, and they would both go, oops. Because they're
+listening to everything that the hub is sending, they would realize their
+message had not gotten through, and they do the same back-off and resend. So
+switching to the original 10BaseT technology did not help with this Ethernet
+saturation and collision problem.
 
 ## Switch
 
-However, what then happened was we changed to switches instead of hubs. A switch is actually an intelligent
-device, which is the reason they're more expensive than hubs, traditionally, and we're beginning to see hubs
-going away as the price of switches are coming down just because of manufacturing efficiencies. A switch
-actually learned the MAC addresses that are on each one of its segments. So whereas the original older coax
-and a hub had, like, a single segment, that is, every NIC in the LAN could directly hear every other one, in a
-switch it actually segments the LAN into individual pieces represented by its ports. And so you could have
-multiple computers on a switch's port because the switch actually has a table of RAM. And if you look at the
-specifications for a switch, it'll say something like up to 4,096 MAC addresses it's able to memorize, meaning
-that in there is a 4K table of MAC addresses. And it learns which adapter is on which one of its ports.
+However, what then happened was we changed to switches instead of hubs. A switch
+is actually an intelligent device, which is the reason they're more expensive
+than hubs, traditionally, and we're beginning to see hubs going away as the
+price of switches are coming down just because of manufacturing efficiencies. A
+switch actually learned the MAC addresses that are on each one of its segments.
+So whereas the original older coax and a hub had, like, a single segment, that
+is, every NIC in the LAN could directly hear every other one, in a switch it
+actually segments the LAN into individual pieces represented by its ports. And
+so you could have multiple computers on a switch's port because the switch
+actually has a table of RAM. And if you look at the specifications for a switch,
+it'll say something like up to 4,096 MAC addresses it's able to memorize,
+meaning that in there is a 4K table of MAC addresses. And it learns which
+adapter is on which one of its ports.
 
 ## Broadcast address
 
-So an Ethernet NIC will respond to its own address or to the broadcast address, which by universal
-agreement is all ones, or in that MAC address addressing it's FF:FF:FF and so on, six sets of FFs. The idea is
-that that's the way systems are able to find each other on the Ethernet. If through some technology or by
-reason of some technology it's necessary for one computer to locate another, it's able to do a broadcast on
-the Ethernet. And all the machines that receive that will take a look at the data. That also means that a
-switch, which is normally providing some isolation, must rebroadcast out every one of its ports anything that
-it receives that is addressed to that broadcast address. So one time that the switch looks like a hub is, if it
-receives something, a packet, an Ethernet packet, addressed to the broadcast address, it just sends it
-everywhere.
+So an Ethernet NIC will respond to its own address or to the broadcast address,
+which by universal agreement is all ones, or in that MAC address addressing it's
+FF:FF:FF and so on, six sets of FFs. The idea is that that's the way systems are
+able to find each other on the Ethernet. If through some technology or by reason
+of some technology it's necessary for one computer to locate another, it's able
+to do a broadcast on the Ethernet. And all the machines that receive that will
+take a look at the data. That also means that a switch, which is normally
+providing some isolation, must rebroadcast out every one of its ports anything
+that it receives that is addressed to that broadcast address. So one time that
+the switch looks like a hub is, if it receives something, a packet, an Ethernet
+packet, addressed to the broadcast address, it just sends it everywhere.
 
 ## Authentication and lack thereof
 
@@ -136,7 +145,14 @@ wire comes in and gets logged and decoded and checked out.
 from [here](https://www.grc.com/nat/arp.htm)
 
 ## LAN
-Ethernet, by comparison, is a "Local Area Network", or LAN technology because it utilizes a "flat addressing model" where every Network Interface Controller (NIC) on the local network is guaranteed to have a unique Media Access Control (MAC) address and traffic is either sent directly to the destination NIC, or broadcast and received by all NICs.
+Ethernet, by comparison, is a "Local Area Network", or LAN technology because it
+utilizes a "flat addressing model" where every Network Interface Controller
+(NIC) on the local network is guaranteed to have a unique Media Access Control
+(MAC) address and traffic is either sent directly to the destination NIC, or
+broadcast and received by all NICs.
 
 ## WAN
-The Internet is a so-called "Wide Area Network" or WAN because its Internet Protocol (IP) uses a hierarchal addressing system (IP addresses) that was designed to allow its data packets to be efficiently "routed" among billions of machines.
+The Internet is a so-called "Wide Area Network" or WAN because its Internet
+Protocol (IP) uses a hierarchal addressing system (IP addresses) that was
+designed to allow its data packets to be efficiently "routed" among billions of
+machines.

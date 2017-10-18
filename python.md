@@ -143,11 +143,22 @@ The new distribution format for python, replacing eggs.
 
 ### `raise`
 
-
 ### `callable`
 
 ### `obj`
 The underlying `object` of the `memoryview`
 
-
 ## Symbol table
+
+## internals
+
+### `__dict__`
+
+A dictionary or other mapping object used to store an object’s (writable)
+attributes.
+
+### `__class__`
+
+
+### Data Model
+todo read https://docs.python.org/3/reference/datamodel.html

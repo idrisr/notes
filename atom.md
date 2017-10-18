@@ -14,3 +14,6 @@ If you press `Cmd+Shift+P` while focused in an editor pane, the command palette 
 
 
 ### hard-wrap
+=======
+todo -
+read some of this getting started [guide](https://flight-manual.atom.io/getting-started/sections/atom-basics/)
