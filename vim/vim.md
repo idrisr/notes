@@ -12,6 +12,14 @@
 
 ## `insert mode`
 
+## `visual mode`
+
+## `command mode`
+Command-line mode
+
+`<ctrl f>` brings up the command history in a vim buffer and can use vim normal
+mappings to do what you want
+
 ## `text object`
 
 ## `internal variables`
@@ -48,5 +56,16 @@ the status line at the bottom of the window
 
 ## Python stuff
 
-* use linters through syntastic plugin
-* todo - code completion and definition jumping?
+* use linters through ale plugin
+* definition jumping - jedi
+
+
+## loclist vs quickfix
+
+The location list is local to the current window so you can have as many
+location lists as windows: 30 windows? No problem, here are your 30 concurrent
+location lists.
+
+The quickfix list is global so you can't have more than one available at a time.
+There are commands that allow you to replace the current quickfix list with a
+previous one but you can't have two concurrent quickfix lists.
