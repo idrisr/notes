@@ -99,6 +99,13 @@ SYNOPSIS
 ### `-d` directory exists
 -d file       True if file exists and is a directory.
 
+### `-a` and
+```shell
+if [ -d $dir -a -z "$1" ]; then
+```
+
+if directory exists and the first argument is zero length
+
 #### `command`
 
 ```shell
@@ -106,6 +113,14 @@ if command -v most > /dev/null 2>&1; then
     export PAGER="most"
 fi
 ```
+
+### `read`
+http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_08_02.html
+
+The `read` built-in command is the counterpart of the `echo` and `printf` commands.
+The syntax of the `read` command is as follows:
+
+`read [options] NAME1 NAME2 ... NAMEN`
 
 ### `let`
 `let` is very similar to `((` - the only difference being let is a builtin
@@ -116,3 +131,53 @@ requiring proper quoting and escaping - whereas the contents of `((` aren't
 subject to word-splitting or pathname expansion (almost never desirable for
 arithmetic). For this reason, the arithmetic compound command should generally
 be preferred over `let`
+
+### arrays
+```shell
+#!/bin/bash
+# declare an array called array and define 3 vales
+array=( one two three )
+for i in "${array[@]}"
+do
+	echo $i
+done
+```
+
+
+### `continue` built-in
+
+The `continue` statement resumes iteration of an enclosing `for`, `while`, `until` or
+`select` loop.
+
+When used in a `for` loop, the controlling variable takes on the value of the next
+element in the list. When used in a `while` or `until` construct, on the other hand,
+execution resumes with `TEST-COMMAND` at the top of the loop.
+
+### `wait`
+
+`wait` makes the shell `wait` for the given subprocess. e.g.:
+
+```shell
+workhard &
+[1] 27408
+workharder &
+[2] 27409
+wait %1 %2
+```
+
+delays the shell until both of the subprocesses have finished.
+
+`=~`
+```shell
+if [[ $REPLY =~ ^[Yy]$ ]];then
+    return 1 
+fi
+```
+
+The leading `~` is actually part of the operator `=~` which performs a regular
+expression match of the string to its left to the expression pattern on its
+right.
+
+`[[ "string" =~ pattern ]]`
+Note that the string should be quoted, and that the regular expression shouldn't
+be quoted.
