@@ -71,3 +71,9 @@ binds a key to a command in a `key-table`
 do a `tmux list-keys` to see the commands
 
 ### `copy-mode-vi`
+
+### `send-keys`
+
+todo read these:
+* [increased prog productivity](http://minimul.com/increased-developer-productivity-with-tmux-part-5.html)
+* [stack overflow send keys]( https://stackoverflow.com/questions/19313807/tmux-send-keys-syntax/19330452#19330452)
