@@ -167,3 +167,23 @@ todo read https://docs.python.org/3/reference/datamodel.html
 
 The `__name__` attribute must be set to the fully-qualified name of the module.
 This name is used to uniquely identify the module in the `import` system.
+
+### `__metaclass__`
+basically a way of using a different `__new__` constructor for the class. You
+don't really grok this at this point.
+
+yet ...
+
+> Metaclasses are deeper magic than 99% of users should ever worry about. If you
+wonder whether you need them, you don’t (the people who actually need them know
+with certainty that they need them, and don’t need an explanation about why).
+-Tim Peters
+
+
+### `__new__` vs `__init__`
+The major difference between these two methods is that `__new__` handles object
+creation and `__init__` handles object initialization. During instantiation
+these two have slight differences in how they work, when defined differently.
+
+`__new__` is for creating the object, and `__init__` is for init'ing it. Kind of
+like `[[MyObject alloc] init]` in objective-c.

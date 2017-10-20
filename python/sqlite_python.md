@@ -34,6 +34,9 @@ c.execute('SELECT * FROM stocks WHERE symbol=?', t)
 print c.fetchone()
 ```
 
+## `executescript`
+run a sql file directly `conn.executescript('my_great_script.sql')`
+
 ## converters and adapters
 convert more easily from sql to your python objects
 
