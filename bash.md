@@ -91,6 +91,12 @@ SYNOPSIS
      [ expression ]
 ```
 
+### no `if`
+can do shit like this
+```bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+```
+
 ### `-n` non zero length string
 `if [ -n $1 ]`
 
@@ -170,7 +176,7 @@ delays the shell until both of the subprocesses have finished.
 `=~`
 ```shell
 if [[ $REPLY =~ ^[Yy]$ ]];then
-    return 1 
+    return 1
 fi
 ```
 
