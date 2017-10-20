@@ -162,3 +162,8 @@ attributes.
 
 ### Data Model
 todo read https://docs.python.org/3/reference/datamodel.html
+
+### `__name__`
+
+The `__name__` attribute must be set to the fully-qualified name of the module.
+This name is used to uniquely identify the module in the `import` system.
