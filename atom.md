@@ -17,3 +17,13 @@ If you press `Cmd+Shift+P` while focused in an editor pane, the command palette 
 =======
 todo -
 read some of this getting started [guide](https://flight-manual.atom.io/getting-started/sections/atom-basics/)
+
+### `apm`
+bundles `npm` and install packages
+
+
+### key binding
+go to `~/.atom/keymap.cson`
+
+## Project Folders
+https://atom.io/packages/project-folder

@@ -95,3 +95,16 @@ def page_not_found(e):
 def page_not_found(e):
   return render_template('404.html'), 404
 ```
+
+### extensions
+* `flask-script` - command line options things
+* `flask-bootstrap` - bootstrap thing
+* `flask-moment` - time localization
+* `flask-wtf` - forms
+* `flask-sqlalchemy` - sql alchemy
+* `flask-migrate` - model migrations
+* `flask-mail` - email
+
+
+## blueprints
+it's kind of like creating a protocol that you say your app adheres too, i think ...
