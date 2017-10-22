@@ -48,5 +48,3 @@ to. Changes done on it are reflected on the object it relates to. Both the
 ### language details
 * uses reference counting
 * weakly typed
-
-### security
