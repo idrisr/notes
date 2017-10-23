@@ -44,3 +44,7 @@ The `Location` interface represents the `location` (URL) of the object it is lin
 to. Changes done on it are reflected on the object it relates to. Both the
 `Document` and `Window` interface have such a linked `Location`, accessible via
 `Document.location` and `Window.location` respectively.
+
+### language details
+* uses reference counting
+* weakly typed
