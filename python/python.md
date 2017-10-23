@@ -1,4 +1,4 @@
-Python topics
+# Python topics
 
 ## Decorators
 todo - deep dive into this and really grok decorators
@@ -187,3 +187,14 @@ these two have slight differences in how they work, when defined differently.
 
 `__new__` is for creating the object, and `__init__` is for init'ing it. Kind of
 like `[[MyObject alloc] init]` in objective-c.
+
+
+### `__cmp__` -- dont use it in python3
+
+from https://docs.python.org/3/whatsnew/3.0.html#ordering-comparisons
+
+The `cmp()` function should be treated as gone, and the `__cmp__()` special
+method is no longer supported. Use `__lt__()` for sorting, `__eq__()` with
+`__hash__()`, and other rich comparisons as needed. (If you really need the
+`cmp()` functionality, you could use the expression `(a > b) - (a < b)` as the
+equivalent for `cmp(a, b)`.)
