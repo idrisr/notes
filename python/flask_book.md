@@ -104,6 +104,10 @@ def page_not_found(e):
 * `flask-sqlalchemy` - sql alchemy
 * `flask-migrate` - model migrations
 * `flask-mail` - email
+* `flask-login` - management of user sessions for logged-in users
+* `werkzeug` - password hashing and verification
+* `itsdangerous` - crypto-ly secure token generation and verification
+
 
 
 ## blueprints
