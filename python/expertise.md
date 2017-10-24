@@ -41,3 +41,5 @@ you can hook into everything. importing modules, creating classes ...
 ## two fundamental ways of enforcing constraint from base class to derived class
 
 ### metaclasses
+
+### decorators
