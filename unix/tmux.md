@@ -77,3 +77,7 @@ do a `tmux list-keys` to see the commands
 todo read these:
 * [increased prog productivity](http://minimul.com/increased-developer-productivity-with-tmux-part-5.html)
 * [stack overflow send keys]( https://stackoverflow.com/questions/19313807/tmux-send-keys-syntax/19330452#19330452)
+
+# tmuxinator
+
+todo check it out https://github.com/tmuxinator/tmuxinator
