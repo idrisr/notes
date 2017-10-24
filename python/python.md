@@ -198,3 +198,5 @@ method is no longer supported. Use `__lt__()` for sorting, `__eq__()` with
 `__hash__()`, and other rich comparisons as needed. (If you really need the
 `cmp()` functionality, you could use the expression `(a > b) - (a < b)` as the
 equivalent for `cmp(a, b)`.)
+
+### `__init_class__`

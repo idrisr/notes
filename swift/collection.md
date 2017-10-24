@@ -30,4 +30,9 @@ public protocol Collection : _Indexable, Sequence {
 }
 ```
 
-Collections are used extensively throughout the standard library. In addition to Array, Dictionary, and Set, the four String views are all collections, as are CountableRange and UnsafeBufferPointer. Increasingly, we’re also seeing types outside the standard library adopt the Collection protocol. Two examples of types that gained a ton of new capabilities in this way are Data and IndexSet, both from Foundation.
+Collections are used extensively throughout the standard library. In addition to
+`Array`, `Dictionary`, and `Set`, the four `String` views are all collections, as are
+`CountableRange` and `UnsafeBufferPointer`. Increasingly, we’re also seeing types
+outside the standard library adopt the `Collection` protocol. Two examples of
+types that gained a ton of new capabilities in this way are `Data` and `IndexSet`,
+both from Foundation.

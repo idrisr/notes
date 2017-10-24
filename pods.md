@@ -28,7 +28,7 @@ The .podspec is a file that determines how a particular pod is added to a projec
 
 The Podfile is the file that defines the pods you want to use. It is highly customizable, and you can be as specific as you’d like.
 
-## How they work#
+## How they work
 
 CocoaPods is a library dependency management tool for OS X and iOS applications. With CocoaPods, you can define your dependencies, called pods, and manage their versions easily over time and across development environments.
 
@@ -54,7 +54,12 @@ contains `openssl sha1` hashes of the podspecs used and of the podfile
 
 ## `Podfile.lock`
 
+# `pod update`
+do this so you can bump up the versions per semantic versioning
+
 # Versions specifications
+
+see [semantic versioning](./semantic_versioning.md)
 
 `'> 0.1'` Any version higher than 0.1  
 `'>= 0.1'` Version 0.1 and any higher version  
@@ -65,3 +70,6 @@ In addition to the logic operators CocoaPods has an optimistic operator `~>:`
 `'~> 0.1.2'` Version 0.1.2 and the versions up to 0.2, not including 0.2 and higher  
 `'~> 0.1'` Version 0.1 and the versions up to 1.0, not including 1.0 and higher  
 `'~> 0'` Version 0 and higher, this is basically the same as not having it.  
+
+# turn off warnings
+`inhibit_all_warnings!` in podfile

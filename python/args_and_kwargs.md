@@ -14,3 +14,6 @@ d = {"wot": "fuck"}
 print(s1.format(**d))    // kwargs
 print(s2.format("fuck")) // args
 ```
+
+the whole point of is it that you can pass along arbitrary positional and named
+arguments to any function, especially in decorators
