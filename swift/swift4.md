@@ -35,3 +35,6 @@ runtime, and it's important that we leave the door open for that language
 evolution.
 
 `@objcMembers`
+
+`@discardableResult`
+no warnings if you dont use the result from a `func` that `return`s
