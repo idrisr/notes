@@ -15,3 +15,39 @@ class (Adaptee) into another interface (Target) clients require.
 ## Definition
 
 An adapter allows two incompatible interfaces to work together. This is the real-world definition for an adapter. Interfaces may be incompatible, but the inner functionality should suit the need. The Adapter design pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
+
+## My Example
+```swift
+// target
+protocol Streamable {
+    func play()
+    func pause()
+}
+
+// adaptee
+class Guitar {
+    func strum() {
+        print("strumming so wonderously")
+    }
+
+    func stopStrum() {
+        print("musics over. so sad")
+    }
+}
+
+// adaptor
+class GuitarStreamableAdapter: Streamable {
+    let guitar: Guitar
+
+    init(guitar: Guitar) {
+        self.guitar = guitar
+    }
+
+    func play() {
+        guitar.strum()
+    }
+
+    func pause() {
+        guitar.stopStrum()
+    }
+```
