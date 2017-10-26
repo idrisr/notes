@@ -131,9 +131,11 @@ A description of search criteria used to retrieve data from a persistent store
 protocol, not a class
 
 
-    /* Protocol conformance for possible result types a fetch request can return.  */
-    public protocol NSFetchRequestResult : NSObjectProtocol {
-    }
+```swift
+/* Protocol conformance for possible result types a fetch request can return.  */
+public protocol NSFetchRequestResult : NSObjectProtocol {
+}
+```
 
 ### NSSortDescriptor
 
