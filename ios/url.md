@@ -6,6 +6,17 @@
 
 ## `URLResponse`
 
+## `HTTPURLResponse`
+
+An `HTTPURLResponse` object represents a response to an
+HTTP URL load. It is a specialization of `URLResponse` which
+provides conveniences for accessing information specific to HTTP
+protocol responses.
+
+```swift
+open class HTTPURLResponse : URLResponse {
+```
+
 ## `URLComponents`
 
 ## `URLSession`
@@ -49,6 +60,14 @@ url schemes for [ios](https://developer.apple.com/library/content/featuredarticl
 
 `scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]`
 
-Select Account  
-PO Box 64193   
-St Paul, MN 55164
+```swift
+func foo<T>(x: T) -> T.Type {
+  return type(of: x)
+}
+
+protocol P {}
+
+func bar(x: P) {
+  foo(x: x) // Call foo with T == P 
+}
+```

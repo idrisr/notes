@@ -200,3 +200,41 @@ method is no longer supported. Use `__lt__()` for sorting, `__eq__()` with
 equivalent for `cmp(a, b)`.)
 
 ### `__init_class__`
+
+### `__all__`
+It's a list of public objects of that module, as interpreted by `import *`. It
+overrides the default of hiding everything that begins with an `_`.
+
+In other words, the content of `__all__` is more of a convention rather than a
+strict limitation. Regardless of what you put there, every symbol defined in
+your module will still be accessible from the outside.
+
+It tells the readers of the source code — be it humans or automated tools —
+what’s the conventional public API exposed by the module.
+
+```python
+# thing.py
+__all__ = ['Foo', 'bar', 'wtf']
+
+class Foo(object):
+   pass
+
+def bar():
+   pass
+
+def baz():
+   pass
+```
+
+```python
+# jig.py
+from thing import *
+```
+
+```shell
+$ python jig.py
+Traceback (most recent call last):
+ File "jig.py", line 1, in <module>
+   from thing import *
+AttributeError: module 'thing' has no attribute 'wtf'
+```

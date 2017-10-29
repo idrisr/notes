@@ -54,25 +54,25 @@ which communicate through a socket in `/tmp`.
 * others?
 
 
-### mouse-mode
+## mouse-mode
 
 in the latest versions of tmux, to turn on mouse mode all you need is
 
 `set -g mouse on`. this lets you scroll normally through panes, resize panes,
 and switch panes using the mouse.
 
-### scripting
+## scripting
 `bind-key c command-prompt -p "Name of new window: " "new-window -n '%%'"`
 the `%%` is replaced by whatever is supplied in the prompt
 
-### `bind-key -T`
+## `bind-key -T`
 binds a key to a command in a `key-table`
 
 do a `tmux list-keys` to see the commands
 
-### `copy-mode-vi`
+## `copy-mode-vi`
 
-### `send-keys`
+## `send-keys`
 
 todo read these:
 * [increased prog productivity](http://minimul.com/increased-developer-productivity-with-tmux-part-5.html)
