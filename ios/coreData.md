@@ -158,12 +158,12 @@ oriented interface.
 ## NSPersistentStoreDescription
 A description object used to create and/or load a persistent store.
 
-
 ## NSAsynchronousFetchRequest
-
 
 ## NSBatchUpdateRequest
 
 ## NSValueTransformer
-
 An abstract class used to transform values from one representation to another.
+
+## NSPersistentStoreDescription
+A description object used to create and load a persistent store.

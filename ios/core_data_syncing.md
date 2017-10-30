@@ -64,3 +64,16 @@ have your app send up all the local changes
 build a local API for your app to talk regarding data changes. That way the app
 developer doesn't think about syncing, because your local API takes care of
 syncing local and network data transparently. rite
+
+# Case Study
+https://www.objc.io/issues/10-syncing-data/sync-case-study/
+
+## Requirements
+
+1. Each device has to have the whole data set available, with and without an
+Internet connection.
+1. Due to the mediocre network connection, syncing has to happen with as few
+requests as possible.
+1. Changes are only accepted if they were made based off the most recent data,
+because nobody should be able to override somebody else’s prior changes without
+being aware of them.
