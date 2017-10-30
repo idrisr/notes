@@ -67,7 +67,7 @@ Because of the work the `NSPersistentStoreCoordinator` does, the `NSManagedObjet
 ### NSEntityDescription
 
 An `NSEntityDescription` object describes an entity in Core Data. Entities are
-to managed objects what Class is to id, or—to use a database analogy—what
+to managed objects what `Class` is to `id`, or—to use a database analogy—what
 tables are to rows. An instance specifies an entity’s name, its properties (its
 attributes and relationships, expressed by instances of
 `NSAttributeDescription` and `NSRelationshipDescription`) and the class by
@@ -158,12 +158,12 @@ oriented interface.
 ## NSPersistentStoreDescription
 A description object used to create and/or load a persistent store.
 
-
 ## NSAsynchronousFetchRequest
-
 
 ## NSBatchUpdateRequest
 
 ## NSValueTransformer
-
 An abstract class used to transform values from one representation to another.
+
+## NSPersistentStoreDescription
+A description object used to create and load a persistent store.
