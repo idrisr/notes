@@ -5,3 +5,8 @@
 todo - do this for running tmux sessions.  
 or find someone who already did it  
 http://mads-hartmann.com/2017/08/06/writing-zsh-completion-scripts.html
+
+## oh-my-zsh
+
+`$PROMPT`
+`$RPROMPT`

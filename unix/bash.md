@@ -2,6 +2,8 @@
 
 from [here](https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/)
 
+google style [guide](https://google.github.io/styleguide/shell.xml)
+
 ## `1>&2`
 `1` is `stdout`
 `2` is `stderr`

@@ -200,6 +200,7 @@ method is no longer supported. Use `__lt__()` for sorting, `__eq__()` with
 equivalent for `cmp(a, b)`.)
 
 ### `__init_class__`
+todo
 
 ### `__all__`
 It's a list of public objects of that module, as interpreted by `import *`. It
@@ -238,3 +239,36 @@ Traceback (most recent call last):
    from thing import *
 AttributeError: module 'thing' has no attribute 'wtf'
 ```
+
+## Virtual Environments
+When a virtual environment is active (i.e., the virtual environment’s Python
+interpreter is running), the attributes `sys.prefix` and `sys.exec_prefix` point
+to the base directory of the virtual environment, whereas `sys.base_prefix` and
+`sys.base_exec_prefix` point to the non-virtual environment Python installation
+which was used to create the virtual environment. If a virtual environment is
+not active, then `sys.prefix` is the same as `sys.base_prefix` and
+`sys.exec_prefix` is the same as `sys.base_exec_prefix` (they all point to a
+non-virtual environment Python installation).
+
+When working in a command shell, users can make a virtual environment active by
+running an `activate` script in the virtual environment’s executables directory
+(the precise filename is shell-dependent), which prepends the virtual
+environment’s directory for executables to the `PATH` environment variable for
+the running shell. There should be no need in other circumstances to activate a
+virtual environment—scripts installed into virtual environments have a “shebang”
+line which points to the virtual environment’s Python interpreter. This means
+that the script will run with that interpreter regardless of the value of
+`PATH`.
+
+### `site.py`
+
+This module is automatically imported during initialization. The automatic
+`import` can be suppressed using the interpreter’s `-S` option.
+
+Importing this module will append site-specific paths to the module search path
+and add a few builtins, unless `-S` was used. In that case, this module can be
+safely imported with no automatic modifications to the module search path or
+additions to the builtins. To explicitly trigger the usual site-specific
+additions, call the `site.main()` function.
+
+### `pyvenv.cfg`
