@@ -42,4 +42,32 @@ you can hook into everything. importing modules, creating classes ...
 
 ### metaclasses
 
+some decorators in the `Collection.abc` package that allow you to mark certain
+properties as `@abstract`, ie required
+
+pretty much every use is some base class enforcing constraints on the subclass
+
 ### decorators
+
+todo closure object duality?
+todo - write a timer function
+todo - write an n-times decorator
+
+## generators
+eagerness vs laziness divide
+
+instead of eagerly evaluating everying, you lazily give them one at a time
+
+top level functions, or top level syntax, have some corresponding underscore
+methods that implement it
+
+generators are way to write code which interleaves with other code while
+enforcing sequencing
+
+co-routine
+
+sub-routine
+
+## Context Manager
+the idea is that there some setup and teardown and that you want to combine them
+together
