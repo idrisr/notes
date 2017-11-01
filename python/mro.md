@@ -41,8 +41,8 @@ class D(B, A):
 
 gets you an error, because The MRO guarantees that leftmost bases are visited
 before rightmost ones - but it also guarantees that among ancestors if `B` is a
-subclass of `A` then `B` is visited before `A`. It's impossible to satisfy both of
-these guarantees in this case
+subclass of `A` then `B` is visited before `A`. It's impossible to satisfy both
+of these guarantees in this case
 
 
 ```

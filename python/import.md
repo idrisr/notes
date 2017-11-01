@@ -115,3 +115,9 @@ Contrarily, when using syntax like `import item.subitem.subsubitem`, each item
 except for the last must be a package; the last item can be a module or a
 package but can’t be a class or function or variable defined in the previous
 item.
+
+# Errors
+
+```python
+ImportError: attempted relative import with no known parent package
+```
