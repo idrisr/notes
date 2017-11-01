@@ -67,3 +67,25 @@ class Idris(object):
         u()
 
 ```
+
+also, not the difference in the `dir(app)`
+
+```python
+# dont import shot in __init__
+In [2]: import app; dir(app)
+Out[2]:
+[...
+ 'db',
+ 'thing']
+```
+
+```python
+# import shot in __init__
+In [2]: import app; dir(app)
+Out[2]:
+[...,
+'User',
+ 'db',
+ 'models',
+ 'thing']
+```
