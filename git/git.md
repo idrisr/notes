@@ -50,3 +50,10 @@ drwxrwxr-x 2 demo demo 4096 May 24 20:10 info
 drwxrwxr-x 4 demo demo 4096 May 24 20:10 objects // good stuff
 drwxrwxr-x 4 demo demo 4096 May 24 20:10 refs    // good stuff
 ```
+
+# `reflog`
+
+https://git-scm.com/docs/git-reflog
+
+`git reflog` and you get to see all the references and can maybe find the thing
+you lost in there

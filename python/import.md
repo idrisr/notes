@@ -21,27 +21,13 @@ from os import path, walk, unlink, uname, \
 
 ### relative imports
 
-
-
-
-
-
 ### optional imports
-
-
-
-
-
 
 ### local imports
 
-
-
-
-
-
 ### import pitfalls
 
+### implicit relative imports
 
 ```python
 >>> import fibo
