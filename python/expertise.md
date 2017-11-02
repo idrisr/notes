@@ -6,7 +6,9 @@ he claims that python is a protocol oriented language
 python is quite simple, runs top to bottom  linearly  
 almost every statement you see is executable runtime code  
 
+[ipython notebook](https://github.com/austin-taylor/code-vault/blob/master/python_expert_notebook.ipynb)
 
+[video](https://www.youtube.com/watch?v=7lmCu8wz8ro)
 
 ## data model methods
 google it   
