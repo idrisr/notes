@@ -32,8 +32,8 @@ from os import path, walk, unlink, uname, \
 ```python
 >>> import fibo
 ```
-This does not enter the names of the functions defined in fibo directly in the
-current symbol table; it only enters the module name fibo there. Using the
+This does not enter the names of the functions defined in `fibo` directly in the
+current symbol table; it only enters the module name `fibo` there. Using the
 module name you can access the functions:
 
 
@@ -121,3 +121,11 @@ item.
 ```python
 ImportError: attempted relative import with no known parent package
 ```
+
+# Videos
+
+https://www.youtube.com/watch?v=0oTh1CXRaQ0
+
+https://www.youtube.com/watch?v=_Yif7EEOCy8
+
+https://www.youtube.com/watch?v=v_eigSFGroI
