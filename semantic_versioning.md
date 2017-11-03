@@ -2,6 +2,10 @@
 
 from https://www.youtube.com/watch?v=x4ARXyovvPc
 
+```
+<major>.<minor>.<patch>
+```
+
 ## patch number
 bug fixes that dont break backward compatibility  
 number on right
