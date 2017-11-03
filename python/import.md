@@ -20,6 +20,17 @@ from os import path, walk, unlink, uname, \
 ```
 
 ### relative imports
+https://stackoverflow.com/questions/7279810/what-does-a-in-an-import-statement-in-python-mean
+
+The dot in the module name is used for relative module import (see here and
+here, section 6.4.2).
+
+You can use more than one dot, referring not to the current package but its
+parent(s). This should only be used within packages, in the main module one
+should always use absolute module names
+
+It should say from where the importing package is. It basically means the
+current namespace or package directory.
 
 ### optional imports
 
