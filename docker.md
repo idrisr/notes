@@ -42,10 +42,17 @@ To run the daemon with debug output, use `dockerd -D` or add debug: true to the
 ## stop
 
 ## run
+launch an image  
+`docker run <imagesha>`  
+`docker run -t <image_tag_name>`
+
 ### open a shell
-`docker run -ti efa47679138e /bin/bash`
+launch an image and get a shell  
+`docker run -ti <imagesha> /bin/bash`
 
 ## build
+builds an image from a `Dockerfile`
+`docker build </path/to/Dockerfile>`
 
 ## manifest
 
