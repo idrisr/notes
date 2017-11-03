@@ -57,3 +57,7 @@ https://git-scm.com/docs/git-reflog
 
 `git reflog` and you get to see all the references and can maybe find the thing
 you lost in there
+
+## git server
+
+https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
