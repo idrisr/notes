@@ -59,5 +59,16 @@ https://git-scm.com/docs/git-reflog
 you lost in there
 
 ## git server
-
 https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server
+
+## bare versus non-bare repos
+from [here](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
+
+A bare repository created with `git init --bare` is for… sharing. If you are
+collaborating with a team of developers, and need a place to share changes to a
+repo, then you will want to create a bare repository in centralized place where
+all users can push their changes (often the easy choice is github.com). Because
+git is a distributed version control system, no one will directly edit files in
+the shared centralized repository. Instead developers will clone the shared bare
+repo, make changes locally in their working copies of the repo, then push back
+to the shared bare repo to make their changes available to other users.
