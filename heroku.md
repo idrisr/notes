@@ -13,6 +13,11 @@ your application, its dependencies, and the language runtime, and produce slugs.
 They’re open source - enabling you to extend Heroku to other languages and
 frameworks.
 
+```sh
+heroku buildpacks:set heroku/python
+```
+
+
 ## slug
 Terminology: A slug is a bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system - ready for execution.
 

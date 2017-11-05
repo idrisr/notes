@@ -49,3 +49,16 @@ Django-specific options and application-specific settings.
 │   └── wsgi.py
 └── manage.py
 ```
+
+## `dj-database-url`
+
+https://pypi.org/project/dj-database-url/
+
+basically allows for configuring your database in a way that matches the
+philosophy of 12factor apps, which says to treat backing services as attached
+resources.
+
+## `whitenoise`
+https://pypi.org/project/whitenoise/
+
+static file serving for python web apps
