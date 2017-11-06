@@ -36,19 +36,19 @@ that mutable object is changed.
 
 ## Types
 
-None
-NotImplemented
-Ellipsis
-numbers.Number
-numbers.Integral
-numbers.Real (float)
-numbers.Complex (complex)
-SequenceImmutable sequences
-Mutable sequences
-Set types
-Mappings -> Dictionaries
-The extension modules dbm.ndbm and dbm.gnu provide additional examples of mapping types, as does the collections module.
-Callable types
-user-defined functions
-instance methods
-generator functions
+* None
+* NotImplemented
+* Ellipsis
+* numbers.Number
+* numbers.Integral
+* numbers.Real (float)
+* numbers.Complex (complex)
+* SequenceImmutable sequences
+* Mutable sequences
+* Set types
+* Mappings -> Dictionaries
+* The extension modules dbm.ndbm and dbm.gnu provide additional examples of mapping types, as does the collections module.
+* Callable types
+* user-defined functions
+* instance methods
+* generator functions

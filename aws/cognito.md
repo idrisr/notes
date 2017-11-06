@@ -2,15 +2,27 @@
 
 * Give you login and all that bullshit work and sync as well. *
 
-Amazon Cognito lets you easily add user sign-up and sign-in and manage permissions for your mobile and web apps. You can create your own user directory within Amazon Cognito. You can also choose to authenticate users through social identity providers such as Facebook, Twitter, or Amazon; with SAML identity solutions; or by using your own identity system. In addition, Amazon Cognito enables you to save data locally on users' devices, allowing your applications to work even when the devices are offline. You can then synchronize data across users' devices so that their app experience remains consistent regardless of the device they use.
+Amazon Cognito lets you easily add  sign-up and sign-in and manage
+permissions for your mobile and web apps. You can create your own  directory
+within Amazon Cognito. You can also choose to authenticate s through social
+identity providers such as Facebook, Twitter, or Amazon; with SAML identity
+solutions; or by using your own identity system. In addition, Amazon Cognito
+enables you to save data locally on s' devices, allowing your applications
+to work even when the devices are offline. You can then synchronize data across
+s' devices so that their app experience remains consistent regardless of the
+device they use.
 
 ## Identity Pools
 
-An identity in a pool gets access to the AWS resources used by your app by being assigned a role in AWS Identity and Access Management (IAM). The access level of an IAM role is defined by the policy that is attached to it. Typical roles for identity pools allow you to give different levels of access to authenticated (Auth)or signed in users, and unauthenticated (Unauth)users.
+An identity in a pool gets access to the AWS resources used by your app by being
+assigned a role in AWS Identity and Access Management (IAM). The access level of
+an IAM role is defined by the policy that is attached to it. Typical roles for
+identity pools allow you to give different levels of access to authenticated
+(Auth)or signed in s, and unauthenticated (Unauth)users.
 
 ## Identity and Access Management (IAM)
 
-* users, groups, permissions to access to EC2 resources
+* s, groups, permissions to access to EC2 resources
 * who can launch an instance
 * logs on API activity
 * standards based federation policy
@@ -31,10 +43,10 @@ An identity in a pool gets access to the AWS resources used by your app by being
 ## API Gateway
 
 ## Data Sync
-sync user's data across devices, like when they upgrade their phone
+sync 's data across devices, like when they upgrade their phone
 
 ## Cognito Identity
-* userpool - gives you sig-up and sign-in
+* pool - gives you sig-up and sign-in
 * federated identities - use identity where a different service does the sign-up and sign-in. like google, facebook, Active Directory
 
 ![cognito](https://i.imgur.com/MAA7JdD.png)
@@ -46,7 +58,7 @@ The idea of refresh tokens is that if an access token is compromised, because it
 
 ### API Docs
 
-from [here](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/cognito-user-identity-pools-apiref.pdf#CommonParameters)
+from [here](https://docs.aws.amazon.com/cognito--identity-pools/latest/APIReference/cognito-user-identity-pools-apiref.pdf#CommonParameters)
 
 * admin
 * attributes
@@ -65,9 +77,9 @@ from [here](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 * signup
 * ui customization
 * update
-* user
-* user pool
-* user pool domain
+*
+*  pool
+*  pool domain
 
 ## Common Parameters for all requests
 
@@ -91,8 +103,8 @@ The following list contains the parameters that all actions use for signing Sign
 
 
 ### WTF These used for?
-* `CognitoUserPoolAppClientId` Your app client id, i.e 81q37d9nfu607gil4uhopekm4b
-* `CognitoUserPoolAppClientSecret` Optional Your app client secret, i.e. `45dpc0bk45v8alftrjv4afeu4nduz1b7do5mjqtia36r7cbnl4d9`. If you don't have a client secret, completely remove this key/string pair.
+* `CognitoPoolAppClientId` Your app client id, i.e 81q37d9nfu607gil4uhopekm4b
+* `CognitoPoolAppClientSecret` Optional Your app client secret, i.e. `45dpc0bk45v8alftrjv4afeu4nduz1b7do5mjqtia36r7cbnl4d9`. If you don't have a client secret, completely remove this key/string pair.
 * `CognitoAuthWebDomain` Your domain, i.e. https://yourdomain.auth.region.amazoncognito.com
 
 #### These two are ios redirect URIs I believe
@@ -100,7 +112,7 @@ The following list contains the parameters that all actions use for signing Sign
 * `CognitoAuthSignOutRedirectUri` Your sign out redirect uri, i.e. myapp://signout
 ---
 
-- `CognitoAuthScopes` Array containing scopes to request, i.e. `aws.cognito.signin.user.admin` i.e. `aws.cognito.signin.user.admin`
+- `CognitoAuthScopes` Array containing scopes to request, i.e. `aws.cognito.signin..admin` i.e. `aws.cognito.signin.user.admin`
 
 ### Redirect URI
 todo
@@ -118,8 +130,15 @@ PAKE protocol, the server does not store password-equivalent data. This means
 that an attacker who steals the server data cannot masquerade as the client
 unless they first perform a brute force search for the password. In layman's
 terms, given two parties who both know a password, SRP (or any other PAKE
-protocol) is a way for one party (the "client" or "user") to demonstrate to
+protocol) is a way for one party (the "client" or "") to demonstrate to
 another party (the "server") that they know the password, without sending the
 password itself, nor any other information from which the password can be
 broken. Further, it is not possible to conduct an offline brute force search for
 the password.
+
+# Tokens
+ID-Token
+
+Access-Token
+
+Refresh-Token
