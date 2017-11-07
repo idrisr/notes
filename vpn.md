@@ -42,3 +42,5 @@ establishes extremely strong, you know, virtually uncrackable encryption.  So
 every single packet is scrambled when it's put into this VPN packet.
 
 https://github.com/trailofbits/algo/issues
+
+https://thomas-witt.com/auto-connect-your-ios-device-to-a-vpn-when-joining-an-unknown-wifi-d1df8100c4ba
