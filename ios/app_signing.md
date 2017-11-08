@@ -1,3 +1,5 @@
+mostly from [here](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html)
+
 # Provisioning Profile
 
 A provisioning profile is a collection of digital entities that uniquely ties
