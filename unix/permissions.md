@@ -2,6 +2,8 @@
 
 from [wikipedia](https://en.wikipedia.org/wiki/File_system_permissions)
 
+todo readme http://tldp.org/LDP/intro-linux/html/sect_03_04.html
+
 ```bash
 Symbolic    Oct   English
 ----------	0000	no permissions
@@ -27,3 +29,4 @@ drwx------ 2 root root 4096 Nov  3 15:32 ./
 drwx------ 1 root root 4096 Nov  3 15:32 ../
 -rw------- 1 root root  401 Nov  3 15:32 authorized_keys
 ```
+

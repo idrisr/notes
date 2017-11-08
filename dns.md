@@ -8,3 +8,5 @@
 cant be done, otherwise packets wont arrive
 
 ##
+
+## dns hostnames
