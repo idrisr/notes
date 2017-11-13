@@ -7,7 +7,7 @@
 a useful, thread-safe structure for modeling state, priority, dependencies, and
 management.
 
-For situations where it doesn’t make sense to build out a custom NSOperation
+For situations where it doesn’t make sense to build out a custom `NSOperation`
 subclass, Foundation provides the concrete implementations `NSBlockOperation` and
 `NSInvocationOperation`.
 
