@@ -38,3 +38,8 @@ The package definition
 ### `brew udpate`
 
 update the brew from the repo
+
+### check version of formula
+```bash
+brew list --versions | ack ${formula}
+```
