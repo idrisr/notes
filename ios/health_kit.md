@@ -21,3 +21,6 @@ that type exists.
 ## HKQuantity
 
 ## HKWorkout
+
+## HKUnit
+Use the HKUnit class to manage units of measure within HealthKit.
