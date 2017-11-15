@@ -72,3 +72,22 @@ git is a distributed version control system, no one will directly edit files in
 the shared centralized repository. Instead developers will clone the shared bare
 repo, make changes locally in their working copies of the repo, then push back
 to the shared bare repo to make their changes available to other users.
+
+### rebase
+https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History
+
+For example, if you want to change the last three commit messages, or any of the
+commit messages in that group, you supply as an argument to `git rebase -i` the
+parent of the last commit you want to edit, which is `HEAD~2^` or `HEAD~3`. It may
+be easier to remember the `~3` because you’re trying to edit the last three
+commits; but keep in mind that you’re actually designating four commits ago, the
+parent of the last commit you want to edit:
+
+```bash
+$ git rebase -i HEAD~3
+```
+
+to edit the commit message, then use `r` for `reword` which will move you
+through each commit you picked and let you edit the message one at a time.
+
+remember to only do this when you have not already pushed

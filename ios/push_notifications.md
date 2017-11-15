@@ -49,9 +49,6 @@ corresponding notifications to the intended devices on your behalf.
 * Add the payload, a globally-unique device token, and other delivery information to an HTTP/2 request. For information about device tokens, see APNs-to-Device Connection Trust and Device Tokens. For information about the HTTP/2 request format, and the possible responses and errors from APNs, see Communicating with APNs.
 * Send the HTTP/2 request to APNs, including cryptographic credentials in the form of a token or a certificate, over a persistent, secure channel. Establishing this secure channel is described in Security Architecture.
 
-
-
-
 ## Pushy
 
 ## APNs
