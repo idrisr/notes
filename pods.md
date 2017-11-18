@@ -73,3 +73,24 @@ In addition to the logic operators CocoaPods has an optimistic operator `~>:`
 
 # turn off warnings
 `inhibit_all_warnings!` in podfile
+
+# Hooks
+
+`post_install`
+
+This hook allows you to make any last changes to the generated Xcode project
+before it is written to disk, or any other tasks you might want to perform.
+
+It receives the `Pod::Installer` as its only argument.
+
+## `Pod::Installer`
+http://www.rubydoc.info/gems/cocoapods/Pod/Installer
+
+The `Installer` is responsible of taking a `Podfile` and transform it in the
+`Pods` libraries. It also integrates the user project so the `Pods` libraries
+can be used out of the box.
+
+The `Installer` is capable of doing incremental updates to an existing Pod
+installation.
+
+The `Installer` gets the information that it needs mainly from 3 files.
