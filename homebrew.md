@@ -40,7 +40,12 @@ The package definition
 
 ### `brew udpate`
 
-update the brew from the repo
+updates `brew` itself
+
+### upgrade a formula version
+```bash
+brew upgrade <my-favorite-formula>
+```
 
 ### check version of formula
 ```bash

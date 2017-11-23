@@ -142,3 +142,23 @@ ID-Token
 Access-Token
 
 Refresh-Token
+
+## sample call
+* doesnt work, yet
+
+```bash
+#!/bin/bash
+region=us-east-1
+user_poolid=us-east-1_YmCPtU8K8
+auth_flow=ADMIN_NO_SRP_AUTH
+client_id=my_client_id
+cmd=admin-initiate-auth
+auth_parameters="USERNAME=user1,PASSWORD=password1!"
+
+aws cognito-idp "${cmd}" \
+--user-pool-id "${user_poolid}" \
+--auth-flow "${auth_flow}" \
+--client-id "${client_id}" \
+--region "${region}" \
+--auth-parameters "${auth_parameters}"
+```
