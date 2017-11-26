@@ -137,11 +137,9 @@ broken. Further, it is not possible to conduct an offline brute force search for
 the password.
 
 # Tokens
-ID-Token
-
-Access-Token
-
-Refresh-Token
+- `ID-Token`
+- `Access-Token`
+- `Refresh-Token`
 
 ## sample call
 * doesnt work, yet
