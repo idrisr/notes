@@ -1,0 +1,10 @@
+# proxy events
+
+read [here](http://ticketmastermobilestudio.com/blog/nsproxy-nsobjects-lesser-known-sibling)
+
+## `NSProxy`
+Pass messages to the proxy and then pass them forward
+
+
+## no init
+weird

@@ -110,3 +110,11 @@ If -N is specified, removed paths are marked as intent-to-add (see git-add[1]).
 #### --hard
 Resets the index and working tree. Any changes to tracked files in the working
 tree since <commit> are discarded.
+
+#### index
+The index is a single, large, binary file in `<baseOfRepo>/.git/index`, which
+lists all files in the current branch, their sha1 checksums, time stamps and the
+file name -- it is not another directory with a copy of files in it.
+
+#### working tree / workspace
+the workspace is the directory tree of (source) files that you see and edit.
