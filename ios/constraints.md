@@ -13,6 +13,9 @@ The `NSLayoutAnchor` class is a factory class for creating `NSLayoutConstraint` 
 # `NSLayoutYAxisAnchor`
 
 # `NSLayoutDimension`
+A factory class for creating size-based layout constraint objects using a fluent API.
+
+
 
 # `UILayoutGuide`
 A rectangular area that can interact with Auto Layout.
@@ -20,3 +23,9 @@ A rectangular area that can interact with Auto Layout.
 Use layout guides to replace the dummy views you may have created to represent
 inter-view spaces or encapsulation in your user interface. Traditionally, there
 were a number of Auto Layout techniques that required dummy views.
+
+
+## `readableContentGuide`
+## `topLayoutGuide`
+## `bottomLayoutGuide`
+## `layoutMarginsGuide`
