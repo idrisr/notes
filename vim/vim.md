@@ -69,3 +69,15 @@ location lists.
 The quickfix list is global so you can't have more than one available at a time.
 There are commands that allow you to replace the current quickfix list with a
 previous one but you can't have two concurrent quickfix lists.
+
+## leader
+from [here](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html)
+
+Vim calls this "prefix" key the "leader". You can set your leader key to whatever you like. Run this command:
+
+```vim
+:let mapleader = "-"
+```
+
+## local leader
+Vim has a second "leader" key called "local leader". This is meant to be a prefix for mappings that only take effect for certain types of files, like Python files or HTML files.
