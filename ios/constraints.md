@@ -24,6 +24,8 @@ Use layout guides to replace the dummy views you may have created to represent
 inter-view spaces or encapsulation in your user interface. Traditionally, there
 were a number of Auto Layout techniques that required dummy views.
 
+# debug
+use symbolic breakpoint `UIViewAlertForUnsatisfiableConstraints`
 
 ## `readableContentGuide`
 ## `topLayoutGuide`

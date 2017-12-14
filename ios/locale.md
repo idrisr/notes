@@ -9,3 +9,6 @@ are formatted.
 and according to the user’s customs and preferences. They are frequently used in
 conjunction with formatters. Although you can use many locales, you usually use
 the one associated with the current user.
+
+## `NSLocale`
+[here](http://nshipster.com/nslocale/)
