@@ -56,3 +56,11 @@ brew list --versions | ack ${formula}
 ```bash
 brew switch <formula> <version>
 ```
+
+### info on formula
+```bash
+brew info <version>
+```
+
+### install older version not on your machine
+see [here](https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions)
