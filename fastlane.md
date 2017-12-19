@@ -1,11 +1,19 @@
 # pilot
 Pilot makes it easier to manage your app on Apple’s TestFlight.
 
-You can:
-- Upload & distribute builds
-- Add & remove testers
-- Retrieve information about testers & devices
-- Import/export all available testers
+## list builds
+```bash
+fastlane pilot builds // list builds
+fastlane pilot list   // list testers
+```
+
+## Upload & distribute builds
+
+## Add & remove testers
+
+## Retrieve information about testers & devices
+
+## Import/export all available testers
 
 # gym
 
