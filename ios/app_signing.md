@@ -4,17 +4,26 @@ read [me](https://developer.apple.com/library/content/documentation/IDEs/Concept
 
 and [me](http://bigzaphod.tumblr.com/post/78574849549/provisioning)
 
+reademe - [automatic signing](https://developer.apple.com/library/content/qa/qa1814/_index.html#//apple_ref/doc/uid/DTS40014030)
+
 # Provisioning Profile
 
-A provisioning profile is a collection of digital entities that uniquely ties
-developers and devices to an authorized iPhone Development Team and enables a
-device to be used for testing. A Development Provisioning Profile must be
-installed on each device on which you wish to run your application code. Each
-Development Provisioning Profile will contain a set of iPhone Development
-Certificates, Unique Device Identifiers and an App ID. Devices specified within
-the provisioning profile can be used for testing only by those individuals
-whose iPhone Development Certificates are included in the profile. A single
-device can contain multiple provisioning profiles.
+A provisioning profile is:
+- a collection of digital entities
+- that uniquely ties developers and devices to an authorized iPhone Development Team
+- and enables a device to be used for testing.
+
+## Development Provisioning Profile
+A Development Provisioning Profile must be installed on each device on which you wish to run your application code.
+
+Each Development Provisioning Profile will contain a set of:
+- iPhone Development Certificates,
+- Unique Device Identifiers
+- and an App ID.
+
+Devices specified within the provisioning profile can be used for testing only
+by those individuals whose iPhone Development Certificates are included in the
+profile. A single device can contain multiple provisioning profiles.
 
 # Signing
 
