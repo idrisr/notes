@@ -6,8 +6,8 @@
 In Foundation, a macro for denoting strings as user-facing: `NSLocalizedString`.
 
 `NSLocalizedString` is a Foundation macro that returns a localized version of a
-string. It has two arguments: key, which uniquely identifies the string to be
-localized, and comment, a string that is used to provide sufficient context for
+string. It has two arguments: `key`, which uniquely identifies the string to be
+localized, and `comment`, a string that is used to provide sufficient context for
 accurate translation.
 
 - Localization is the process of adapting your application for a specific market, or locale.
