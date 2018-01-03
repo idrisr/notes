@@ -1,0 +1,5 @@
+# RGB
+
+# HSBA
+
+# CMYK
