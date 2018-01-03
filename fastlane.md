@@ -17,7 +17,8 @@ fastlane pilot list   // list testers
 
 # gym
 
-gym builds and packages iOS apps for you. It takes care of all the heavy lifting and makes it super easy to generate a signed ipa or app file 💪
+gym builds and packages iOS apps for you. It takes care of all the heavy lifting
+and makes it super easy to generate a signed ipa or app file 💪
 
 # sigh
 
@@ -36,3 +37,19 @@ expired credentials. It's the easiest way to share signing credentials across
 teams.
 
 # beta
+
+
+# Tests
+## scan
+## snapshot
+
+# TestFlight
+## scan
+## pilot
+## slack
+
+# App Store
+## scan
+## snapshot
+## sigh
+## deliver
