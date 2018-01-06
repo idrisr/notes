@@ -46,3 +46,6 @@ Here’s what that looks like:
 
 ## `localized(with: "thing")`
 let scDiagramName = "DiagramName".localized(with: "String for 'DIAGRAM NAME'")
+
+## Experimenting
+- The language, region, and calendar settings are in the International section of the Settings app.

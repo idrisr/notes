@@ -2,6 +2,8 @@
 
 from [here](https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/)
 
+read me https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
+
 google style [guide](https://google.github.io/styleguide/shell.xml)
 
 ## `1>&2`
