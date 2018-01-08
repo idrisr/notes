@@ -8,7 +8,7 @@
     "drink": [
         { "name": "tea", "calories": 150 },
         { "name": "water", "calories": 0 },
-        { "name": "la croix", "calories": 1 }
+        { "name": "la croix", "calories": 1   }
     ],
 
     "food": [
