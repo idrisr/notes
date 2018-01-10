@@ -13,6 +13,15 @@ A provisioning profile is:
 - that uniquely ties developers and devices to an authorized iPhone Development Team
 - and enables a device to be used for testing.
 
+## storage location
+```bash
+~/Library/MobileDevice/Provisioning Profiles
+```
+
+## team provisioning profile
+[read me](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
+
+
 ## Development Provisioning Profile
 A Development Provisioning Profile must be installed on each device on which you wish to run your application code.
 
@@ -24,6 +33,11 @@ Each Development Provisioning Profile will contain a set of:
 Devices specified within the provisioning profile can be used for testing only
 by those individuals whose iPhone Development Certificates are included in the
 profile. A single device can contain multiple provisioning profiles.
+
+### Development WildCard
+
+
+
 
 # Signing
 
