@@ -16,3 +16,7 @@ see [here](https://www.charlesproxy.com/documentation/tools/command-line-tools/)
 
 ## rewrite
 - [here](https://www.charlesproxy.com/documentation/tools/rewrite/)
+
+
+## vpns
+- something with vpns messes it all up
