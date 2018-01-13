@@ -1,20 +1,10 @@
 # Push Notifications
 
-A push notification is a message that pops up on a mobile device. App publishers
-can send them at any time; users don't have to be in the app or using their
-devices to receive them. They can do a lot of things; for example, they can show
-the latest sports scores, get a user to take an action, such as downloading a
-coupon, or let a user know about an event, such as a flash sale.
-
-Push notifications look like SMS text messages and mobile alerts, but they only
-reach users who have installed your app. Each mobile platform has support for
-push notifications — iOS, Android, Fire OS, Windows and BlackBerry all have
-their own services.
+A push notification is a message that pops up on a mobile device.
 
 On initial launch of your app on a user’s device, the system automatically
 establishes an accredited, encrypted, and persistent IP connection between your
-app and APNs. This connection allows your app to perform setup to enable it to
-receive notifications, as explained in Configuring Remote Notification Support.
+app and APNs.
 
 With push notification setup complete on your providers and in your app, your
 providers can then send notification requests to APNs. APNs conveys
@@ -23,10 +13,11 @@ notification, the system delivers the payload to the appropriate app on the
 device, and manages interactions with the user.
 
 If a notification for your app arrives with the device powered on but with the
-app not running, the system can still display the notification. If the device is
-powered off when APNs sends a notification, APNs holds on to the notification
-and tries again later (for details, see Quality of Service, Store-and-Forward,
-and Coalesced Notifications).
+app not running, the system can still display the notification.
+
+If the device is powered off when APNs sends a notification, APNs holds on to
+the notification and tries again later (for details, see Quality of Service,
+Store-and-Forward, and Coalesced Notifications).
 
 
 ## provider
@@ -54,3 +45,6 @@ corresponding notifications to the intended devices on your behalf.
 ## APNs
 
 [overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1)
+
+## tutorial
+from [here](https://www.appcoda.com/push-notification-ios/)

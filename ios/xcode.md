@@ -1,4 +1,4 @@
-# fucking XCode
+# XCode
 
 ## saving custom keyboard shortcuts
 
@@ -9,3 +9,25 @@ time you run in, so a `symlink` from `dotfiles` wont work.
 
 ## creating color profiles
 - from [here](https://www.natashatherobot.com/xcode-color-palette/)
+
+## build settings sections
+* architectures
+* assets
+* build locations
+* build options
+* deployment
+* headers
+* kernel module
+* linking
+* packaging
+* search paths
+* signing
+* testing
+* text-based API
+* versioning
+* lots of apple llvm 9.0 stuff
+* interface builder compiler options
+* OSA (applescript) compile options
+* static analyzer stuff
+* swift compiler stuff
+* user-defined
