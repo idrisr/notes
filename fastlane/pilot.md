@@ -1,8 +1,8 @@
 # Pilot
 
-[here](https://github.com/fastlane/fastlane/tree/master/pilot#readme)
+[here](https://docs.fastlane.tools/actions/pilot/)
 
-Pilot makes it easier to manage your app on Apple’s TestFlight. You can:
+`pilot` makes it easier to manage your app on Apple’s TestFlight. You can:
 
 * Upload & distribute builds
 * Add & remove testers
