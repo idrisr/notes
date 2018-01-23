@@ -2,10 +2,12 @@
 from [here](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
 
 ## `useradd`
-`useradd -m -s /bin/bash idmoney`
+```bash
+useradd -m -s /bin/bash idmoney
 
--m create a home directory if one doesnt exist
--s name of the users login shell
+# -m create a home directory if one doesnt exist  
+# -s name of the users login shell
+```
 
 next steps
 
@@ -17,6 +19,11 @@ next steps
 ##  `useradd`
 
 # `wheel` group
+
+## change users password
+```bash
+passwd `user`
+```
 
 from [wikipedia](https://en.wikipedia.org/wiki/Wheel_(Unix_term)
 
