@@ -10,3 +10,9 @@ command script import /usr/local/opt/chisel/libexec/fblldb.py
 ```bash
 command script clear
 ```
+
+## reload `.lldbinit`
+
+```bash
+(lldb) command source ~/.lldbinit
+```
