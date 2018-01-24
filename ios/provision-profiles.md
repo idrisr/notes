@@ -16,7 +16,20 @@ that are built with an Adhoc provisioning profile can only run in devices whose
 UDIDs were added to the provisioning profile during the profile creation
 process.
 
+## what do they do
+A provisioning profile is a
+* collection of digital entities that uniquely ties developers and devices to an authorized iPhone Development Team
+* and can enable a device to be used for testing.
+* A Development Provisioning Profile must be installed on each device on which you wish to run your application code.
+* Each Development Provisioning Profile will contain a set of
+  * iPhone Development Certificates,
+  * Unique Device Identifiers and an
+  * App ID.
 
+Devices specified within
+the provisioning profile can be used for testing only by those individuals whose
+iPhone Development Certificates are included in the profile. A single device can
+contain multiple provisioning profiles.
 
 ## Development
 * Name and UUID
