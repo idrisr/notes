@@ -5,16 +5,16 @@
 ## `.dockerignore`
 
 The current working directory where you are located when you issue a docker
-build command is called the build context, and the Dockerfile must be somewhere
+build command is called the build context, and the `Dockerfile` must be somewhere
 within this build context. By default, it is assumed to be in the current
-directory, but you can specify a different location by using the -f flag.
-Regardless of where the Dockerfile actually lives, all of the recursive contents
+directory, but you can specify a different location by using the `-f` flag.
+Regardless of where the `Dockerfile` actually lives, all of the recursive contents
 of files and directories in the current directory are sent to the Docker daemon
 as the build context. Inadvertently including files that are not necessary for
 building the image results in a larger build context and larger image size.
 These in turn can increase build time, time to pull and push the image, and the
 runtime size of containers. To see how big your build context is, look for a
-message like the following, when you build your Dockerfile.
+message like the following, when you build your `Dockerfile`.
 
 ## multi-stage builds
 
