@@ -73,3 +73,6 @@ certificate authority, which effectively vouches for your identity. The simple
 act of code signing does not require a certificate authority’s signature on your
 certificate, but your signature is much more useful this way because anyone
 encountering your signature can be confident of its origin.
+
+## resign .ipa with new distribution certificate
+* [here](https://coderwall.com/p/cea3fw/resign-ipa-with-new-distribution-certificate)
