@@ -16,3 +16,7 @@ Application bundles are the only ones that actually get installed onto your devi
 * as well as some other files meant only for iTunes to use, for instance iTunesArtwork.
 
 They are how iTunes manages applications, and as far as I can tell have little to do with the applications themselves other than App Store information.
+
+## `ipa`
+
+* Files with the `.ipa` extension can be uncompressed by changing the extension to `.zip` and unzipping.
