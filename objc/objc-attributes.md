@@ -61,3 +61,12 @@ The astute reader may notice that the title of the article contains these two te
 * Bivariance is when both supertypes and subtypes are accpted. I can't think of any examples of bivariance in Objective-C or Swift.
 
 You may find the terminology hard to remember. That's OK! It's not really that important. As long as you understand subtyping, supertyping, and what causes a subtype or supertype to be acceptable in any given place, you can just look up the terminology in the unlikely event that you need it.
+
+## `synthesize`
+```objc
+@synthesize mapView = mapView1;
+```
+
+This line tells the compiler to create a `setter` and `getter` for `mapView`, and
+that they should use the ivar called `mapView1`. Without the `= mapView1` part, the
+compiler would assume that the property and ivar have the same name.
