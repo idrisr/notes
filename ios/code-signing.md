@@ -74,12 +74,5 @@ act of code signing does not require a certificate authority’s signature on yo
 certificate, but your signature is much more useful this way because anyone
 encountering your signature can be confident of its origin.
 
-## checking entitlements
-from [here](https://emm.how/t/how-to-check-existing-app-entitlements-of-an-ios-app/75)
-```
-# check the entitlements of the app
-codesign -d --entitlements - ayourapp.app/yourapp
-
-# check the entitlements of the provisioning profile
-security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
-```
+## resign .ipa with new distribution certificate
+* [here](https://coderwall.com/p/cea3fw/resign-ipa-with-new-distribution-certificate)
