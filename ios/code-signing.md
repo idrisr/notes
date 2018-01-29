@@ -73,3 +73,13 @@ certificate authority, which effectively vouches for your identity. The simple
 act of code signing does not require a certificate authority’s signature on your
 certificate, but your signature is much more useful this way because anyone
 encountering your signature can be confident of its origin.
+
+## checking entitlements
+from [here](https://emm.how/t/how-to-check-existing-app-entitlements-of-an-ios-app/75)
+```
+# check the entitlements of the app
+codesign -d --entitlements - ayourapp.app/yourapp
+
+# check the entitlements of the provisioning profile
+security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
+```
