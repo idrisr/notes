@@ -38,7 +38,37 @@ use symbolic breakpoint `UIViewAlertForUnsatisfiableConstraints`
 - `alamborder   -- Put a border around views with an ambiguous layout`
 - `alamunborder` -- Removes the border around views with an ambiguous layout
 
+## Visual Format Language ("VFL")
+from [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html)
 
+```
+# Standard Space
+[button]-[textField]
+
+# Width Constraint
+[button(>=50)]
+
+# Connection to Superview
+|-50-[purpleBox]-50-|
+
+# Vertical Layout
+V:[topField]-10-[bottomField]
+
+# Flush Views
+[maroonView][blueView]
+
+# Priority
+[button(100@20)]
+
+# Equal Widths
+[button1(==button2)]
+
+# Multiple Predicates
+[flexibleButton(>=70,<=100)]
+
+# A Complete Line of Layout
+|-[find]-[findNext]-[findField(>=20)]-|
+```
 
 ## apple
 - from [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/AmbiguousLayouts.html#//apple_ref/doc/uid/TP40010853-CH18-SW1)
