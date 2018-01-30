@@ -31,3 +31,11 @@ time you run in, so a `symlink` from `dotfiles` wont work.
 * static analyzer stuff
 * swift compiler stuff
 * user-defined
+
+## shortcuts
+
+* show all tabs  
+`shift` + `command` + `\`
+
+## custom key bindings
+* save in `~/Library/Developer/Xcode/UserData/KeyBindings/Custom.idekeybinding`
