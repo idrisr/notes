@@ -26,3 +26,6 @@ A configuration can be created on a project level and on a target level.
 - match it up with a scheme
 - to check what setting is being used for the project, go to `Project -> Build Settings -> Levels`
 - to see the `config` used in a scheme, go to `Scheme->Build Configuration`
+
+### schemes
+* can mark as
