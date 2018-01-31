@@ -11,4 +11,10 @@ When you support universal links, iOS users can tap a link to your website and g
 
 3. Prepare your app to handle universal links.
 
+4. add app entitlement `com.apple.developer.associated-domains`
+
+
 # establish trust between server and app
+
+## sendgrid
+[sendgrip universal links](https://sendgrid.com/docs/Classroom/Build/Add_Content/universal_links.html)

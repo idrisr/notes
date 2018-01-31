@@ -18,6 +18,8 @@ shouldn’t include that code at all because it’s not available.”
 compile. You’ll want to use the `#if` build configuration statement instead.
 
 # Target SDK
+* the sdk you link against
+
 The first is the Target SDK version. SDK stands for “Software Development Kit,”
 which is the set of libraries and headers for a particular OS version. This is
 the version of Apple’s APIs that you compile and link against. The SDK describes
@@ -28,10 +30,14 @@ latest OS versions, so if you upgrade your Xcode, you will be linking against a
 newer version of the SDK.
 
 # Deployment Target
+* minimum version you'll support
+
 The other version number is the Deployment Target. This declares the oldest OS
 version your app will support. How far back you decide to support is a business
 decision based on how much work you are willing to do for customers on older
 versions of the OS.
+
+set in `Project -> Info`
 
 ## Two Problems
 
