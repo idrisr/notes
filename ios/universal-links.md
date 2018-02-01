@@ -18,3 +18,6 @@ When you support universal links, iOS users can tap a link to your website and g
 
 ## sendgrid
 [sendgrip universal links](https://sendgrid.com/docs/Classroom/Build/Add_Content/universal_links.html)
+
+## debugging
+http://building.usebutton.com/debugging/ios/deep-linking/links/universal-links/2016/03/31/debugging-universal-links/
