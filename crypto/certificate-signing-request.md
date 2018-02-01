@@ -55,3 +55,6 @@ come from sources other than us saying, oh, here, call this number.  So they
 independently verify as much information as they can, really as a function of
 how secure you want this to be.  So they want to get paid in return for doing
 all that.  And that's sort of the ecosystem that we have for certificates.
+
+## namecheap explanation
+https://www.namecheap.com/support/knowledgebase/article.aspx/337/67/what-is-a-certificate-signing-request-csr
