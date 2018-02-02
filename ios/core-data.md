@@ -11,7 +11,7 @@ uniquing is scoped to a particular context.
 A context is not thread safe. You can only access it on the same thread that it was created.
 
 ## @NSManaged
-`@NSManaged` now says 'compiler, don't check those properties as I have Core Data to take care of the implementation - it will be there at runtime'
+`@NSManaged` says 'compiler, don't check those properties as I have Core Data to take care of the implementation - it will be there at runtime'
 
 
 ### NSPersistentStore

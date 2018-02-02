@@ -39,3 +39,14 @@ time you run in, so a `symlink` from `dotfiles` wont work.
 
 ## custom key bindings
 * save in `~/Library/Developer/Xcode/UserData/KeyBindings/Custom.idekeybinding`
+
+## build variables
+from [here](https://stackoverflow.com/questions/36323031/what-the-different-between-srcroot-and-project-dir)
+
+`SRCROOT`
+
+`SOURCE_ROOT`
+
+`PROJECT_DIR`
+
+`PROJECT_FILE_PATH`

@@ -12,3 +12,8 @@ from [here](https://developer.apple.com/library/content/documentation/DeveloperT
 - futz around with the app
 - click stop
 - look at the data
+
+## Core Data
+* measure fetches
+* measure cache misses
+* measure data saves

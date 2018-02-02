@@ -2,6 +2,8 @@
 
 from [here](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-111349)
 
+[definitive guide](https://developer.apple.com/library/content/technotes/tn2420/_index.html#//apple_ref/doc/uid/DTS40016603)
+
 ### `CFBundleShortVersionString`
 * tl;dr - specificies a *released* versions of the app, using semantic versioning
 
@@ -51,3 +53,6 @@ represents the stage of development for the new version. For example, you can
 represent development, alpha, beta, and final candidate, by d, a, b, and fc. The
 final number in the suffix is the build version, which cannot be 0 and cannot
 exceed 255. When you release the new version of your app, remove the suffix.
+
+## Automation
+see `agvtool`
