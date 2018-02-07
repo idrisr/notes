@@ -1,12 +1,12 @@
-# `dsym`
+# ```dSYM```
 
 from [here](https://lldb.llvm.org/symbols.html)
 
-On MacOSX, debug symbols are often in stand alone bundles called dSYM files.
+On MacOSX, debug symbols are often in stand alone bundles called `dSYM` files.
 These are bundles that contain DWARF debug information and other resources
 related to builds and debug info.
 
-The DebugSymbols.framework framework helps locate dSYM files when given a UUID.
+The `DebugSymbols.framework` framework helps locate `dSYM` files when given a `UUID`.
 It can locate the symbols using a variety of methods:
 
 * Spotlight
@@ -15,10 +15,10 @@ It can locate the symbols using a variety of methods:
 * File mapped UUID paths
 * Running one or more shell scripts
 
-DebugSymbols.framework also has global defaults that can be modified to allow
-all of the debug tools (lldb, gdb, sample, CoreSymbolication.framework) to
-easily find important debug symbols.  The domain for the DebugSymbols.framework
-defaults is com.apple.DebugSymbols, and the defaults can be read, written or
+`DebugSymbols.framework` also has global defaults that can be modified to allow
+all of the debug tools (`lldb`, `gdb`, `sample`, `CoreSymbolication.framework`) to
+easily find important debug symbols.  The domain for the `DebugSymbols.framework`
+defaults is `com.apple.DebugSymbols`, and the defaults can be read, written or
 modified using the defaults shell command:
 
     % defaults read com.apple.DebugSymbols
