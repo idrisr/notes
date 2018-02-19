@@ -50,3 +50,7 @@ Alamofire’s structs are similar: `Result` has `.success` and `.failure` cases 
 might have what you asked for or an error. `Response` is higher level: it packs up
 the `Result` along with all of the other info from the transaction like your
 original request and the raw response.
+
+
+### Router
+* basically it creates your requests for you. 
