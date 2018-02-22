@@ -53,4 +53,7 @@ original request and the raw response.
 
 
 ### Router
-* basically it creates your requests for you. 
+* basically it creates your requests for you.
+
+### `SessionManager`
+* Responsible for creating and managing `Request` objects, as well as their underlying `NSURLSession`.
