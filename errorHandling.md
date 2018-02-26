@@ -12,7 +12,12 @@
  1. handle the error as an optional value,
  1. or assert that the error will not occur. Each approach is described in a section below.
 
- When a function throws an error, it changes the flow of your program, so it’s important that you can quickly identify places in your code that can throw errors. To identify these places in your code, write the try keyword—or the try? or try! variation—before a piece of code that calls a function, method, or initializer that can throw an error. These keywords are described in the sections below.
+When a function throws an error, it changes the flow of your program, so it’s
+important that you can quickly identify places in your code that can throw
+errors. To identify these places in your code, write the `try` keyword—or the
+`try?` or `try!` variation—before a piece of code that calls a function, method, or
+initializer that can throw an error. These keywords are described in the
+sections below.
 
 
 ## Propagating Errors Using Throwing Functions

@@ -45,10 +45,10 @@ from [here](https://stackoverflow.com/questions/36323031/what-the-different-betw
 
 [retired apple doc](https://developer.apple.com/legacy/library/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW49)
 
-`SRCROOT`
 
-`SOURCE_ROOT`
-
-`PROJECT_DIR`
-
-`PROJECT_FILE_PATH`
+* `SRCROOT`
+* `SOURCE_ROOT`
+* `PROJECT_DIR`
+* `PROJECT_FILE_PATH`
+* `SWIFT_MODULE_NAME`
+* `PROJECT_NAME`

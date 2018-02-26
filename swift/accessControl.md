@@ -5,6 +5,12 @@ files and modules. This feature enables you to hide the implementation details
 of your code, and to specify a preferred interface through which that code can
 be accessed and used.
 
+# Order of Restricitivity
+* `Open`
+* `Public`
+* `FilePrivate`
+* `Private`
+
 ## Modules and Source Files
 
 Swift’s access control model is based on the concept of modules and source
