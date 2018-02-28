@@ -38,3 +38,10 @@ jq '. | {names: .drink[].name}' my.json
 { "names": "water" }
 { "names": "la croix" }
 ```
+
+##
+
+```bash
+# go one key in, get the array, then print just the keys
+jq '.|{Sections}[] | keys' my.json
+```
