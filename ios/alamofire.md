@@ -51,11 +51,15 @@ might have what you asked for or an error. `Response` is higher level: it packs 
 the `Result` along with all of the other info from the transaction like your
 original request and the raw response.
 
-
 ### Router
 * basically it creates your requests for you.
 
 ### `SessionManager`
 * Responsible for creating and managing `Request` objects, as well as their underlying `NSURLSession`.
 
-### `DataRequest`
+## abstraction levels
+... how it is with code to hook in to web services:
+
+* Somewhere your code has to know about the low level network stuff
+* Somewhere it has to handle JSON
+* Somewhere it has to work with gists (or whatever your model objects are)
