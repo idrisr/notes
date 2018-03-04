@@ -57,3 +57,5 @@ original request and the raw response.
 
 ### `SessionManager`
 * Responsible for creating and managing `Request` objects, as well as their underlying `NSURLSession`.
+
+### `DataRequest`

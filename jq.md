@@ -45,3 +45,8 @@ jq '. | {names: .drink[].name}' my.json
 # go one key in, get the array, then print just the keys
 jq '.|{Sections}[] | keys' my.json
 ```
+
+```bash
+# select and filter
+jq '.[] | select (.FieldType | contains("Select"))' fields.json 
+```
