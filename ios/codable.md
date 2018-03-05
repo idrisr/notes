@@ -3,6 +3,7 @@
 * from [Swift Evolution](https://github.com/apple/swift-evolution/blob/master/proposals/0166-swift-archival-serialization.md)
 * from [this](https://hackernoon.com/everything-about-codable-in-swift-4-97d0e18a2999) tutorial
 * [readme](https://benscheirman.com/2017/06/swift-json/)
+* [readme, seriously ](https://swiftunboxed.com/stdlib/json-decoder-decodable/)
 
 
 ## Protocols in play

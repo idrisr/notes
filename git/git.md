@@ -2,10 +2,7 @@
 
 ### Client side
 
-
 ### Server side
-
-
 
 ### `push`
 

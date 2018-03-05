@@ -6,5 +6,3 @@ https://github.com/Carthage/Carthage
 ```bash
 carthage update
 ```
-
-### add
