@@ -52,3 +52,13 @@ from [here](https://stackoverflow.com/questions/36323031/what-the-different-betw
 * `PROJECT_FILE_PATH`
 * `SWIFT_MODULE_NAME`
 * `PROJECT_NAME`
+
+### archive
+xcarchive contains your app and dsym files. .DSYM is required to desymbolicate
+your crash logs. Right click on saved .xcarchive and select show package
+contents to see what it contains.
+
+### package ipa
+IPA is a zipped up Payload folder which has YourApp.app bundle. .app contains
+all your application resources like images, plist files, compressed nibs and the
+executable, CodeSigning resources,etc.
