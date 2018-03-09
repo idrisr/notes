@@ -62,3 +62,18 @@ contents to see what it contains.
 IPA is a zipped up Payload folder which has YourApp.app bundle. .app contains
 all your application resources like images, plist files, compressed nibs and the
 executable, CodeSigning resources,etc.
+
+# Build levels
+from [here](https://stackoverflow.com/questions/16649635/what-is-the-fourth-columns-meaning-of-xcodes-setting)
+
+* columns from right to left
+* in `Target` or `Project`
+  * XCode -> [Project|Target] -> Build Settings -> Levels
+
+### Targets
+| Resolved 	| Target 	| Project 	| ios Default 	|
+|----------	|--------	|---------	|-------------	|
+
+### Projects
+| Resolved | Project | ios Default |
+|----------|---------|-------------|
