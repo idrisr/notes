@@ -201,3 +201,23 @@ public struct KeyedEncodingContainer<K> : KeyedEncodingContainerProtocol where K
     public mutating func encodeIfPresent<T>(_ value: T?, forKey key: K) throws where T : Encodable
 }
 ```
+
+# Errors
+```swift
+public enum DecodingError : Error {
+    public struct Context {
+        public let codingPath: [CodingKey]
+        public let debugDescription: String
+        public let underlyingError: Error?
+        public init(codingPath: [CodingKey], debugDescription: String, underlyingError: Error? = default)
+    }
+
+    case typeMismatch(Any.Type, DecodingError.Context)
+    case valueNotFound(Any.Type, DecodingError.Context)
+    case keyNotFound(CodingKey, DecodingError.Context)
+    case dataCorrupted(DecodingError.Context)
+    public static func dataCorruptedError<C>(forKey key: C.Key, in container: C, debugDescription: String) -> DecodingError where C : KeyedDecodingContainerProtocol
+    public static func dataCorruptedError(in container: UnkeyedDecodingContainer, debugDescription: String) -> DecodingError
+    public static func dataCorruptedError(in container: SingleValueDecodingContainer, debugDescription: String) -> DecodingError
+}
+```
