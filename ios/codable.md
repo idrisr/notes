@@ -6,7 +6,18 @@
 * [readme, seriously ](https://swiftunboxed.com/stdlib/json-decoder-decodable/)
 * [code example 2](https://github.com/nsscreencast/279-advanced-swift-4-json)
 * [code example 1](https://github.com/nsscreencast/278-swift-4-json-parsing)
+* [playground expamle](https://developer.apple.com/documentation/foundation/archives_and_serialization/using_json_with_custom_types)
 
+## DUH, ahah moment
+
+json:
+
+key: value
+
+swift:
+let key: Value
+
+trying to capture the key into a var or constant was the issue!
 
 
 ## Protocols in play
