@@ -30,8 +30,11 @@ public typealias Codable = Encodable & Decodable
 ```
 
 ## `Container`
-A container can be one of a few different types:
-
+* one yet bizarre thing is that you have access to all the member vars in the `encode` func
+  * it's cause the object already exists. now you're taking the instantiated object and creating something with it
+* a view into the storage of the encoder that you can access with keys.
+* nested container - like reaching down the json
+* A container can be one of a few different types:
 ### `Keyed Container`
 provides values by keys. This is essentially a dictionary.
 ### `Unkeyed Container`
