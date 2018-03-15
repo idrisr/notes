@@ -1,7 +1,37 @@
 # Homebrew
 
 * Homebrew installs packages to their own directory and then symlinks their files
-into /usr/local.
+into `/usr/local`.
+
+## For examle
+```bash
+# install ack
+brew install ack ...
+
+/usr/local/bin ᐅ which ack
+/usr/local/bin/ack
+/usr/local/bin ᐅ ll $(which ack)
+lrwxr-xr-x 1 id admin 26 Nov  9  2015 /usr/local/bin/ack -> ../Cellar/ack/2.14/bin/ack
+
+/usr/local/Cellar/ack ᐅ ll
+total 0
+drwxr-xr-x   3 id admin   96 Nov  9  2015 .
+drwxr-xr-x 142 id admin 4.5K Jan  7 17:51 ..
+drwxr-xr-x   5 id admin  160 Nov  9  2015 2.14
+
+```
+
+# Linking
+
+* Homebrew insalls into `/usr/local/Cellar/`
+* and then symlinked into one or many of
+  * `usr/local/bin`
+  * `usr/local/lib`
+  * `usr/local/include`
+
+
+* also linked to `/usr/local/opt`
+used to link keg and non-keg version of the latest version.
 
 ## Cask
 
