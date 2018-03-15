@@ -94,3 +94,6 @@ brew info <version>
 
 ### install older version not on your machine
 see [here](https://stackoverflow.com/questions/39187812/homebrew-how-to-install-older-versions)
+
+## homebrew and python
+https://docs.brew.sh/Homebrew-and-Python.html
