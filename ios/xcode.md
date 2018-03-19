@@ -39,3 +39,41 @@ time you run in, so a `symlink` from `dotfiles` wont work.
 
 ## custom key bindings
 * save in `~/Library/Developer/Xcode/UserData/KeyBindings/Custom.idekeybinding`
+
+## build variables
+from [here](https://stackoverflow.com/questions/36323031/what-the-different-between-srcroot-and-project-dir)
+
+[retired apple doc](https://developer.apple.com/legacy/library/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW49)
+
+
+* `SRCROOT`
+* `SOURCE_ROOT`
+* `PROJECT_DIR`
+* `PROJECT_FILE_PATH`
+* `SWIFT_MODULE_NAME`
+* `PROJECT_NAME`
+
+### archive
+xcarchive contains your app and dsym files. .DSYM is required to desymbolicate
+your crash logs. Right click on saved .xcarchive and select show package
+contents to see what it contains.
+
+### package ipa
+IPA is a zipped up Payload folder which has YourApp.app bundle. .app contains
+all your application resources like images, plist files, compressed nibs and the
+executable, CodeSigning resources,etc.
+
+# Build levels
+from [here](https://stackoverflow.com/questions/16649635/what-is-the-fourth-columns-meaning-of-xcodes-setting)
+
+* columns from right to left
+* in `Target` or `Project`
+  * XCode -> [Project|Target] -> Build Settings -> Levels
+
+### Targets
+| Resolved 	| Target 	| Project 	| ios Default 	|
+|----------	|--------	|---------	|-------------	|
+
+### Projects
+| Resolved | Project | ios Default |
+|----------|---------|-------------|

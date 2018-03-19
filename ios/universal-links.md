@@ -13,8 +13,14 @@ When you support universal links, iOS users can tap a link to your website and g
 
 4. add app entitlement `com.apple.developer.associated-domains`
 
-
-# establish trust between server and app
+5. update the provisioning profile for Associated Domains
 
 ## sendgrid
 [sendgrip universal links](https://sendgrid.com/docs/Classroom/Build/Add_Content/universal_links.html)
+
+## debugging
+http://building.usebutton.com/debugging/ios/deep-linking/links/universal-links/2016/03/31/debugging-universal-links/
+
+## notes
+* iOS downloads the `apple-app-site-association` at app install and then caches the result. To get a new one, you need to delete and reinstall the app
+* the instructions say `apple-app-site-association` should be served with `content-type` `application/json`, but it's working with `content-type` `octet-stream`

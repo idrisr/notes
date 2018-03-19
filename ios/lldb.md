@@ -31,3 +31,9 @@ using UIKit in your app, you can do this:
 Which will save a lot of subsequent typing:
 
 Note that the app must be linked against the module being used in the `@import`.
+
+### `file`
+### `ex`
+### `process launch`
+
+* `ex -l swift -- import AppKit`

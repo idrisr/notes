@@ -41,3 +41,8 @@ Releases are an append-only ledger of slugs and config vars.
 ## add-ons
 Add-ons are third party, specialized, value-added cloud services that can be
 easily attached to an application, extending its functionality.
+
+## command line interface
+```bash
+heroku login
+```

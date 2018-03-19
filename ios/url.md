@@ -53,21 +53,17 @@ When you create a credential, you can specify that it should be used for a
 single request, persisted temporarily (until your app quits), or persisted
 permanently (in the keychain).
 
+## `URLSessionConfiguration`
+An `URLSessionConfiguration` object defines the behavior and policies to use when
+uploading and downloading data using an `URLSession` object. When uploading or
+downloading data, creating a configuration object is always the first step you
+must take. You use this object to configure the timeout values, caching
+policies, connection requirements, and other types of information that you
+intend to use with your `URLSession` object.
+
 # url schemes
 from [here](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
 
 url schemes for [ios](https://developer.apple.com/library/content/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html)
 
 `scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]`
-
-```swift
-func foo<T>(x: T) -> T.Type {
-  return type(of: x)
-}
-
-protocol P {}
-
-func bar(x: P) {
-  foo(x: x) // Call foo with T == P 
-}
-```
