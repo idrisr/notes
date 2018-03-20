@@ -17,3 +17,10 @@ isn’t running or, in iOS, while your app is suspended.
 The `URLSession` class natively supports the `data`, `file`, `ftp`, `http`, and `https` URL
 schemes, with transparent support for proxy servers and `SOCKS` gateways, as
 configured in the user’s system preferences.
+
+## methods
+* `func dataTask(with url: URL) -> URLSessionDataTask`
+  * all you get to pass in is a URL. Can't configure your request
+
+* `func dataTask(with: URLRequest)`
+  * here you get to define the full request
