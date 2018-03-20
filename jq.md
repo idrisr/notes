@@ -49,8 +49,6 @@ jq '.|{Sections}[] | keys' my.json
 ```bash
 # select and filter
 jq '.[] | select (.FieldType | contains("Select"))' fields.json
-<<<<<<< HEAD
-=======
 ```
 
 
@@ -58,5 +56,4 @@ jq '.[] | select (.FieldType | contains("Select"))' fields.json
 # count entries
 # get into an array, then use length
 jq '.|{Sections}[]| length' myjson.json
->>>>>>> bffa52a7243029af9de631eb2ea3a9f6984c9931
 ```
