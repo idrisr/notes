@@ -48,5 +48,5 @@ jq '.|{Sections}[] | keys' my.json
 
 ```bash
 # select and filter
-jq '.[] | select (.FieldType | contains("Select"))' fields.json 
+jq '.[] | select (.FieldType | contains("Select"))' fields.json
 ```
