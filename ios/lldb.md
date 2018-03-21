@@ -1,5 +1,8 @@
 # LLDB
 
+[read me](https://developer.apple.com/library/content/documentation/General/Conceptual/lldb-guide/chapters/Introduction.html#//apple_ref/doc/uid/TP40016717-CH1-DontLinkElementID_42
+)
+
 ## import commands
 
 ```bash
