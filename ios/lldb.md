@@ -28,6 +28,12 @@ LLDB’s parser for Objective-C can now go through any module used in your app a
 determine the types used for all functions and methods it defines. If you’re
 using UIKit in your app, you can do this:
 
+#### swift
+from [here](https://github.com/facebook/chisel/issues/186)
+
+if it's a swift project, you'll probably want to run `expr import UIKit`, or you
+can stick with the objective-c syntax by using `expr -l objc -- @import UIKit`.
+
 ```bash
 (lldb) expr @import UIKit
 ```
@@ -40,3 +46,15 @@ Note that the app must be linked against the module being used in the `@import`.
 ### `process launch`
 
 * `ex -l swift -- import AppKit`
+
+# Contexts
+* stop in Swift, swift context
+* stop in Objc, Objc context
+* stop out of the blue, Objc context
+
+## Force the language
+from [here](https://stackoverflow.com/questions/37390238/how-can-i-set-lldbs-default-language-to-swift/37398662#37398662)
+
+```
+(lldb) settings set target.language swift
+```
