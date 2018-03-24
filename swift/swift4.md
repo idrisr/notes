@@ -1,5 +1,7 @@
 # Swift 4
 
+[read me](https://medium.com/widgetlabs-engineering/from-swift-3-to-4-b094597b889b)
+
 ## `@objc` inference
 
 from https://github.com/apple/swift-evolution/blob/master/proposals/0160-objc-inference.md
@@ -38,3 +40,7 @@ evolution.
 
 `@discardableResult`
 no warnings if you dont use the result from a `func` that `return`s
+
+## `NSAttributedString` Attributes
+The `NSAttributeName` constants who used to be global `String` constants are now
+grouped within their own type `NSAttributedStringKey`.
