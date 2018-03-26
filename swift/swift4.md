@@ -44,3 +44,13 @@ no warnings if you dont use the result from a `func` that `return`s
 ## `NSAttributedString` Attributes
 The `NSAttributeName` constants who used to be global `String` constants are now
 grouped within their own type `NSAttributedStringKey`.
+
+## Argument Labels and parameter names
+* from [here](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID166)
+
+Each function parameter has both an `argument label` and a `parameter name`.
+
+* The `argument label` is used when calling the function; each argument is written in
+the function call with its `argument label` before it.
+* The `parameter name` is used in the implementation of the function.
+  * By default, parameters use their `parameter name` as their `argument label`.
