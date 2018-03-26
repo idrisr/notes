@@ -115,3 +115,11 @@ file name -- it is not another directory with a copy of files in it.
 
 #### working tree / workspace
 the workspace is the directory tree of (source) files that you see and edit.
+
+# `bisect`
+
+```bash
+git bisect start # current sha is the known good spot
+git bisect bad
+git bisect good <known-good-sha> # the latest known bad spot
+```

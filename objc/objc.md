@@ -58,3 +58,9 @@ the interface file for the class it extends:
 // method declarations
 @end
 ```
+
+## `isa`
+Under the hood, Objective-C objects are basically C structs. Each one contains a
+field called `isa`, which is a pointer to the class that the object is an instance
+of (that's how the object and Objective-C runtime knows what kind of object it
+is).

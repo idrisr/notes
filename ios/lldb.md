@@ -3,6 +3,12 @@
 [read me](https://developer.apple.com/library/content/documentation/General/Conceptual/lldb-guide/chapters/Introduction.html#//apple_ref/doc/uid/TP40016717-CH1-DontLinkElementID_42
 )
 
+[readme](https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49)
+
+https://eli.thegreenplace.net/2011/01/23/how-debuggers-work-part-1
+https://eli.thegreenplace.net/2011/01/27/how-debuggers-work-part-2-breakpoints
+https://eli.thegreenplace.net/2011/02/07/how-debuggers-work-part-3-debugging-information
+
 ## import commands
 
 ```bash
