@@ -71,6 +71,7 @@ Andy Matuschak talk [here](https://academy.realm.io/posts/andy-matuschak-control
 
 # further reading
 * boundaries, Gary Bernhardt
-* are we there yet? - Rich Hickey
+* are we there yet? - Rich Hickey, simple made easy
 * SICP - Abelson & Sussman
 * Enemy of the State - Justin Spahr-Summers
+* Mosely and Mark - "out of the tar pit"
