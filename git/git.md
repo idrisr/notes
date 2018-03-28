@@ -92,6 +92,11 @@ remember to only do this when you have not already pushed
 ### reset
 https://git-scm.com/docs/git-reset
 
+```
+# go back one commit
+git reset HEAD~1
+```
+
 #### --soft
 Does not touch the index file or the working tree at all (but resets the head to
 <commit>, just like all modes do). This leaves all your changed files "Changes
