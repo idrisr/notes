@@ -34,7 +34,7 @@ The presentation process managed by a presentation controller is divided into th
 
 1. The dismissal phase involves moving the new view controller off screen through a series of transition animations
 
-## Layman
+## For the Layman
 from [here](https://www.raywenderlich.com/139277/uipresentationcontroller-tutorial-getting-started)
 
 
@@ -44,11 +44,21 @@ When you call `present(_:animated:completion:)`, iOS does two things.
 * Second, it attaches the presented view controller to itself then presents it using one of the built-in modal presentation styles.
 
 ## Key Concepts
-1. The presented view controller has a transitioning delegate that’s responsible for loading the `UIPresentationController` and the presentation/dismissal animation controllers. That delegate is an object that conforms to `UIViewControllerTransitioningDelegate`.
+1. The presented view controller has a transitioning delegate that’s responsible
+for loading the `UIPresentationController` and the presentation/dismissal
+animation controllers. That delegate is an object that conforms to
+`UIViewControllerTransitioningDelegate`.
 
-1. The `UIPresentationController` subclass is an object that has many presentation-customizing methods, as you’ll see later in the tutorial.
+1. The `UIPresentationController` subclass is an object that has many
+presentation-customizing methods, as you’ll see later in the tutorial.
 
-1. The animation controller object is responsible for the presentation and dismissal animations. It conforms to `UIViewControllerAnimatedTransitioning`. Note that some use cases warrant two controllers: one for presentation and one for dismissal.
+1. The animation controller object is responsible for the presentation and
+dismissal animations. It conforms to `UIViewControllerAnimatedTransitioning`.
+Note that some use cases warrant two controllers: one for presentation and one
+for dismissal.
 
-1. A presentation controller’s delegate tells the presentation controller what to do when its trait collection changes. For the sake of adaptivity, the delegate must be an object that conforms to `UIAdaptivePresentationControllerDelegate`.
+1. A presentation controller’s delegate tells the presentation controller what
+to do when its trait collection changes. For the sake of adaptivity, the
+delegate must be an object that conforms to
+`UIAdaptivePresentationControllerDelegate`.
 That’s all you need to know before you dive in!
