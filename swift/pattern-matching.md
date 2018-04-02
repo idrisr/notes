@@ -20,3 +20,6 @@ switch m {
   default: () // do nothing, but this is mandatory as all switch in Swift must be exhaustive
 }
 ```
+
+## Pattern Matching Custom Types
+[readme](http://alisoftware.github.io/swift/pattern-matching/2016/04/24/pattern-matching-3/)
