@@ -64,3 +64,13 @@ is beyond the scope of this specification.  The authorization server
 may be the same server as the resource server or a separate entity.
 A single authorization server may issue access tokens accepted by
 multiple resource servers.
+
+# My dumb notes
+
+## terms
+* `authorization grants`
+* `access tokens`
+* `id tokens`
+* `authorization code grant`
+* `implicit grant`
+* `resource owner credential`

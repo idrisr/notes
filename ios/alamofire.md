@@ -37,7 +37,10 @@ public protocol ParameterEncoding {
 ```
 
 ### `Response` and `Result`
-* so often you'll see the networking code split up. one function/completion handler for the response, which is the network piece of it. and another function/completion handlder for the result, which is the body and you can check if it has the right json, format, etc.
+* so often you'll see the networking code split up. one function/completion
+handler for the response, which is the network piece of it. and another
+function/completion handler for the result, which is the body and you can
+check if it has the right json, format, etc.
 
 Think of the `Response` and `Result` structs as little packages of data that make up
 what we get from fetching the response and serializing it into the format that

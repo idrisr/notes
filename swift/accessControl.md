@@ -40,6 +40,10 @@ from another module that imports the defining module. You typically use open or
 public access when specifying the public interface to a framework. The
 difference between open and public access is described below.
 
+## Open vs Public
+* open can be subclassed across module boundaries
+* public can be accessed, but not subclassed across module boundaries
+
 ## Internal - Default
 
 Internal access enables entities to be used within any source file

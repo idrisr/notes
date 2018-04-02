@@ -1,5 +1,19 @@
 # XCode
 
+## XCode 9 tips and tricks
+
+from [here](https://talk.objc.io/episodes/S01E60-xcode-9-productivity-tips)
+* easy to switch between new swift versions
+* can directly clone from github in xcode
+* directly search error messages into Google
+* `command` + `ctrl` + `shift` + `c` - copy symbol of function
+* jump bar documentation, reveal in navigator
+* `command` + `option` + `\` documentation template generation
+* Assistant Editor -> Generate Interface
+* `File` -> `Project Settings` -> `New Build System`
+* better source control integration
+
+
 ## saving custom keyboard shortcuts
 
 - custom keyboard shortcuts are saved here. I think XCode overwrites them each

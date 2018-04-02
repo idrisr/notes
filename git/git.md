@@ -92,6 +92,11 @@ remember to only do this when you have not already pushed
 ### reset
 https://git-scm.com/docs/git-reset
 
+```
+# go back one commit
+git reset HEAD~1
+```
+
 #### --soft
 Does not touch the index file or the working tree at all (but resets the head to
 <commit>, just like all modes do). This leaves all your changed files "Changes
@@ -115,3 +120,11 @@ file name -- it is not another directory with a copy of files in it.
 
 #### working tree / workspace
 the workspace is the directory tree of (source) files that you see and edit.
+
+# `bisect`
+
+```bash
+git bisect start # current sha is the known good spot
+git bisect bad
+git bisect good <known-good-sha> # the latest known bad spot
+```

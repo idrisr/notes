@@ -20,3 +20,10 @@ class MyCustomView: UIView {
     // ...
 }
 ```
+
+## Crashes
+
+There are crash reports generated when Interface Builder Cocoa Touch Tool
+crashes. Theses are located in `~/Library/Logs/DiagnosticReports` and named
+`IBDesignablesAgentCocoaTouch_*.crash`. In my case they contained a useful
+stack-trace that identified the issue in my code.

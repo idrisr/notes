@@ -55,3 +55,25 @@ on the platform:
 ## `xibs` and `nib`s
 * `xib`s - `xml` `nib` files. non binary, less source control atrocious, what we use in xcode
 * ``nib``s - compiled `xib`s, post compilation process, binary format
+
+# Getting Xib into a view
+```swift
+# 1. loan the nib from the bundle
+let bundle = Bundle(for: type(of: self))
+let nib = UINib(nibName: nibName(), bundle: bundle)
+```
+
+```swift
+# 2. instantiate the nib and get it's view
+let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+```
+
+```swift
+# 3. add that view as a subview and constrain it to all sides
+view.translatesAutoresizingMaskIntoConstraints = false
+addSubview(view)
+view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+view.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+view.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+```
