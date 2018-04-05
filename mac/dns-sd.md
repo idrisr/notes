@@ -2,7 +2,7 @@
 
 [readme](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/dns-sd.1.html)
 
-`dns-sd` -- Multicast DNS (mDNS) & DNS Service Discovery (DNS-SD) Test Tool
+`dns-sd` -- Multicast DNS (`mDNS`) & DNS Service Discovery (`DNS-SD`) Test Tool
 
 The `dns-sd` command is a network diagnostic tool, much like `ping(8)` or
 `traceroute(8)`.  However, unlike those tools, most of its functionality is not
