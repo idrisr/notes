@@ -7,3 +7,8 @@ interesting UIKit internals that I come across
 
 `_UIFullscreenPresentationController`
 * presents splitview in regular trait environments
+
+```
+# UIToolbar?
+_UIButtonBarStackView
+```
