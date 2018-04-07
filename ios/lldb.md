@@ -3,6 +3,8 @@
 [read me](https://developer.apple.com/library/content/documentation/General/Conceptual/lldb-guide/chapters/Introduction.html#//apple_ref/doc/uid/TP40016717-CH1-DontLinkElementID_42
 )
 
+[read me](http://www.enharmonichq.com/tutorial-ios-reverse-engineering-lldb/)
+
 [readme](https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49)
 
 https://eli.thegreenplace.net/2011/01/23/how-debuggers-work-part-1
