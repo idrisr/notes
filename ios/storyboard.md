@@ -6,6 +6,9 @@ when you subclass `UIView` and create your own custom view  mark it
 `@IBDesignable` and then it'll render in Interface Builder, in ttheory.
 sometimes it works like shit.
 
+### `prepareForInterfaceBuilder()`
+* Called when a designable object is created in Interface Builder.
+
 ## `@IBInspectable`
 
 You can also add the `@IBInspectable` attribute to properties with types
