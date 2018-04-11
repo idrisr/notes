@@ -66,3 +66,9 @@ from [here](https://stackoverflow.com/questions/37390238/how-can-i-set-lldbs-def
 ```
 (lldb) settings set target.language swift
 ```
+
+## Swift memory casting
+
+```swift
+lldb> unsafeBitCast(0x60000024d230, to: MyType.self).myProperty
+```
