@@ -1,5 +1,0 @@
-# UIScrollView
-
-## contentinsets
-
-## automaticallyAdjustsScrollViewInsets
