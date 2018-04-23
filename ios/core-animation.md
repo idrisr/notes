@@ -1,5 +1,7 @@
 # Core Animation
 
+[readme](https://academy.realm.io/posts/tryswift-tim-oliver-advanced-graphics-with-core-animation/)
+
 ## Layer Tree
 
 * `CALayer`
@@ -69,3 +71,22 @@ glued together to form hollow, origami-like 3D structures.
 with touch events or gestures directly. It does have a couple of methods to help
 you to implement touch handling yourself, however: `-containsPoint:` and
 `-hitTest:`.
+
+### `CATransaction`
+* A mechanism for grouping multiple layer-tree operations into atomic updates to the render tree.
+* manages a stack of transactions, without giving you direct access to them.
+* use `+begin` and `+commit` to push a new transaction onto the stack or pop the current one
+* Core Animation automatically begins a new transaction with each iteration of the run loop.
+
+
+When you change a property, how does Core Animation determine the type and
+duration of the animation that it will perform?
+
+* The duration of the animation is specified by the settings for the current transaction,
+* and the animation type is controlled by layer actions.
+
+### `CATransformLayer`
+* the layer backing a `UIStackView`
+* `CATransformLayer` objects are used to create true 3D layer hierarchies,
+rather than the flattened hierarchy rendering model used by other `CALayer`
+classes.
