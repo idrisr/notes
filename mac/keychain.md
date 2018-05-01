@@ -1,6 +1,13 @@
 # Keychain
 
-mostly from [here](https://developer.apple.com/documentation/security/keychain_services/keychain_items)
+* from [here](https://useyourloaf.com/blog/simple-iphone-keychain-access/)
+* mostly from [here](https://developer.apple.com/documentation/security/keychain_services/keychain_items)
+* and [here](https://useyourloaf.com/blog/keychain-duplicate-item-when-adding-password/)
+* and [here](https://useyourloaf.com/blog/keychain-group-access/)
+
+
+## Keychain Item
+
 
 In macOS, keychain files are stored in `~/Library/Keychains/`,
 `/Library/Keychains/`, and `/Network/Library/Keychains/`, and the Keychain
@@ -30,6 +37,11 @@ have this attribute.
 * The corresponding value is of type `CFString` and contains the server's domain
 name or IP address. Items of class `kSecClassInternetPassword` have this
 attribute.
+
+### `kSecAttrGeneric`
+* A key whose value indicates the item's user-defined attributes.
+* The corresponding value is of type `CFData` and contains a user-defined
+attribute. Items of class `kSecClassGenericPassword` have this attribute.
 
 ### `kSecValueData`
 * The corresponding value is of type `CFData`.  For keys and password items, the
@@ -75,8 +87,11 @@ func SecItemDelete(_ query: CFDictionary) -> OSStatus
 ### `SecItemUpdate`
 * Modifies items that match a search query.
 ```swift
+// search dictionary - query: CFDictionary
+// update dictionary - attributesToUpdate: CFDictionary
 func SecItemUpdate(_ query: CFDictionary, _ attributesToUpdate: CFDictionary) -> OSStatus
 ```
+
 
 ### `SecItemCopyMatching`
 * Returns one or more keychain items that match a search query, or copies attributes of specific keychain items.
