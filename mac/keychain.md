@@ -12,6 +12,78 @@ APSL. The command line equivalent of Keychain Access is `/usr/bin/security`.
 * when you need to share your keychain items across different apps.
 * turn it on in entitlements
 
+## main keychain strings
+### `kSecAttrAccessGroup`
+* needed if you want to share across apps, and hook it up via entitlements
+
+### `kSecAttrAccount`
+* The corresponding value is of type `CFString` and contains an account name.
+Items of class `kSecClassGenericPassword` and `kSecClassInternetPassword` have
+this attribute.
+
+### `kSecAttrService`
+* The corresponding value is a string of type `CFString` that represents the
+service associated with this item. Items of class `kSecClassGenericPassword`
+have this attribute.
+
+### `kSecAttrServer`
+* The corresponding value is of type `CFString` and contains the server's domain
+name or IP address. Items of class `kSecClassInternetPassword` have this
+attribute.
+
+### `kSecValueData`
+* The corresponding value is of type `CFData`.  For keys and password items, the
+data is secret (encrypted) and may require the user to enter a password for
+access.
+
+### `kSecReturnData`
+* The corresponding value is of type `CFBoolean`. A value of `kCFBooleanTrue`
+indicates that the data of an item should be returned in the form of a `CFData`
+object.
+
+### `kSecClass`
+* A dictionary key whose value is the item's class.
+* see the documentation for the list of values
+
+### `kSecClassGenericPassword`
+* The value that indicates a generic password item.
+
+### `kSecMatchLimit`
+
+### `kSecMatchLimitAll`
+
+### `kSecMatchLimitOne`
+
+### `kSecReturnAttributes`
+* The corresponding value is of type `CFBoolean`. A value of `kCFBooleanTrue`
+indicates that a dictionary of the (unencrypted) attributes of an item should be
+returned in the form of a `CFDictionary` using the keys and values defined in Item
+Attribute Keys and Values.
+
+## main keychain methods
+### `SecItemAdd`
+```swift
+func SecItemAdd(_ attributes: CFDictionary, _ result: UnsafeMutablePointer<CFTypeRef?>?) -> OSStatus
+```
+
+### `SecItemDelete`
+* Deletes items that match a search query.
+```swift
+func SecItemDelete(_ query: CFDictionary) -> OSStatus
+```
+
+### `SecItemUpdate`
+* Modifies items that match a search query.
+```swift
+func SecItemUpdate(_ query: CFDictionary, _ attributesToUpdate: CFDictionary) -> OSStatus
+```
+
+### `SecItemCopyMatching`
+* Returns one or more keychain items that match a search query, or copies attributes of specific keychain items.
+```swift
+func SecItemCopyMatching(_ query: CFDictionary, _ result: UnsafeMutablePointer<CFTypeRef?>?) -> OSStatus
+```
+
 
 ## ios
 
@@ -46,17 +118,3 @@ APSL. The command line equivalent of Keychain Access is `/usr/bin/security`.
 ### Pseudorandom Function Values
 
 ### Access Group Values
-
-```
-kSecAttrAccessGroup
-kSecAttrAccount
-kSecAttrService
-kSecClass
-kSecClassGenericPassword
-kSecMatchLimit
-kSecMatchLimitAll
-kSecMatchLimitOne
-kSecReturnAttributes
-kSecReturnData
-kSecValueData
-```
