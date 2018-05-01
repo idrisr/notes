@@ -3,10 +3,10 @@
 
 ## tl;dr
 
-* Core Foundation is C Code
-* Cocoa is ObjC Code
+* `Core Foundation` is `C` Code
+* `Cocoa`/(`Foundation`?) is `ObjC` Code
 
-* Toll Free bridinging means the underlying memory for a `C struct` in Core Foundation can be read just as if it was an object in `ObjC`. Hence it's toll-free to bridge from Core Foundation to Cocoa.
+* Toll Free bridinging means the underlying memory for a `C struct` in `Core Foundation` can be read just as if it was an object in `ObjC`. Hence it's toll-free to bridge from `Core Foundation` to `Cocoa`.
 
 * read [this](https://developer.apple.com/library/content/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html)
 * and [this](https://www.mikeash.com/pyblog/friday-qa-2010-01-22-toll-free-bridging-internals.html)

@@ -8,6 +8,11 @@ Access GUI application is located in the Utilities folder in the `Applications`
 folder. It is free, open source software released under the terms of the
 APSL. The command line equivalent of Keychain Access is `/usr/bin/security`.
 
+## keychain sharing
+* when you need to share your keychain items across different apps.
+* turn it on in entitlements
+
+
 ## ios
 
 * need this key in `info.plist` - `keychain-access-groups`
