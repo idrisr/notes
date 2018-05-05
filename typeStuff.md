@@ -8,4 +8,6 @@ Use protocol composition or class restrictions. If you want to do a protocol and
 
 
 ### Constrain type in where
-### Costrain type in declaration
+### Costraint type in declaration
+
+##

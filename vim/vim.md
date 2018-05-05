@@ -82,7 +82,11 @@ Vim calls this "prefix" key the "leader". You can set your leader key to whateve
 ## local leader
 Vim has a second "leader" key called "local leader". This is meant to be a prefix for mappings that only take effect for certain types of files, like Python files or HTML files.
 
-## remove lines matching
+## patterns
 ```
+## remove lines matching
 g/PATTERN/d
+
+## remove lines not matching
+g!/PATTERN/d
 ```

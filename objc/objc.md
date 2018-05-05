@@ -3,6 +3,72 @@
 ## message send
 
 ## runtime
+* the first two parameters passed to all Objective-C methods are `self` and `_cmd`
+
+* Note that any C function that takes an `id` and `SEL` as its first two arguments can
+be used as a method implementation.
+* Similarly, any method implementation is a C function that takes an `id` and `SEL`
+as its first two arguments.
+
+* To be extra clear, `_cmd` is an `SEL` -- the method selector for the
+Objective-C method.
+* A method selector is a C string that has been registered (or 'mapped') with
+the Objective-C runtime.
+
+
+```objc
+# does object respond to message
+if ([self.webView respondsToSelector:_cmd])
+```
+
+## messaging
+
+```c
+# memory structure objc c class
+struct NSObject {
+  Class isa;
+}
+```
+```c
+typedef Class = objc_class;
+```
+```c
+struct objc_class {
+  Class isa;
+  Class super_class;
+  const char *name;
+  long version;
+  long info;
+  long instance_size;
+  struct objc_ivar_list *ivars;
+  struct objc_method_lists **methodLists;
+  struct objc_cache *cache;
+  struct objc_protocol_list *protocols;
+}
+```
+```objc
+[self doSomethingTo:var1]; #  is transformed into something like:
+objc_msgSend(self, @selector(doSomethingTo:), var1);
+```
+
+  A selector in Objective-C is a struct that identifies an Objective-C method you
+want an object to perform, and defined:
+
+```objc
+typedef struct objc_selector *SEL
+```
+
+```objc
+SEL select = @selector(doSomething)
+```
+```C
+# implementation of objc_msgSend
+id objc_msgSend(id receiver, SEL name, arguments...) {
+  # IMP is a c function pointer
+  IMP function = class_getMethodImplementation(receiver->isa, name);
+  return function(arguments);
+}
+```
 
 ## introspection
 

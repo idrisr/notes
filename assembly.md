@@ -3,6 +3,10 @@
 ## `RAX`
 * the return register
 
+## `je`
+
+jump. usually after a control flow branch
+
 ## `RBX`
 ## `RCX`
 ## `RDX`
