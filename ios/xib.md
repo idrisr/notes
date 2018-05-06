@@ -77,3 +77,19 @@ view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
 view.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
 view.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
 ```
+
+## interesting runtime stuff
+
+```swift
+# on an error where a storyboard reference is not found
+2   UIKit                               +[UIStoryboard storyboardWithName:bundle:] + 672
+3   UIKit                               -[UIStoryboard instantiateViewControllerReferencedByPlaceholderWithIdentifier:] + 87
+4   UIKit                               -[UIStoryboardViewControllerPlaceholder initWithCoder:] + 143
+5   UIKit                               UINibDecoderDecodeObjectForValue + 704
+6   UIKit                               -[UINibDecoder decodeObjectForKey:] + 89
+7   UIKit                               -[UIRuntimeConnection initWithCoder:] + 178
+8   UIKit                               UINibDecoderDecodeObjectForValue + 704
+9   UIKit                               UINibDecoderDecodeObjectForValue + 1118
+10  UIKit                               -[UINibDecoder decodeObjectForKey:] + 89
+11  UIKit                               -[UINib instantiateWithOwner:options:] + 1262
+```
