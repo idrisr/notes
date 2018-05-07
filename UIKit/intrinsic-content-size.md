@@ -16,3 +16,9 @@ from [here](https://krakendev.io/blog/autolayout-magic-like-harry-potter-but-rea
 * the higher the priority for `content hugging`
 
 ![img](../images/layout-priority.jpeg)
+
+`UILayoutPriority`
+
+`UILayoutConstraintAxis`
+
+`UIViewNoIntrinsicMetric`
