@@ -1,4 +1,4 @@
-# `NSLayoutConstraint`
+ `NSLayoutConstraint`
 
 A constraint defines a relationship between two user interface objects that must be satisfied by the constraint-based layout system. Each constraint is a linear equation with the following format:
 
@@ -105,3 +105,6 @@ console. For example, after the breakpoint halts execution, type call
 `exerciseAmbiguityInLayout` method on the `myView` object. Similarly, type `po
 [self.myView autolayoutTrace]` to print out diagnostic information about the view
 hierarchy containing `myView`.
+
+## Breakpoint
+`UIViewAlertForUnsatisfiableConstraints`

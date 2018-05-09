@@ -6,6 +6,8 @@ from
 
 ## `contentinsets`
 
+## `contentoffset`
+
 ## `automaticallyAdjustsScrollViewInsets`
 
 ## delegate
