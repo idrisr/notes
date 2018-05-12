@@ -58,7 +58,7 @@ on the platform:
 
 # Getting Xib into a view
 ```swift
-# 1. loan the nib from the bundle
+# 1. load the nib from the bundle
 let bundle = Bundle(for: type(of: self))
 let nib = UINib(nibName: nibName(), bundle: bundle)
 ```
