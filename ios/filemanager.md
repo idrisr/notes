@@ -85,3 +85,11 @@ let filemgr = FileManager.default
 let dirPaths = filemgr.urls(for: .documentDirectory, in: .userDomainMask)
 let docsDir = dirPaths[0].path
 ```
+
+```
+# in simulator
+/Users/
+<user name>/Library/Developer/CoreSimulator/Devices/
+<device id>/data/Containers/Data/Application/
+<app id>/Documents
+```
