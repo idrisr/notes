@@ -16,3 +16,26 @@
 the button title.
 
 ### `imageEdgeInsets`
+
+## States
+
+### `normal`
+normal
+
+### `highlighted`
+when your finger is on the button
+
+### `disabled`
+cant interact with the button
+
+### `selected`
+pressed, de-pressed, and now turned
+
+### `focused`
+more of a AppleTV thing
+
+### `application`
+obscure
+
+### `reserved`
+obscure
