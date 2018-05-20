@@ -57,3 +57,8 @@ jq '.[] | select (.FieldType | contains("Select"))' fields.json
 # get into an array, then use length
 jq '.|{Sections}[]| length' myjson.json
 ```
+
+```bash
+# get top level keys
+jq '.| [keys]' | myJson.json
+```

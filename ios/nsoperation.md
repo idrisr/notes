@@ -1,6 +1,8 @@
  # `Operation` previously `NSOperation`
 
 * from [here](http://nshipster.com/nsoperation/)
+* objc [example](https://williamboles.me/networking-with-nsoperation-as-your-wingman/)
+* rayw [tutorial](https://www.raywenderlich.com/76341/use-nsoperation-nsoperationqueue-swift)
 
 # `Operation`
 
