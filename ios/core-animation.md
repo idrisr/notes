@@ -90,3 +90,6 @@ duration of the animation that it will perform?
 * `CATransformLayer` objects are used to create true 3D layer hierarchies,
 rather than the flattened hierarchy rendering model used by other `CALayer`
 classes.
+
+...and they're used in `UIStackView`s under the hood. How does the above
+description relate to stack views??
