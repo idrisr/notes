@@ -45,3 +45,30 @@ position, and the text font size.
 * Quartz accomplishes device independence with a separate coordinate system—`user
 space`—mapping it to the coordinate system of the output device—`device
 space`—using the `current transformation matrix`, or `CTM`
+
+## Context Stuff
+
+* `CGContextAddPath`
+* `CGContextDrawPath`
+* `CGContextRestoreGState`
+* `CGContextSaveGState`
+* `CGContextSetFillColorWithColor`
+* `CGContextSetFlatness`
+* `CG_CONTEXT_SHOW_BACKTRACE`
+
+* `CGContextRef`
+* `CGPathRef`
+
+
+## `UIImage` from drawing into a context
+
+```swift
+let imageSize = CGSize(width: 32, height: 32)
+let scale: CGFloat = 2
+UIGraphicsBeginImageContextWithOptions(image, false, scale)
+UIColor.blue.setFill()
+UIBezierPath(rect: CGRect(x: 20, y: 20, width: 100, height: 100)).fill()
+let image = UIGraphicsGetImageFromCurrentImageContext()
+UIGraphicsEndImageContext()
+return image
+```
