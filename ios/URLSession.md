@@ -8,6 +8,18 @@
 * ephemeral
 * background
 
+## Configurations
+
+### `URLSessionConfiguration`
+
+configures:
+* the timeout values,
+* caching policies,
+* connection requirements, and
+* other types of information that you intend to use with your `URLSession` object.
+* default cache is pretty small. like 0.5MB in memory and 10MB on disk.
+
+
 ## overview
 The `URLSession` class and related classes provide an API for downloading content.
 This API provides a rich set of delegate methods for supporting authentication
