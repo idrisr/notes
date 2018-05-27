@@ -2,14 +2,6 @@
 
 * built once and be reused an infinite number of times
 
-## errata
-
-
-### `FOUNDATION_EXPORT`
-* from [here](https://stackoverflow.com/questions/10953221/foundation-export-vs-extern)
-* same thing as `extern`, though will be a bit different for C++, win32, etc
-
-
 # Terms
 * from [here](https://theswiftdev.com/2018/01/25/deep-dive-into-swift-frameworks/)
 
@@ -55,6 +47,12 @@ files, and reference documentation in a single package.
 enforces access controls on which parts of that code can be used outside of
 the module.
 
-
-
 ## Modules and module maps
+
+
+## errata
+
+
+### `FOUNDATION_EXPORT`
+* from [here](https://stackoverflow.com/questions/10953221/foundation-export-vs-extern)
+* same thing as `extern`, though will be a bit different for C++, win32, etc
