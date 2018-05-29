@@ -1,4 +1,4 @@
-# `UIApplicationMain`
+#  `UIApplicationMain`
 
 
 [readme](https://www.hackingwithswift.com/example-code/uikit/how-to-subclass-uiapplication-using-uiapplicationmain)
