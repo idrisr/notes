@@ -7,6 +7,8 @@
 
 [readme](https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49)
 
+[watchme from UIKonf](https://www.youtube.com/watch?v=578YdS2sNqk)
+
 https://eli.thegreenplace.net/2011/01/23/how-debuggers-work-part-1
 https://eli.thegreenplace.net/2011/01/27/how-debuggers-work-part-2-breakpoints
 https://eli.thegreenplace.net/2011/02/07/how-debuggers-work-part-3-debugging-information
@@ -72,3 +74,12 @@ from [here](https://stackoverflow.com/questions/37390238/how-can-i-set-lldbs-def
 ```swift
 lldb> unsafeBitCast(0x60000024d230, to: MyType.self).myProperty
 ```
+
+## swift by sundell lldb notes
+* changes views in runtime
+* lldb attach to process
+* xcode change target process
+* module based imports
+* sounds on objects deallocated
+* instabug
+* launch arguments vs environment variables
