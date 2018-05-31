@@ -10,6 +10,6 @@ xcrun simctl io booted recordVideo myMovie.mov
 
 ```bash
 # open a file from the booted simulator
-cd $(xcrun simctl get_app_container booted com.mybundle.bundle data)
+  cd $(xcrun simctl get_app_container booted com.mybundle.bundle data)
 open $(find . -iname "output.pdf")
 ```
