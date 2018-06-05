@@ -41,3 +41,10 @@ both from Foundation.
 
 # BiDirectionalCollection
 see git@bitbucket.org:idrisr/bidirectional-fun.git
+
+# Array
+* many functions on array return an arrayslice
+* optimization to not copy array
+
+
+# ArraySlice
