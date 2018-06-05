@@ -97,6 +97,13 @@ https://git-scm.com/docs/git-reset
 git reset HEAD~1
 ```
 
+
+### checkout one file prior commit
+```bash
+git checkout <mysha> path/to/file.txt
+```
+
+
 #### --soft
 Does not touch the index file or the working tree at all (but resets the head to
 <commit>, just like all modes do). This leaves all your changed files "Changes
