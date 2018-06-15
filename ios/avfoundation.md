@@ -69,9 +69,6 @@ connection.
 The `AVCaptureMetadataOutput` object calls the methods of the delegate object on
 the dispatch queue associated with its `metadataObjectsCallbackQueue` property.
 
-
-
-
 * `AVCaptureMetadataOutputObjectsDelegate`
 * `AVCamBarcode`
 * `AVCaptureConnection`
