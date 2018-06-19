@@ -1,8 +1,12 @@
 # Swifty Beaver
 
 * from [here](https://www.raywenderlich.com/153500/swiftybeaver-tutorial-ios-logging-platform-swift)
+* more [here](https://nsscreencast.com/episodes/244-logging-with-swifty-beaver)
 
 * logging
+
+* singleton class
+* can filter based on file, message, and function
 
 ## log levels
 
@@ -16,3 +20,4 @@ This is typically used for information useful in a more general support context.
 Use this log level when reaching a condition that won’t necessarily cause a problem but strongly leads the app in that direction.
 ### error
 The most serious and highest priority log level. Use this only when your app has triggered a serious error.
+  
