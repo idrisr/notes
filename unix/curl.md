@@ -18,3 +18,8 @@ curl -v \
 	-H "Accept-Encoding: gzip;q=1.0, compress;q=0.5" \
 	-d "key1=value1&key2=value2" "http://my-url.com"
 ```
+
+```
+# download links in a file
+xargs -n 1 curl -O < your_files.txt
+```
