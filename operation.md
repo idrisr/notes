@@ -2,6 +2,7 @@
 
 * from [nshipster](http://nshipster.com/nsoperation/)
 * apple [docs](https://developer.apple.com/documentation/foundation/operation)
+* [readme](https://www.raywenderlich.com/190008/operation-and-operationqueue-tutorial-in-swift)
 
 `NSOperation` represents a single unit of work. It’s an abstract class that offers
 a useful, thread-safe structure for modeling state, priority, dependencies, and

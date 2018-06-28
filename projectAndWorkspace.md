@@ -22,23 +22,23 @@ files in a build phase etc.
 ### Classes
 
 ```
-PBXAggregateTarget
-PBXBuildRule
-PBXContainerItemProxy
-PBXCopyFilesBuildPhase
-PBXFileReference
-PBXFrameworksBuildPhase
-PBXGroup
-PBXHeadersBuildPhase
-PBXLegacyTarget
-PBXNativeTarget
-PBXProject
-PBXReferenceProxy
-PBXRezBuildPhase
-PBXShellScriptBuildPhase
-PBXSourcesBuildPhase
-PBXTargetDependency
-PBXVariantGroup
+PBX AggregateTarget
+PBX BuildRule
+PBX ContainerItemProxy
+PBX CopyFilesBuildPhase
+PBX FileReference
+PBX FrameworksBuildPhase
+PBX Group
+PBX HeadersBuildPhase
+PBX LegacyTarget
+PBX NativeTarget
+PBX Project
+PBX ReferenceProxy
+PBX RezBuildPhase
+PBX ShellScriptBuildPhase
+PBX SourcesBuildPhase
+PBX TargetDependency
+PBX VariantGroup
 XCBuildConfiguration
 XCConfigurationList
 XCVersionGroup
