@@ -135,3 +135,20 @@ git bisect start # current sha is the known good spot
 git bisect bad
 git bisect good <known-good-sha> # the latest known bad spot
 ```
+
+## delete merged branches
+
+
+```bash
+# check out the branch to check for merges into
+git checkout develop
+
+# check which ones are merge
+git branch --merged \
+
+# exclude ones you want to keep, like your current one
+ack -v develop \
+
+# xargs delete them
+xargs git branch -d
+```

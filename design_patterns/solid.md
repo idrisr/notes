@@ -6,3 +6,5 @@ from [here](https://nsscreencast.com/episodes/310-solid-intro?autoplay=true&seri
 * Liskov Substitution Principle
 * Interface Segregation Principle
 * Dependency Inversion Principle
+
+## SRP

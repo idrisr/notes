@@ -1,5 +1,8 @@
 # Collection
 
+* [watchme](https://academy.realm.io/posts/try-swift-soroush-khanlou-sequence-collection/)
+* [realm collection](https://realm.io/docs/swift/latest/#collections)
+
 ```swift
   protocol Collection
 ```
