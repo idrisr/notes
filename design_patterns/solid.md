@@ -10,15 +10,18 @@ from [here](https://nsscreencast.com/episodes/310-solid-intro?autoplay=true&seri
 
 ## SRP
 
-
-## Single Responsibility Principle
-
 ## Open Closed Principle
 * open for extension
 * closed for modification
 * clue that you're violating is from having the same `switch` statement in multiple places
 
+## Liskov
+* a subtype can be used in place of its type
+* if you keep checking types, it's a sign your abstractions are off
 
-## Liskov Substitution Principle
 ## Interface Segregation Principle
+* This one states that a type should not depend on methods from an interface that it will never use.
+
 ## Dependency Inversion Principle
+* high level component should not talk to a low level component directly
+* the high level component has the low level ones passed in
