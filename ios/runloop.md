@@ -24,3 +24,5 @@ the run loop to return when they fire.
 ```swift
 RunLoop.current.add(self.idleTimer!, forMode: RunLoopMode.commonModes)
 ```
+
+* not all threads automatically have a run loop
