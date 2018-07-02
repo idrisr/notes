@@ -61,8 +61,8 @@ the install prefix of a formula
 For a software to be "keg-only" means it is installed in `/usr/local/Cellar` but
 not linked into places like `/usr/local/bin`, `/usr/local/lib`, etc. That means
 other software that depends on it has to be compiled with specific instructions
-to use the files in `/usr/local/Cellar`. That's done automatically by brew
-install when a formula specifies keg-only dependencies.
+to use the files in `/usr/local/Cellar`. That's done automatically by `brew
+install` when a formula specifies keg-only dependencies.
 
 ## Formula
 

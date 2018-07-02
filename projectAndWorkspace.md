@@ -22,11 +22,11 @@ files in a build phase etc.
 ### Classes
 
 ```
-PBX AggregateTarget
-PBX BuildRule
-PBX ContainerItemProxy
-PBX CopyFilesBuildPhase
-PBX FileReference
+PBX Aggregate Target
+PBX Build Rule
+PBX Container Item Proxy
+PBX Copy Files Build Phase
+PBX File Reference
 PBX FrameworksBuildPhase
 PBX Group
 PBX HeadersBuildPhase
