@@ -143,12 +143,13 @@ git bisect good <known-good-sha> # the latest known bad spot
 # check out the branch to check for merges into
 git checkout develop
 
+git branch --merged | ack -v develop | xargs git branch -d
 # check which ones are merge
-git branch --merged \
+# git branch --merged
 
 # exclude ones you want to keep, like your current one
-ack -v develop \
+# ack -v develop
 
 # xargs delete them
-xargs git branch -d
+# xargs git branch -d
 ```
