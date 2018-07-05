@@ -1,4 +1,7 @@
 # `CALayer`
+*
+*
 
 ## `CAShapeLayer`
 * A layer that draws a cubic Bezier spline in its coordinate space.
+* Can be used for drawing a clipping path to a UIView

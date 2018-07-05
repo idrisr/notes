@@ -16,6 +16,11 @@
 [^\s]+
 ```
 
+# Concepts
+## Negative lookahead
+
+## Positive lookahead
+
 # Metacharacters
 
 ### `.` dot

@@ -83,3 +83,18 @@ lldb> unsafeBitCast(0x60000024d230, to: MyType.self).myProperty
 * sounds on objects deallocated
 * instabug
 * launch arguments vs environment variables
+
+## objects
+* `SBuild_`
+
+* `SBundle`
+
+* `SBCommandReturnObject`
+
+* `SBError`
+
+* `SBExpressionOptions`
+
+* `SBInputReader`
+
+* [`SBValue`](https://lldb.llvm.org/python_reference/lldb.SBValue-class.html)

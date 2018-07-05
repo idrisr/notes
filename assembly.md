@@ -10,8 +10,13 @@ jump. usually after a control flow branch
 ## `RBX`
 ## `RCX`
 ## `RDX`
+
 ## `RDI`
+first arg passing register?
+
 ## `RSI`
+second arg passing register?
+
 ## `RSP`
 The stack pointer register, `RSP`, points to the head of the stack for a
 particular thread. The head of the stack will grow downwards, so the `RSP` will
