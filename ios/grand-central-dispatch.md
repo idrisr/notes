@@ -56,3 +56,11 @@ synchronization point for an application. Although you do not need to create the
 main dispatch queue, you do need to make sure your application drains it
 appropriately. For more information on how this queue is managed, see Performing
 Tasks on the Main Thread.
+
+## Misc
+* It’s important to note that parallelism requires concurrency, but concurrency
+does not guarantee parallelism.
+
+* Tasks that you submit to a `DispatchQueue` are encapsulated by `DispatchWorkItem`.
+You can configure the behavior of a `DispatchWorkItem` such as its QoS class or
+whether to spawn a new detached thread.

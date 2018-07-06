@@ -93,3 +93,15 @@ classes.
 
 ...and they're used in `UIStackView`s under the hood. How does the above
 description relate to stack views??
+
+
+## `CAKeyframeAnimation`
+
+## `CABasicAnimation`
+
+## `CAAnimation`
+
+`CAAnimation` provides the basic support for the `CAMediaTiming` and `CAAction`
+protocols. You do not create instance of `CAAnimation`: to animate Core Animation
+layers or SceneKit objects, create instances of the concrete subclasses
+`CABasicAnimation`, `CAKeyframeAnimation`, `CAAnimationGroup`, or `CATransition`.

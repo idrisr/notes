@@ -272,3 +272,10 @@ additions to the builtins. To explicitly trigger the usual site-specific
 additions, call the `site.main()` function.
 
 ### `pyvenv.cfg`
+
+
+### executable path
+```python
+import sys
+print(sys.executable)
+```
