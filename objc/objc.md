@@ -130,3 +130,9 @@ Under the hood, Objective-C objects are basically C structs. Each one contains a
 field called `isa`, which is a pointer to the class that the object is an instance
 of (that's how the object and Objective-C runtime knows what kind of object it
 is).
+
+
+## Runtime
+
+### `objc_property_t`
+* An opaque type that represents an Objective-C declared property.
