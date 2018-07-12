@@ -1,5 +1,3 @@
 # `CAAnimation`
 
 ## `CABasicAnimation`
-
-## `CABasicAnimation`

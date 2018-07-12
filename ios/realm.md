@@ -16,3 +16,14 @@ As a rule of thumb, try to always create a local Realm instance via
 you always get a Realm for the specific thread you’re working on. This is part
 of Realm’s multi-threading strategy, designed to aid you in creating safe,
 concurrent code.
+
+# `RLMException`
+
+## Realm Files
+
+* `.realm.lock` - A lock file for resource locks.
+* `.realm.management` - Directory of interprocess lock files.
+* `.realm.note` - A named pipe for notifications.
+
+--- 
+* `shouldCompactOnLaunch`

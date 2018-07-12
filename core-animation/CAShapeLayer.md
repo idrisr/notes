@@ -1,7 +1,7 @@
 # `CAShapeLayer`
 
 * A layer that draws a cubic Bezier spline in its coordinate space.
-* Can be used for drawing a clipping path to a UIView
+* Can be used for drawing a clipping path to a `UIView`
 
 `CAShapeLayer` is a layer subclass that draws itself using vector graphics instead
 of a bitmap image. You specify attributes such as color and line thickness,
