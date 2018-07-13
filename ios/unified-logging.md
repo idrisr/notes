@@ -1,5 +1,8 @@
 # Unified Logging
 
+* [readme](https://agostini.tech/2018/06/24/unified-logging-system/)
+  - [watchme](https://developer.apple.com/videos/play/wwdc2016/721/)
+
 ```swift
 func os_log(_ message: StaticString,
   dso: UnsafeRawPointer? = #dsohandle,
