@@ -25,5 +25,8 @@ concurrent code.
 * `.realm.management` - Directory of interprocess lock files.
 * `.realm.note` - A named pipe for notifications.
 
---- 
+---
 * `shouldCompactOnLaunch`
+
+
+## Update
