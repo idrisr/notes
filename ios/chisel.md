@@ -82,3 +82,38 @@ class FBPrintViewHierarchyCommand(fb.FBCommand):
                 description = re.sub(r'%s.*\n' % (prefixToRemove), r'', description)
             print description
             ```
+
+
+## Helpers             
+
+#### objc helpers
+```python
+def objc_getClass(className):
+    command = '(void*)objc_getClass("{}")'.format(className)
+    value = fb.evaluateExpression(command)
+    return value
+
+def object_getClass(object):
+    command = '(void*)object_getClass((id){})'.format(object)
+    value = fb.evaluateExpression(command)
+    return value
+
+def class_getName(klass):
+    command = '(const char*)class_getName((Class){})'.format(klass)
+    value = fb.evaluateExpressionValue(command).GetSummary().strip('"')
+    return value
+
+def class_getSuperclass(klass):
+    command = '(void*)class_getSuperclass((Class){})'.format(klass)
+    value = fb.evaluateExpression(command)
+    return value
+
+def class_isMetaClass(klass):
+    command = 'class_isMetaClass((Class){})'.format(klass)
+    return fb.evaluateBooleanExpression(command)
+
+def class_getInstanceMethod(klass, selector):
+    command = '(void*)class_getInstanceMethod((Class){}, @selector({}))'.format(klass, selector)
+    value = fb.evaluateExpression(command)
+    return value
+```

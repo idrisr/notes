@@ -98,3 +98,49 @@ lldb> unsafeBitCast(0x60000024d230, to: MyType.self).myProperty
 * `SBInputReader`
 
 * [`SBValue`](https://lldb.llvm.org/python_reference/lldb.SBValue-class.html)
+
+## in python
+
+
+```python
+lldb.debugger.HandleCommand('script ' + functionName + ' = sys.modules[\'' + module.__name__ + '\']._loadedFunctions[\'' + key + '\']')
+lldb.debugger.HandleCommand('command script add --help "{help}" --function {function} {name}'.format(
+    help=helpText.replace('"', '\\"'), # escape quotes
+    function=functionName,
+    name=name))
+```
+
+```python
+# pulled out of chisel repo with
+# ack --no-color -h 'lldb.debugger' | sed "s/^[ \t]*//"| sort -u 
+address = int(lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSelectedFrame().GetModule().ResolveFileAddress(library_address))
+breakpoint = lldb.debugger.GetSelectedTarget().BreakpointCreateByName("-[UIApplication sendEvent:]")
+frame = lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSelectedFrame()
+frameStartAddress = frameSymbol.GetStartAddress().GetLoadAddress(lldb.debugger.GetSelectedTarget())
+initialAsync = lldb.debugger.GetAsync()
+interpreter = lldb.debugger.GetCommandInterpreter()
+lldb.debugger.HandleCommand("po " + command)
+lldb.debugger.HandleCommand('breakpoint command add -s python -F "sys.modules[\'' + __name__ + '\'].' + self.__class__.__name__ + '.taplog_callback" ' + str(breakpoint.id))
+lldb.debugger.HandleCommand('breakpoint set --address {}'.format(address))
+lldb.debugger.HandleCommand('breakpoint set --skip-prologue false --fullname "{}" --condition "{}"'.format(breakpointFullName, breakpointCondition))
+lldb.debugger.HandleCommand('breakpoint set --skip-prologue false --func-regex "{}" --condition "{}"'.format(breakpointPattern, breakpointCondition))
+lldb.debugger.HandleCommand('caflush')
+lldb.debugger.HandleCommand('command script add --help "{help}" --function {function} {name}'.format(
+lldb.debugger.HandleCommand('continue')
+lldb.debugger.HandleCommand('expression -O -l ObjC++ -- ' + expression)
+lldb.debugger.HandleCommand('p (BOOL)[UIView _isInAnimationBlock]')
+lldb.debugger.HandleCommand('p (CGFloat)[(id)[(id)[UIApplication sharedApplication] keyWindow] windowLevel]')
+lldb.debugger.HandleCommand('process continue')
+lldb.debugger.HandleCommand('process interrupt')
+lldb.debugger.HandleCommand('script ' + functionName + ' = sys.modules[\'' + module.__name__ + '\']._loadedFunctions[\'' + key + '\']')
+lldb.debugger.HandleCommand('thread return')
+lldb.debugger.HandleCommand(command)
+lldb.debugger.SetAsync(True)
+lldb.debugger.SetAsync(True) #Needed so XCode doesn't hang if tap on Continue while lldb is waiting for user input in 'vs' mode
+lldb.debugger.SetAsync(initialAsync)
+process = lldb.debugger.GetSelectedTarget().GetProcess()
+return lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSelectedFrame().GetCompileUnit().GetLanguage()
+target = lldb.debugger.GetSelectedTarget()
+targetTriple = lldb.debugger.GetSelectedTarget().GetTriple()
+watchpoint = lldb.debugger.GetSelectedTarget().WatchAddress(objectAddress + ivarOffset, ivarSize, False, True, error)
+```

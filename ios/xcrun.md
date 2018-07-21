@@ -4,6 +4,9 @@
 * from [here](https://stackoverflow.com/questions/25797990/capture-ios-simulator-video-for-app-preview)
 * [awesome source - read me](https://medium.com/flawless-app-stories/simulator-on-steroids-c12774ca6b)
 
+[read me](https://www.iosdev.recipes/simctl/)
+
+
 ```bash
 xcrun simctl io booted recordVideo myMovie.mov
 ```
