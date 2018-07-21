@@ -1,5 +1,7 @@
 # Examples
 
+https://regexr.com/
+
 ## hex numbers
 ```bash
 0[xX][0-9a-fA-F]+
@@ -17,6 +19,26 @@
 ```
 
 # Concepts
+## greedy search
+```
+# full match
+<.+>
+<em>Hello World</em>
+
+# matches
+<em>Hello World</em>
+```
+
+## lazy search
+```
+# full match
+<.+?>
+<em>Hello World</em>
+# matches
+<em>
+</em>
+```
+
 ## Negative lookahead
 
 ## Positive lookahead
