@@ -2,6 +2,8 @@
 
 * https://stedolan.github.io/jq/
 
+* https://jqplay.org/jq
+
 ```bash
 # my.json
 {

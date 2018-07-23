@@ -4,7 +4,6 @@
 )
 
 [read me](http://www.enharmonichq.com/tutorial-ios-reverse-engineering-lldb/)
-
 [readme](https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49)
 
 [watchme from UIKonf](https://www.youtube.com/watch?v=578YdS2sNqk)
@@ -99,6 +98,11 @@ lldb> unsafeBitCast(0x60000024d230, to: MyType.self).myProperty
 
 * [`SBValue`](https://lldb.llvm.org/python_reference/lldb.SBValue-class.html)
 
+## Type Summary
+from [here](https://medium.com/itty-bitty-apps/scripting-lldb-with-python-31718eb4e501)
+
+```
+type summary add -F iba_lldb.IBARangeSummary IBARange
 ## in python
 
 

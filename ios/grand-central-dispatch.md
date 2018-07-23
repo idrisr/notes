@@ -6,6 +6,15 @@ todo grok me https://developer.apple.com/library/content/documentation/General/C
 
 Executes a block object once and only once for the lifetime of an application.
 
+## `DispatchGroup`
+
+`DispatchGroup` allows for aggregate synchronization of work. You can use them to
+submit multiple different work items and track when they all complete, even
+though they might run on different queues. This behavior can be helpful when
+progress can’t be made until all of the specified tasks are complete.
+
+
+
 
 ## `DispatchQueue`
 

@@ -77,6 +77,16 @@ IPA is a zipped up Payload folder which has YourApp.app bundle. .app contains
 all your application resources like images, plist files, compressed nibs and the
 executable, CodeSigning resources,etc.
 
+```swift
+# IPA structure
+/Payload/
+/Payload/Application.app
+/iTunesArtwork
+/iTunesArtwork@2x
+/iTunesMetadata.plist
+/WatchKitSupport/WK
+```
+
 # Build levels
 from [here](https://stackoverflow.com/questions/16649635/what-is-the-fourth-columns-meaning-of-xcodes-setting)
 

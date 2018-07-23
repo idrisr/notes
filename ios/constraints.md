@@ -106,3 +106,8 @@ hierarchy containing `myView`.
 
 ## Breakpoint
 `UIViewAlertForUnsatisfiableConstraints`
+
+## turn off warnings
+```Swift
+UserDefaults.standard.setValue(false, forKey:"_UIConstraintBasedLayoutLogUnsatisfiable")
+```
