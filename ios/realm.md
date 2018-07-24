@@ -1,5 +1,6 @@
 # Realm
 
+<<<<<<< HEAD
 * `NotificationToken`
 * `.realm`
 * `realm.delete(self)`
@@ -30,3 +31,6 @@ concurrent code.
 
 
 ## Update
+=======
+[read me](https://medium.com/@gonzalezreal/using-realm-with-value-types-b69947741e8b  )
+>>>>>>> table view and realm

@@ -14,3 +14,6 @@
 
 * snap if scrolling stopped though an animation  
 * animated a view in/out by its alpha
+
+`scrollViewDidScroll()` suppose to be called upon every pixels user scrolled on
+mainThread, heavy computation should be avoided
