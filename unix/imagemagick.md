@@ -1,4 +1,4 @@
-# ImageMagick
+  # ImageMagick
 
 Use ImageMagick® to create, edit, compose, or convert bitmap images.
 
