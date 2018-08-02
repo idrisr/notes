@@ -6,6 +6,8 @@
 
 * [readme]( https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/MachOTopics/1-Articles/executing_files.html#//apple_ref/doc/uid/TP40001829)
 
+* [readme](http://blog.darlinghq.org/2018/07/mach-o-linking-and-loading-tricks.html)
+
 The process of loading and linking a program in OS X mainly involves two
 entities: the OS X kernel and the dynamic linker
 

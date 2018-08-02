@@ -112,7 +112,7 @@ lldb.debugger.HandleCommand('command script add --help "{help}" --function {func
 
 ```python
 # pulled out of chisel repo with
-# ack --no-color -h 'lldb.debugger' | sed "s/^[ \t]*//"| sort -u 
+# ack --no-color -h 'lldb.debugger' | sed "s/^[ \t]*//"| sort -u
 address = int(lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSelectedFrame().GetModule().ResolveFileAddress(library_address))
 breakpoint = lldb.debugger.GetSelectedTarget().BreakpointCreateByName("-[UIApplication sendEvent:]")
 frame = lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSelectedFrame()
@@ -143,4 +143,41 @@ return lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSel
 target = lldb.debugger.GetSelectedTarget()
 targetTriple = lldb.debugger.GetSelectedTarget().GetTriple()
 watchpoint = lldb.debugger.GetSelectedTarget().WatchAddress(objectAddress + ivarOffset, ivarSize, False, True, error)
+```
+
+## Evaluate an expression
+
+```python
+# evaluates expression in Objective-C++ context, so it will work even for
+# Swift projects
+# from chisel
+def evaluateExpressionValue(expression, printErrors=True, language=lldb.eLanguageTypeObjC_plus_plus):
+    frame = lldb.debugger.GetSelectedTarget().GetProcess().GetSelectedThread().GetSelectedFrame()
+    options = lldb.SBExpressionOptions()
+    options.SetLanguage(language)
+
+    # Allow evaluation that contains a @throw/@catch.
+    #   By default, ObjC @throw will cause evaluation to be aborted. At the time
+    #   of a @throw, it's not known if the exception will be handled by a @catch.
+    #   An exception that's caught, should not cause evaluation to fail.
+    options.SetTrapExceptions(False)
+
+    # Give evaluation more time.
+    options.SetTimeoutInMicroSeconds(5000000) # 5s
+
+    # Chisel commands are not multithreaded.
+    options.SetTryAllThreads(False)
+
+    value = frame.EvaluateExpression(expression, options)
+    error = value.GetError()
+
+    # Retry if the error could be resolved by first importing UIKit.
+    if (error.type == lldb.eErrorTypeExpression and
+        error.value == lldb.eExpressionParseError and
+        importModule(frame, 'UIKit')):
+        value = frame.EvaluateExpression(expression, options)
+        error = value.GetError()
+
+    if printErrors and not isSuccess(error):
+        print error
 ```

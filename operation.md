@@ -20,3 +20,55 @@ long-running task that produces associated state or data.
 
 But simply wrapping computation into an object doesn’t do much without a little
 oversight. That’s where `NSOperationQueue` comes in.
+
+
+* like a dispatch group
+* state machine
+* can monitor with kvo
+* can declare dispatch queues as the operation queues underlying queue
+* dont need to start an operation queue
+* when you add an operation, itll start as soon as its ready
+* `waitUntilAllOperationsAreFinished`
+* `maxConcurrentOperationCount`
+* `serialOperationQueue`
+
+## State machine
+* `isCancelled`
+* `isConcurrent`
+* `isAsynchronous`
+
+### initially
+```swift
+isReady = false
+isExecuting = false
+isFinished = false
+```
+
+### ready
+```swift
+isReady = true  // understands dependency
+isExecuting = false
+isFinished = false
+```
+
+### executing
+```swift
+isReady = true  
+isExecuting = true // do something to make it true, kick off async task
+isFinished = false
+```
+
+### finished
+```swift
+isReady = true
+isExecuting = false
+isFinished = true // happens in the completion handler
+```
+
+* relies on KVO so others know state changed
+* chain async calls in an operation queue
+* avoid pyramid of doom
+* more complex dependencies
+
+* to do dependencies, the queue must know when it's finished
+* the state must manage its state changes 
