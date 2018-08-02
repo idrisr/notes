@@ -149,8 +149,13 @@ targetTriple = lldb.debugger.GetSelectedTarget().GetTriple()
 watchpoint = lldb.debugger.GetSelectedTarget().WatchAddress(objectAddress + ivarOffset, ivarSize, False, True, error)
 ```
 
-## Evaluate an expression
+## Load a binary image
+```python
+# from reveal
+self.process.LoadImage(lldb.SBFileSpec(path), error)
+```
 
+## Evaluate an expression
 ```python
 # evaluates expression in Objective-C++ context, so it will work even for
 # Swift projects
