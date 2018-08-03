@@ -71,4 +71,62 @@ isFinished = true // happens in the completion handler
 * more complex dependencies
 
 * to do dependencies, the queue must know when it's finished
-* the state must manage its state changes 
+* the state must manage its state changes
+
+
+If you do not want to use an operation queue, you can execute an operation yourself by calling its start() method directly from your code.
+
+### starting
+
+If you do not want to use an operation queue, you can execute an operation
+yourself by calling its `start()` method directly from your code. Executing
+operations manually does put more of a burden on your code, because starting an
+operation that is not in the ready state triggers an exception. The `isReady`
+property reports on the operation’s readiness.
+
+
+## dependencies
+By default, an operation object that has dependencies is not considered ready
+until all of its dependent operation objects have finished executing. Once the
+last dependent operation finishes, however, the operation object becomes ready
+and able to execute.
+
+The dependencies supported by `NSOperation` make no distinction about whether a
+dependent operation finished successfully or unsuccessfully. (In other words,
+canceling an operation similarly marks it as finished.) It is up to you to
+determine whether an operation with dependencies should proceed in cases where
+its dependent operations were cancelled or did not complete their task
+successfully. This may require you to incorporate some additional error tracking
+capabilities into your operation objects.
+
+
+## `isAsynchronous`
+When you add an operation to an operation queue, the queue ignores the value of
+the `isAsynchronous` property and always calls the `start()` method from a separate
+thread. Therefore, if you always run operations by adding them to an operation
+queue, there is no reason to make them asynchronous.
+
+
+## Methods to Override
+
+For non-concurrent operations, you typically override only one method:
+
+`main()`
+
+Into this method, you place the code needed to perform the given task. Of
+course, you should also define a custom initialization method to make it easier
+to create instances of your custom class. You might also want to define getter
+and setter methods to access the data from the operation. However, if you do
+define custom getter and setter methods, you must make sure those methods can be
+called safely from multiple threads.
+
+If you are creating a concurrent operation, you need to override the following
+methods and properties at a minimum:
+
+## `start()`
+
+`isAsynchronous`
+
+`isExecuting`
+
+`isFinished`
