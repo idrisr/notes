@@ -6,10 +6,11 @@ of your code, and to specify a preferred interface through which that code can
 be accessed and used.
 
 # Order of Restricitivity
-* `Open`
-* `Public`
-* `FilePrivate`
-* `Private`
+* `open`
+* `public`
+* `internal`
+* `filePrivate`
+* `private`
 
 ## Modules and Source Files
 
