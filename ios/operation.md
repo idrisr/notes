@@ -122,7 +122,16 @@ queue, there is no reason to make them asynchronous.
 
 For non-concurrent operations, you typically override only one method:
 
+```swift
+# if a sync method
+
+# isExecuting = true
+# essentially it calls you the start method for you when in sync mode
 `main()`
+# isExecuting = false
+```
+
+if it's synchronous, then once you leave the main method you're considered to be done.
 
 Into this method, you place the code needed to perform the given task. Of
 course, you should also define a custom initialization method to make it easier
@@ -136,8 +145,61 @@ methods and properties at a minimum:
 
 ## `start()`
 
+The default implementation of this method updates the execution state of the
+operation and calls the receiver’s `main()` method.
+
+
 `isAsynchronous`
 
 `isExecuting`
 
 `isFinished`
+
+
+## `cancel()`
+* just a bool flipping
+* observe it changing, and react accordingly
+* susceptible to race conditions
+* cannot go from `finished` to `cancel`
+
+
+## `main()`
+
+The default implementation of this method does nothing. You should override this
+method to perform the desired task. In your implementation, do not invoke `super`.
+This method will automatically execute within an autorelease pool provided by
+`NSOperation`, so you do not need to create your own autorelease pool block in
+your implementation.
+
+If you are implementing a concurrent operation, you are not required to override
+this method but may do so if you plan to call it from your custom `start()`
+method.
+
+
+* as soon as you add the operation to the queue it is going to start
+
+### Operation Queue
+
+* high-level `dispatch_queue_t`
+* makes it easy to things that arent yet executing
+
+```swift
+// send cancel message to all operations
+operationQueue.cancel()
+```
+
+
+### Operation
+* high-level `dispatch_block_t`
+
+* pending
+* ready
+* executing
+* finished
+
+![img](../images/operation-state-machine.png)
+
+
+### Ready
+* a simple bool
+* means operation ready to execute

@@ -38,11 +38,24 @@ issue.
 
 ## atomic
 
-Properties are atomic by default, so if you don’t write nonatomic, it will be atomic (whether you write it or not).  Atomic basically ensures that data is written or read atomically.  So if thread A is still in the getter when thread B calls the setter, thread A will get a viable value.  It is not necessarily thread-safe, but much safer than nonatomic.  The problem with atomic though, is that it is quite slow compared to its opposite.  Also, you must either implement both the setter and the getter, or neither. You cannot have a custom getter and a synthesized setter in an atomic property.
+Properties are atomic by default, so if you don’t write nonatomic, it will be
+atomic (whether you write it or not).  Atomic basically ensures that data is
+written or read atomically.  So if thread A is still in the getter when thread B
+calls the setter, thread A will get a viable value.  It is not necessarily
+thread-safe, but much safer than nonatomic.  The problem with atomic though, is
+that it is quite slow compared to its opposite.  Also, you must either implement
+both the setter and the getter, or neither. You cannot have a custom getter and
+a synthesized setter in an atomic property.
 
 ## nonatomic
 
-This makes no such guarantees about atomicity (which is quite a cool word) as nonatomic.  If thread A is in the middle of a getter for a nonatomic NSString, and Thread B tries to set it to “Microwave”, and Thread C tries to set it to “Refrigerator”, you might get “Microgerator”, or it may just be completely unreadable and crash the program.  You never know, so if you use nonatomic, you must implement your own thread safety and atomicity.  You will more often use nonatomic properties though, because they are FAST when compared to atomic ones.
+This makes no such guarantees about atomicity (which is quite a cool word) as
+nonatomic.  If thread A is in the middle of a getter for a nonatomic NSString,
+and Thread B tries to set it to “Microwave”, and Thread C tries to set it to
+“Refrigerator”, you might get “Microgerator”, or it may just be completely
+unreadable and crash the program.  You never know, so if you use nonatomic, you
+must implement your own thread safety and atomicity.  You will more often use
+nonatomic properties though, because they are FAST when compared to atomic ones.
 
 # Swift Compatability
 

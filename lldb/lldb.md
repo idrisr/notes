@@ -190,3 +190,8 @@ def evaluateExpressionValue(expression, printErrors=True, language=lldb.eLanguag
     if printErrors and not isSuccess(error):
         print error
 ```
+
+# Remote Debugging
+
+* [readme](https://kov4l3nko.github.io/blog/2018-05-25-my-experience-with-lldb-and-electra-jb/)
+* [andme](https://blog.securityevaluators.com/debugging-ios-applications-a-guide-to-debug-other-developers-apps-c041311498eb)
