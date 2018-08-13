@@ -37,6 +37,17 @@ oversight. That’s where `NSOperationQueue` comes in.
 * `isConcurrent`
 * `isAsynchronous`
 
+
+## methods
+
+### `start()`
+
+### `main()`
+
+### `cancel()`
+
+### `waitUntilFinished()`
+
 ### initially
 ```swift
 isReady = false
