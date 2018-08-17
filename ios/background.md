@@ -44,3 +44,13 @@ applicationWillEnterForeground:
 // your app is suspended.
 applicationWillTerminate:
 ```
+
+# `UIBackgroundModes`
+
+* `fetch`
+
+## `UIApplication`
+```swift
+func beginBackgroundTask(withName: String?, expirationHandler: (() -> Void)? = nil)
+func beginBackgroundTask(withName taskName: String?, expirationHandler handler: (() -> Void)? = nil) -> UIBackgroundTaskIdentifier
+```

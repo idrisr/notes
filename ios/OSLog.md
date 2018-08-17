@@ -10,3 +10,24 @@ messages to the logging system.
 * [watchme](https://developer.apple.com/videos/wwdc2014/#714)
 
 * c inter-op
+
+# privary
+```swift
+%{public}@
+```
+
+# `log`
+
+```swift
+log config --status
+```
+
+`diagnosticd`
+
+
+## streaming command line
+can put in a shell script and share with others
+
+```
+xcrun simctl spawn booted log stream --debug --predicate 'subsystem == "com.backgroundFun.general"'
+```

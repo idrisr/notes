@@ -41,6 +41,9 @@ oversight. That’s where `NSOperationQueue` comes in.
 ## methods
 
 ### `start()`
+* change state to `executing` or `finisehd` (if `cancelled`)
+* call `main`
+* trigger KVO for state change
 
 ### `main()`
 
