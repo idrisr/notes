@@ -2,7 +2,23 @@
 
 * [readme](https://blog.obdev.at/representing-socket-addresses-in-swift-using-enums/)
 
-## `SystemConfiguration`
+## Reachability objects used in Alamofire
+```swift
+# ~/Alamofire ack -ho --sw "SCNetwork[A-Za-z]+" | sort -u
+SCNetworkReachability
+SCNetworkReachability Context
+SCNetworkReachability CreateWithAddress
+SCNetworkReachability CreateWithName
+SCNetworkReachability Flags
+SCNetworkReachability GetFlags
+SCNetworkReachability SetCallback
+SCNetworkReachability SetDispatchQueue
+```
+
+### `SCNetworkReachabilityCreateWithName`
+Creates a reachability reference to the specified network host or node name.
+
+### `SystemConfiguration`
 
 Allow applications to access a device’s network configuration settings.
 Determine the reachability of the device, such as whether Wi-Fi or cell
@@ -88,3 +104,10 @@ configuration, but a connection must first be established.
 ### `kSCNetworkFlagsInterventionRequired`
 ### `kSCNetworkFlagsIsLocalAddress`
 ### `kSCNetworkFlagsIsDirect`
+
+
+### Reachability Manager Pod
+
+#### `Reachability`
+
+#### `ReachabilityManager`

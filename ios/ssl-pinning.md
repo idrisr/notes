@@ -39,3 +39,6 @@ An abstract Core Foundation-type object representing an X.509 certificate.
 ### `SecIdentity`
 * An abstract Core Foundation-type object representing an identity.
 * A SecIdentity object contains a SecKey object and an associated SecCertificate object.
+
+### `SecTrust`
+* An object used to evaluate trust

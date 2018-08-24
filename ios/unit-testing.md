@@ -19,3 +19,5 @@ values. They are typically used for one of two reasons:
 
 * To avoid some inconvenient interface - for instance to avoid making actual requests to a server from tests.
 * To feed the system with known data, forcing a specific code path.
+
+## mock
