@@ -11,3 +11,6 @@ System Integrity Protection includes protection for these parts of the system:
 * `/bin`
 * `/sbin`
 * Apps that are pre-installed with OS X
+
+## `csrutil`
+* configure SIP

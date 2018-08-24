@@ -41,3 +41,8 @@ Standards (PKCS) published by RSA Laboratories.
 The filename extension for PKCS #12 files is `.p12` or `.pfx`.
 
 These files can be created, parsed and read out with the OpenSSL pkcs12 command.
+
+# der encoded
+check is der encoded
+
+https://stackoverflow.com/questions/13975520/how-can-i-validate-that-a-certificate-really-is-in-der-format
