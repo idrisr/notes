@@ -31,3 +31,65 @@ sudo dtrace -n 'objc$target:UIViewController:-viewWillAppear?:entry
 
 #### `ustack()`
 * dumps the userland stack trace when the method gets hit.
+
+## Terminology
+
+### Probes
+* probes are events that DTrace can monitor either in a specific process or globally across across your computer.
+* four-tuple
+* `provider`:`module`:`function`:`name`
+
+
+#### Provider
+* grouping of code or common functionality
+
+* A provider. This is the entity that provides access to classes of functions. A
+common provider is `syscall`, which lets you trace Unix system calls like read and
+write system-wide. There’s another provider called pid that lets you trace
+functions inside of a particular program. You’ll see that in part 2. The objc
+provider lets you poke around in Objective-C land, and you’ll see that in part
+3. There’s a lot of other providers available, too.
+
+### Module
+In the `objc` provider, the module section is where you specify the class name you
+wish to observe. Using the `objc` provider is a little unique in this sense,
+because typically the module is used to reference a library in which the code is
+coming from. In fact, in some providers, there’s no module at all! However, the
+authors of the `objc` provider chose to use the module to reference the Objective-
+C classname. For this particular example, the module is `NSObject`.
+
+This depends on the provider. Some providers don’t have modules. Some providers
+let you specify a particular shared library in the module. Perhaps you only
+wanted to trace some functions inside of libxm2.dylib - you could put that in
+the module.
+
+### Function
+This is the name of the function you want to pay attention to.
+
+### Name
+The name also depends on the provider, but most let you specify entry, to run
+some D code before the function starts running or return to run some D code
+after the function has exited.
+
+
+```
+# {provider}:{module}:{function}:{name}
+# {provider}
+# {module}
+# {function}
+# {name}
+
+dtrace -n 'objc$target:NSObject:-description:entry / arg0 = 0 / { @[probemod] = count(): }' -p `pgrep SpringBoard`
+```
+
+## background
+
+from [here](https://www.bignerdranch.com/blog/hooked-on-dtrace-part-1/)
+
+
+You command DTrace by writing code in the “D Language”, which is not related to
+that other D Language. DTrace’s D is a scripting language that has a strong C
+flavor, so much of C is available to you. It gets compiled by the dtrace command
+into bytecode, shipped to the kernel, where it runs. It’s run in a safe mode to
+minimize impact on the system, so there’s no looping , branch statements, or
+floating point operations.
