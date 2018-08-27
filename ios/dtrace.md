@@ -1,5 +1,10 @@
 # DTrace
 
+```
+# list options without number suffix
+sudo dtrace -l | awk '{print $2}' | sed 's/[0-9]*//g' | sort -u | cat -n
+```
+
 ## probes
 
 
@@ -93,3 +98,14 @@ flavor, so much of C is available to you. It gets compiled by the dtrace command
 into bytecode, shipped to the kernel, where it runs. It’s run in a safe mode to
 minimize impact on the system, so there’s no looping , branch statements, or
 floating point operations.
+
+## samples
+
+
+```bash
+# use -v to find probe arguments
+􏰀 sudo dtrace -lv -f syscall:freebsd:read
+```
+
+## challenge
+* list files touched by Instruments process
