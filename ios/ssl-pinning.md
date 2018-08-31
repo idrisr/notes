@@ -46,15 +46,15 @@ An abstract Core Foundation-type object representing an X.509 certificate.
 ## convert cert types
 ```sh
 # show server certs
-openssl s_client -connect phmapi.nhl.com:443 -showcerts
+openssl s_client -connect domain.mydomain.com:443 -showcerts
 ```
 
 ```sh
 # check DER encoding
-openssl x509 -text -noout -inform DER -in nhl.com.ca-bundle
+openssl x509 -text -noout -inform DER -in domain.com.ca-bundle
 ```
 
 ```sh
 # convert crt to DER file
-openssl x509 -outform der -in nhl.com.crt -out nhl.com.der
+openssl x509 -outform der -in domain.com.crt -out domain.com.der
 ```
