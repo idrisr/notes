@@ -42,3 +42,19 @@ An abstract Core Foundation-type object representing an X.509 certificate.
 
 ### `SecTrust`
 * An object used to evaluate trust
+
+## convert cert types
+```sh
+# show server certs
+openssl s_client -connect phmapi.nhl.com:443 -showcerts
+```
+
+```sh
+# check DER encoding
+openssl x509 -text -noout -inform DER -in nhl.com.ca-bundle
+```
+
+```sh
+# convert crt to DER file
+openssl x509 -outform der -in nhl.com.crt -out nhl.com.der
+```
