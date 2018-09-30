@@ -3,23 +3,21 @@
 todo grok me https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html
 
 ## `dispatch_once`
-
-Executes a block object once and only once for the lifetime of an application.
+* Executes a block object once and only once for the lifetime of an application.
 
 ## `DispatchGroup`
 
-`DispatchGroup` allows for aggregate synchronization of work. You can use them to
-submit multiple different work items and track when they all complete, even
-though they might run on different queues. This behavior can be helpful when
-progress can’t be made until all of the specified tasks are complete.
-
-
-
+* allows for aggregate synchronization of work.
+* use them to submit multiple different work items and track when they all complete
+* though they might run on different queues.
+* can be helpful when progress can’t be made until all of the specified tasks are complete.
 
 ## `DispatchQueue`
 
 `DispatchQueue` manages the execution of work items. Each work item submitted to a
 queue is processed on a pool of threads managed by the system.
+
+* manages a thread pool
 
 # Queue Types
 

@@ -43,6 +43,9 @@ An abstract Core Foundation-type object representing an X.509 certificate.
 ### `SecTrust`
 * An object used to evaluate trust
 
+### `SecTrustRef`
+* 
+
 ## convert cert types
 ```sh
 # show server certs

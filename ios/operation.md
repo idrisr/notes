@@ -6,6 +6,7 @@
 
 * [readme](https://agostini.tech/2017/07/30/understanding-operation-and-operationqueue-in-swift/)
 * [stack overflow readme](https://stackoverflow.com/questions/43561169/trying-to-understand-asynchronous-operation-subclass)
+* [readme](https://medium.com/flawless-app-stories/parallel-programming-with-swift-operations-54cbefaf3cb0)
 
 `NSOperation` represents a single unit of work. It’s an abstract class that offers
 a useful, thread-safe structure for modeling state, priority, dependencies, and

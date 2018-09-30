@@ -77,3 +77,6 @@ one or more of the immediately-preceding item
 
 ### `*` star
 try to match it as many times as possible, but it’s OK to settle for nothing if need be
+
+### `\w`
+alphanumber or underscore characters
