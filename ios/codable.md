@@ -11,12 +11,15 @@
 
 ## DUH, ahah moment
 
-json:
-
+```
+# json
 key: value
+```
 
-swift:
+```
+# swift
 let key: Value
+```
 
 trying to capture the key into a var or constant was the issue!
 
