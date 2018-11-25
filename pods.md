@@ -100,3 +100,18 @@ The `Installer` gets the information that it needs mainly from 3 files.
 ### pods of note
 https://github.com/bryx-inc/BRYXBanner - toast pod
 Updates the local clone of the spec-repo `NAME`. If `NAME` is omitted this will update all spec-repos in `~/.cocoapods/repos`.
+
+## Under the hood
+
+### platform
+
+### use_frameworks
+
+### inhibit_all_warnings
+
+### abstract_target
+If you want multiple targets to share the same pods, use an `abstract_target`.
+
+
+## Deeper under the hood
+* from [here](https://www.objc.io/issues/6-build-tools/cocoapods-under-the-hood/)

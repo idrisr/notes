@@ -131,6 +131,15 @@ field called `isa`, which is a pointer to the class that the object is an instan
 of (that's how the object and Objective-C runtime knows what kind of object it
 is).
 
+## `__block`
+It tells the compiler that any variable marked by it must be treated in a
+special way when it is used inside a block. Normally, variables and their
+contents that are also used in blocks are copied, thus any modification done to
+these variables don't show outside the block. When they are marked with
+`__block`, the modifications done inside the block are also visible outside of
+it.
+
+For an example and more info, see The `__block` Storage Type in Apple's Blocks Programming Topics.
 
 ## Runtime
 
