@@ -9,7 +9,6 @@ defaults delete com.apple.dt.Xcode DVTPlugInManagerNonApplePlugIns-Xcode-9.0.1
 ```
 
 ## man page
-Defaults allows users to read, write, and delete Mac OS X user defaults from a
 command-line shell. Mac OS X applications and other programs use the defaults
 system to record user preferences and other information that must be maintained
 when the applications aren't running (such as default font for new documents, or
