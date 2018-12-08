@@ -7,10 +7,19 @@
 https://learnappmaking.com/promises-swift-how-to/
 
 
+## Classes
+`Guarantee<T>`
+
+`Thenable`
+
+`seal`
+
+## Guarantee
+* a `Guarantee` always succeeds.
+
 ## Promises
-* A Promise is something you make to someone else.
-
-
+* A `Promise` is something you make to someone else.
+* A `Promise` can be rejected, but a ‘Guarantee’ always succeeds.
 
 ## Futures
 * In the Future you may choose to honor (resolve) that promise, or reject it.

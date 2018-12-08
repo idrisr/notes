@@ -46,3 +46,56 @@ is a recursive process: A dependency can have its own dependencies, each of
 which can also have dependencies, forming a dependency graph. The package
 manager downloads and builds everything that is needed to satisfy the entire
 dependency graph.
+
+---
+
+from [here](https://www.youtube.com/watch?v=o3HG0Z3yc5c)
+
+## `C`
+* before we had `.h` files, to declare headers
+* like `#include` from `.c` files
+* they're kind of a mess
+* things can be imported twice
+* therefore `IF_DEF`s
+
+## `ObjC`
+* use `import Header` and then the compiler keeps track to not import things twice
+
+## Module Maps
+* what headers are part of module
+* special treatment
+* modulemap gets translated
+
+```
+# standard xcode module map
+framework module UsefulFramework {
+    umbrella header "UsefulFramework.h"
+
+    export *
+    module * { export * }
+}
+```
+
+### line by line
+
+* declaring module named UsefulFramework
+```
+framework module UsefulFramework {
+```
+
+* the heart of it
+* tells what headers are included as part of module
+* umbrella responsible for importing all the other public headers
+```
+umbrella header "UsefulFramework.h"
+```
+
+```
+export *
+```
+* all headers should be exported
+
+```
+module * { export * }
+```
+* file can import `UsefulFramework.file` class to make it more clear which file your class is dependent on
