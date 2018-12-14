@@ -7,19 +7,52 @@
 https://learnappmaking.com/promises-swift-how-to/
 
 
-## Classes
-`Guarantee<T>`
+# Classes
+## `Guarantee<T>`
+```swift
+/**
+ A `Guarantee` is a functional abstraction around an asynchronous operation
+ that cannot error.
+*/
+public final class Guarantee<T>: Thenable {
+    ...
+}
+```
 
-`Thenable`
+`Promise<T>`
+```swift
+/**
+ A `Promise` is a functional abstraction around a failable asynchronous operation.
+ - See: `Thenable`
+ */
+public final class Promise<T>: Thenable, CatchMixin {
+    ...
+}
+```
 
 `seal`
+
+## `Thenable`
+represents an asynchronous operation that can be chained.
+
+```swift
+/// Thenable represents an asynchronous operation that can be chained.
+public protocol Thenable: class {
+    /// The type of the wrapped value
+    associatedtype T
+    /// `pipe` is immediately executed when this `Thenable` is resolved
+    func pipe(to: @escaping(Result<T>) -> Void)
+    /// The resolved result or nil if pending.
+    var result: Result<T>? { get }
+}
+```
 
 ## Guarantee
 * a `Guarantee` always succeeds.
 
 ## Promises
 * A `Promise` is something you make to someone else.
-* A `Promise` can be rejected, but a ‘Guarantee’ always succeeds.
+* A `Promise` can be rejected, but a `Guarantee` always succeeds.
 
 ## Futures
 * In the Future you may choose to honor (resolve) that promise, or reject it.
