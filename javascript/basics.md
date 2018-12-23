@@ -1,0 +1,5 @@
+
+
+`let` - mutable
+
+`const` - immutable

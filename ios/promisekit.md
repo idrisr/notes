@@ -48,7 +48,7 @@ public protocol Thenable: class {
 ```
 
 ## Guarantee
-* a `Guarantee` always succeeds.
+* a `Guarantee` always resolves
 
 ## Promises
 * A `Promise` is something you make to someone else.
