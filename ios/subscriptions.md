@@ -30,4 +30,3 @@
 
 ## status polling
 * discover new transctions from your server
-* asdf
