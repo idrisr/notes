@@ -4,7 +4,7 @@
 * note, probably differences between GNU and BSD versions
 
 
-```
+```sh
 # -v verbose
 # -H header
 # -d the data in a POST request
@@ -22,4 +22,12 @@ curl -v \
 ```
 # download links in a file
 xargs -n 1 curl -O < your_files.txt
+```
+
+```sh
+# POST with body
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"username":"xyz","password":"xyz"}' \
+  http://localhost:3000/api/login
 ```

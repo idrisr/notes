@@ -1,5 +1,7 @@
 # Firebase Storage
 
+[docs](https://cloud.google.com/nodejs/docs/reference/storage/2.3.x/)
+
 ## steps for use
 
 * create a storage reference

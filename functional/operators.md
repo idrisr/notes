@@ -38,9 +38,21 @@ func >>> <A, B, C>
 func >=> <A, B, C> (f: @escaping (A) -> (B, [String]),
                     g: @escaping (B) -> (C, [String])) -> (A) -> (C, [String]) {
     return { a in
+    
         let (b, logs) = f(a)
         let (c, moreLogs) = g(b)
         return (c, logs + moreLogs)
     }
 }
 ```
+
+
+## `Statement` vs `Expression`
+
+### `Statement`
+* unit of code evaluated just for the net action
+
+
+
+### `Expression`
+* unit of code evaluated to get the value from the expression
