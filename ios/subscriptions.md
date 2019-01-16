@@ -31,11 +31,17 @@
 
 `SKProduct`
 
+`SKProductDiscount`
+
 `SKProductsRequest`
 
 `SKProductsRequestDelegate`
 
 `SKProductsResponse`
+
+`SKProductSubscriptionPeriod`
+
+`SKStoreReviewController`
 
 `SKRequest`
 
@@ -119,3 +125,25 @@ from [here](https://developer.apple.com/videos/play/wwdc2016/702/?time=1694)
 ## subscription management
 * subscription groups
 * subscription levels
+
+# WWDC 704 2018 best practices with in app purchases
+## sandbox testing
+* no charges
+* dedicated sandbox account
+
+
+* based on certificate used to sign app
+* dev cert - sandbox
+* prod cert - production
+
+# WWDC 705 2018 Engineering Subscriptions
+[in app purchasing guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html)
+
+
+# In App Purchasing Programming Guide
+
+* app is responsible for calculating the time period that the subscription is active 
+* and determining what content needs to be made available to the user.
+* app is responsible for detecting that a subscription is approaching its expiration date 
+* and prompting the user to renew the subscription by purchasing the product again.
+* app is responsible for making subscriptions available across all the user’s devices after they’re purchased and for letting users restore past purchases. For example, most subscriptions are provided by a server; your server would need some mechanism to identify users and associate subscription purchases with the user who purchased them
