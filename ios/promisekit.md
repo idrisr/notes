@@ -7,6 +7,19 @@
 https://learnappmaking.com/promises-swift-how-to/
 
 
+`after`
+
+`firstly`
+
+`hang`
+
+`race`
+
+`when`
+
+
+
+
 # Classes
 ## `Guarantee<T>`
 ```swift

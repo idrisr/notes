@@ -76,7 +76,7 @@ from [here](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-
 # WWDC 702 2016
 * using store kit for in app purchases with swift 3
 
-from [here](https://developer.apple.com/videos/play/wwdc2016/702/?time=1694)
+from [here](https://developer.apple.com/videos/play/wwdc2016/702/)
 
 ## process
 ### load in-app identifier
@@ -142,8 +142,19 @@ from [here](https://developer.apple.com/videos/play/wwdc2016/702/?time=1694)
 
 # In App Purchasing Programming Guide
 
-* app is responsible for calculating the time period that the subscription is active 
+* app is responsible for calculating the time period that the subscription is
+active
+
 * and determining what content needs to be made available to the user.
-* app is responsible for detecting that a subscription is approaching its expiration date 
-* and prompting the user to renew the subscription by purchasing the product again.
-* app is responsible for making subscriptions available across all the user’s devices after they’re purchased and for letting users restore past purchases. For example, most subscriptions are provided by a server; your server would need some mechanism to identify users and associate subscription purchases with the user who purchased them
+
+* app is responsible for detecting that a subscription is approaching its
+expiration date
+
+* and prompting the user to renew the subscription by purchasing the product
+again.
+
+* app is responsible for making subscriptions available across all the user’s
+devices after they’re purchased and for letting users restore past purchases.
+For example, most subscriptions are provided by a server; your server would
+need some mechanism to identify users and associate subscription purchases
+with the user who purchased them
