@@ -31,3 +31,6 @@ your shell.
 
 `$PROMPT`
 `$RPROMPT`
+
+
+## autocomplete
