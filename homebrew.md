@@ -24,9 +24,7 @@ drwxr-xr-x   5 id admin  160 Nov  9  2015 2.14
 ## Linking
 
 * Homebrew insalls into `/usr/local/Cellar/`
-* and then symlinked into one or many ogem install gem-ctags
-gem ctags
-f
+* and then symlinked into one or many 
   * `usr/local/bin`
   * `usr/local/lib`
   * `usr/local/include`
@@ -37,7 +35,7 @@ used to link keg and non-keg version of the latest version.
 
 ## Cask
 
-`brew cask` is an extension to brew that allows management of graphical
+`brew cask` is an extension to `brew` that allows management of graphical
 applications through the Cask project.
 
 ## Taps

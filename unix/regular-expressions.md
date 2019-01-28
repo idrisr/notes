@@ -40,6 +40,28 @@ https://regexr.com/
 ```
 
 ## Negative lookahead
+from [here](https://www.regular-expressions.info/lookaround.html)
+
+* if you want to match something not followed by something else.
+
+```bash
+± cat test
+iraq
+iraq is a country
+what the fuck
+queens of the stone age
+qaasi
+
+± ack 'q(?=u)' test
+queens of the stone age
+
+± ack 'q(?!u)' test
+iraq
+iraq is a country
+qaasi
+```
+
+
 
 ## Positive lookahead
 
