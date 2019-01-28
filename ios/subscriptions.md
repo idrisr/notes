@@ -142,16 +142,10 @@ from [here](https://developer.apple.com/videos/play/wwdc2016/702/)
 
 # In App Purchasing Programming Guide
 
-* app is responsible for calculating the time period that the subscription is
-active
-
+* app responsible for calculating the time period that the subscription is active
 * and determining what content needs to be made available to the user.
-
-* app is responsible for detecting that a subscription is approaching its
-expiration date
-
-* and prompting the user to renew the subscription by purchasing the product
-again.
+* app responsible for detecting that a subscription is approaching its expiration date
+* prompting the user to renew the subscription by purchasing the product again.
 
 * app is responsible for making subscriptions available across all the user’s
 devices after they’re purchased and for letting users restore past purchases.

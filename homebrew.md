@@ -24,7 +24,9 @@ drwxr-xr-x   5 id admin  160 Nov  9  2015 2.14
 ## Linking
 
 * Homebrew insalls into `/usr/local/Cellar/`
-* and then symlinked into one or many of
+* and then symlinked into one or many ogem install gem-ctags
+gem ctags
+f
   * `usr/local/bin`
   * `usr/local/lib`
   * `usr/local/include`

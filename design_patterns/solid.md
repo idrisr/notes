@@ -9,6 +9,9 @@ from [here](https://nsscreencast.com/episodes/310-solid-intro?autoplay=true&seri
 * Dependency Inversion Principle
 
 ## SRP
+* keep the dependeny graph managed
+* [see](https://www.destroyallsoftware.com/compendium/software-structure?share_key=62b114d94c61098e)
+
 
 ## Open Closed Principle
 * open for extension

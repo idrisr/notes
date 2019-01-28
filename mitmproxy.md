@@ -22,5 +22,19 @@ else
 fi
 ```
 
+
 * install the cert on the client
 * [readme](https://docs.mitmproxy.org/stable/concepts-certificates/)
+
+### simulator install cert
+https://github.com/ADVTOOLS/ADVTrustStore#how-to-use-advtruststore
+
+
+### cert creation
+from [here](https://docs.mitmproxy.org/stable/concepts-certificates/)
+
+```bash
+openssl genrsa -out cert.key 2048
+openssl req -new -x509 -key cert.key -out cert.crt
+cat cert.key cert.crt \> cert.pem
+```

@@ -90,3 +90,10 @@ g/PATTERN/d
 ## remove lines not matching
 g!/PATTERN/d
 ```
+
+## map key
+for example to save a shell script and then run it
+
+```
+:map ,t :w\|:!./myscript.sh<cr>
+```
