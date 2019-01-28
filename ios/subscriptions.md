@@ -1,6 +1,20 @@
 
 ## StoreKit 2018 WWDC
 
+# expirations
+from [here](https://davidbarnard.com/post/164337147440/testing-auto-renewable-subscriptions-on-ios)
+
+
+```
+Actual subscription duration -> Test duration
+1 week -> 3 minutes
+1 month -> 5 minutes
+2 months -> 10 minutes
+3 months -> 15 minutes
+6 months -> 30 minutes
+1 year -> 1 hour
+```
+
 #### 1. receive transaction
 
 #### 2. verify authenticity
