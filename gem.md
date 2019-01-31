@@ -8,3 +8,8 @@ ruby gems
 1. install `gem install bundler`
 1. install `bundle install`
 ```
+
+
+```bash
+gem environment
+```

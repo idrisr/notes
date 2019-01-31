@@ -24,3 +24,5 @@ fi
 
 * install the cert on the client
 * [readme](https://docs.mitmproxy.org/stable/concepts-certificates/)
+
+## install cert on simulator
