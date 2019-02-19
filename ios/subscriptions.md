@@ -1,6 +1,20 @@
 
 ## StoreKit 2018 WWDC
 
+# expirations
+from [here](https://davidbarnard.com/post/164337147440/testing-auto-renewable-subscriptions-on-ios)
+
+
+```
+Actual subscription duration -> Test duration
+1 week -> 3 minutes
+1 month -> 5 minutes
+2 months -> 10 minutes
+3 months -> 15 minutes
+6 months -> 30 minutes
+1 year -> 1 hour
+```
+
 #### 1. receive transaction
 
 #### 2. verify authenticity
@@ -142,16 +156,10 @@ from [here](https://developer.apple.com/videos/play/wwdc2016/702/)
 
 # In App Purchasing Programming Guide
 
-* app is responsible for calculating the time period that the subscription is
-active
-
+* app responsible for calculating the time period that the subscription is active
 * and determining what content needs to be made available to the user.
-
-* app is responsible for detecting that a subscription is approaching its
-expiration date
-
-* and prompting the user to renew the subscription by purchasing the product
-again.
+* app responsible for detecting that a subscription is approaching its expiration date
+* prompting the user to renew the subscription by purchasing the product again.
 
 * app is responsible for making subscriptions available across all the user’s
 devices after they’re purchased and for letting users restore past purchases.
