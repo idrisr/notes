@@ -1,5 +1,7 @@
 # `jq`
 
+* https://stedolan.github.io/jq/manual/
+
 * https://stedolan.github.io/jq/
 
 * https://jqplay.org/jq
@@ -65,7 +67,7 @@ jq '.|{Sections}[]| length' myjson.json
 jq '.| [keys]' | myJson.json
 ```
 
-## recurse
-
-## recurse
-https://stedolan.github.io/jq/manual/
+```bash
+# drilling down levels like in-app purchase receipts
+jq '.receipt.in_app[].purchase_date_pst' receipts/receipt5.json 
+```
