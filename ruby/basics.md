@@ -73,3 +73,8 @@ the `class` or `module`.
 ### `extend`
 
 `extend` is for adding class methods
+
+### `instance_eval`
+
+###  `method!`
+* Bang methods end with an exlamation mark, and often modify the object they are called on.
