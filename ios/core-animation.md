@@ -1,6 +1,23 @@
 # Core Animation
 
+* happens on the GPU, not the CPU
+
 [readme](https://academy.realm.io/posts/tryswift-tim-oliver-advanced-graphics-with-core-animation/)
+
+## Presentation Vs Model
+When you change a property of a layer, the property value is actually updated immediately (if you try to read it, you’ll find that the value is whatever you just set it to), but that change is not reflected onscreen. That’s because the property you set doesn’t adjust the appearance of the layer directly; instead, it defines the appearance that the layer is going to have when that property’s animation has completed.
+
+### display value
+* in presentation layer
+```objc
+[myLayer presentationLayer]
+```
+
+### post animation value
+* in model layer
+```objc
+[myLayer modelLayer]
+```
 
 ## Layer Tree
 
