@@ -1,9 +1,14 @@
 # `UIPresentationController`
 
+* [readme](https://www.raywenderlich.com/915-uipresentationcontroller-tutorial-getting-started)
+
+* [and me](http://petersteinberger.com/blog/2015/uipresentationcontroller-popover-detection/)
+
 * from [here](https://developer.apple.com/documentation/uikit/uipresentationcontroller)
 
-An object that manages the transition animations and the presentation of view controllers onscreen.
+* [and me](https://asciiwwdc.com/2014/sessions/228?q=uipresentationcontroller)
 
+An object that manages the transition animations and the presentation of view controllers onscreen.
 
 ## ``UIPopoverController``
 Important: `UIPopoverController` is deprecated in iOS 9. In iOS 9 and later, a popover is implemented as a `UIViewController` presentation. To create a popover, use an instance of `UIPopoverPresentationController` and specify the popover style.

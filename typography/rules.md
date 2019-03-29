@@ -9,10 +9,14 @@ In turn, the ap­pear­ance of the body text is de­ter­mined pri­mar­ily by 
 point size is the size of the let­ters. In print, the most com­fort­able range for body text is 10–12 point. On the web, the range is 15–25 pix­els. Not every font ap­pears equally large at a given point size, so be pre­pared to ad­just as necessary.
 
 ## line spacing
-line spac­ing is the ver­ti­cal dis­tance be­tween lines. It should be 120–145% of the point size. In word proces­sors, use the “Ex­act” line-spac­ing op­tion to achieve this. The de­fault sin­gle-line op­tion is too tight; the 1½-line op­tion is too loose. In CSS, use line-height.
+* ver­ti­cal dis­tance be­tween lines. 
+* should be 120–145% of the point size. 
+* The de­fault sin­gle-line op­tion is too tight; the 1½-line op­tion is too loose. 
 
 ## line length
-line length is the hor­i­zon­tal width of the text block. Line length should be an av­er­age of 45–90 char­ac­ters per line (use your word-count func­tion) or 2–3 low­er­case al­pha­bets, like so:
+* hor­i­zon­tal width of the text block. 
+* be an av­er­age of 45–90 char­ac­ters per line 
+* or 2–3 low­er­case al­pha­bets, like so:
 
 abcde­fghijklmnopqrstu­vwxyz­abcde­fghijklmnopqrstu­vwxyz­abcd
 

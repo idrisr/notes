@@ -56,3 +56,8 @@ contain multiple provisioning profiles.
 
 ## if shit aint working
 * make sure your cert in keychain has a private key. a cert without a private key wont do shit
+
+## Location
+```bash
+~/Library/MobileDevice/Provisioning Profiles
+```
