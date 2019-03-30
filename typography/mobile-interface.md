@@ -1,7 +1,8 @@
 # type
 
 * hierarchy
-* different * distinguishable
+* different 
+* distinguishable
 * emphasis
 * size
 * weight
