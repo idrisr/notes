@@ -10,7 +10,7 @@
 * case
 
 ## SF Display
-*  for large font sizes
+* for large font sizes
 * 9 weights
 * larger type, more details
 
@@ -19,5 +19,4 @@
 * 6 weights
 * small type, so at small sizes the weights are meaningless
 * more letter spacing, ie tracking
-
 * capital letters need more spacing than lower case
