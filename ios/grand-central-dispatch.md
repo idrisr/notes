@@ -19,6 +19,12 @@ queue is processed on a pool of threads managed by the system.
 
 * manages a thread pool
 
+## `DispatchWorkItem`
+encapsulates work that can be performed. A work item can be
+dispatched onto a `DispatchQueue` and within a `DispatchGroup`. A
+`DispatchWorkItem` can also be set as a `DispatchSource` event, registration, or
+cancel handler.
+
 # Queue Types
 
 from [here](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW2)
