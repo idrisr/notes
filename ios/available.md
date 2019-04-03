@@ -20,14 +20,12 @@ compile. You’ll want to use the `#if` build configuration statement instead.
 # Target SDK
 * the sdk you link against
 
-The first is the Target SDK version. SDK stands for “Software Development Kit,”
-which is the set of libraries and headers for a particular OS version. This is
-the version of Apple’s APIs that you compile and link against. The SDK describes
-the set of API available to you. Linking against the iOS 9 SDK means you can use
-any API that comes with iOS 9. You won’t be able to directly use stuff
-introduced in iOS 10. Modern Xcodes are tightly coupled to the SDKs for the
-latest OS versions, so if you upgrade your Xcode, you will be linking against a
-newer version of the SDK.
+* set of libraries and headers for a particular OS version. 
+* This is the version of Apple’s APIs that you compile and link against. 
+* The SDK describes the set of API available to you. 
+* Linking against the iOS 9 SDK means you can use any API that comes with iOS 9. 
+* You won’t be able to directly use stuff introduced in iOS 10. 
+* Modern Xcodes are tightly coupled to the SDKs for the latest OS versions, so if you upgrade your Xcode, you will be linking against a newer version of the SDK.
 
 # Deployment Target
 * minimum version you'll support
