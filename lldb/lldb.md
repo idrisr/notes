@@ -150,6 +150,23 @@ targetTriple = lldb.debugger.GetSelectedTarget().GetTriple()
 watchpoint = lldb.debugger.GetSelectedTarget().WatchAddress(objectAddress + ivarOffset, ivarSize, False, True, error)
 ```
 
+## Skip lines while running
+```
+thread jump --by 1
+```
+
+## Print func args in assembly frames
+```
+po $arg1
+po $arg2
+```
+
+## flush view changes to screen
+```
+expression CATransaction.flush()
+```
+
+
 ## Load a binary image
 ```python
 # from reveal
