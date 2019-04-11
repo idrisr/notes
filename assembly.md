@@ -1,5 +1,7 @@
 # Registers, AMD, iOS focus
 
+[readme](http://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
+
 ## `RAX`
 * the return register
 

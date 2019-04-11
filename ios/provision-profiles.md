@@ -61,3 +61,6 @@ contain multiple provisioning profiles.
 ```bash
 ~/Library/MobileDevice/Provisioning Profiles
 ```
+
+### check the entitlements of the provisioning profile
+security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
