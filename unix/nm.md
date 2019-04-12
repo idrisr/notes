@@ -10,6 +10,7 @@ https://www.mikeash.com/pyblog/friday-qa-2011-12-02-object-file-inspection-tools
 `otool -L <mybinary>`
 
 
+```
 Each symbol name is preceded by its value (blanks if  undefined).   
 Unless  the  -m option  is  specified,  this  value is followed by one of the following characters, representing the symbol type: 
 U (undefined), 
@@ -25,4 +26,4 @@ If the symbol is local (non-external), the symbol's type is instead represented
 by the corresponding lowercase letter.   A  lower case  u  in  a  dynamic
 shared library indicates a undefined reference to a private external in another
 module in th
-
+```

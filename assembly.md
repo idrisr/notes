@@ -14,10 +14,10 @@ jump. usually after a control flow branch
 ## `RDX`
 
 ## `RDI`
-first arg passing register?
+first arg passing register
 
 ## `RSI`
-second arg passing register?
+second arg passing register
 
 ## `RSP`
 The stack pointer register, `RSP`, points to the head of the stack for a
