@@ -168,6 +168,7 @@ expression CATransaction.flush()
 
 
 ## Load a binary image
+
 ```python
 # from reveal
 self.process.LoadImage(lldb.SBFileSpec(path), error)
