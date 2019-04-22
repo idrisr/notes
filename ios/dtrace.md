@@ -106,7 +106,7 @@ floating point operations.
 
 ```bash
 # use -v to find probe arguments
-􏰀 sudo dtrace -lv -f syscall:freebsd:read
+sudo dtrace -lv -f syscall:freebsd:read
 ```
 
 ## challenge
