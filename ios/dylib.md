@@ -2,6 +2,8 @@
 
 [readme](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html#//apple_ref/doc/uid/TP40001908-SW1)
 
+[andme](http://newosxbook.com/articles/DYLD.html)
+
 A file with the `DYLIB` file extension is a
 * Mach-O (Mach Object) Dynamic Library file
 * that an application references during runtime
