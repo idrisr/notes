@@ -2,6 +2,10 @@
 
 top 10 dtrace scripts for [mac osx](http://dtrace.org/blogs/brendan/2011/10/10/top-10-dtrace-scripts-for-mac-os-x/)
 
+[dtrace scripts](http://www.brendangregg.com/dtracebook/index.html)
+
+[opendtrace](https://github.com/opendtrace)
+
 ```
 # list options without number suffix
 sudo dtrace -l | awk '{print $2}' | sed 's/[0-9]*//g' | sort -u | cat -n
