@@ -11,12 +11,14 @@ Defined in RFC's 1421 through 1424, this is a container format that may include 
 ### `.key`
 This is a PEM formatted file containing just the private-key of a specific certificate and is merely a conventional name and not a standardized one. In Apache installs, this frequently resides in /etc/ssl/private. The rights on these files are very important, and some programs will refuse to load these certificates if they are set wrong.
 
-### `.pkcs12` `.pfx` `.p12`
+### `.pkcs12`, `.pfx`, `.p12`
 Originally defined by RSA in the Public-Key Cryptography Standards, the "12"
 variant was enhanced by Microsoft.
 
-This is a passworded container format that
-contains both public and private certificate pairs. Unlike .pem files, this
+* passworded container format 
+* contains both public and private certificate pairs. 
+
+Unlike .pem files, this
 container is fully encrypted. Openssl can turn this into a .pem file with both
 public and private keys: openssl pkcs12 -in file-to-convert.p12 -out
 converted-file.pem -nodes
