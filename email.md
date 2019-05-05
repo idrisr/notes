@@ -35,7 +35,7 @@ an smtp server that will forward any email packets along to their destination.
 These are very rare now due to spammers taking advantage of this
 
 ## DMARC
-protocol that allows STMP servers to sign their emails, and then the recipients can use DNS to get the public key and verify the signature
+protocol that allows SMTP servers to sign their emails, and then the recipients can use DNS to get the public key and verify the signature
 
 ## SPF
 protocol that lets the recipient email server check that the IP source of the
