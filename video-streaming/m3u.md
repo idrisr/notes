@@ -1,3 +1,4 @@
+* [HLS](https://developer.apple.com/library/archive/technotes/tn2454/_index.html)
 
 # M3U
 * computer file format for a multimedia playlist
