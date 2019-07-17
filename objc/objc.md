@@ -1,6 +1,31 @@
 # Objective-C
 
-## message send
+## building blocks
+
+
+### `IMP`
+
+* A pointer to the start of a method implementation.
+* This data type is a pointer to the start of the function that implements the method. 
+* This function uses standard C calling conventions as implemented for the current CPU architecture. 
+* The first argument is a pointer to self (that is, the memory for the particular instance of this class, or, for a class method, a pointer to the metaclass). 
+* The second argument is the method selector. The method arguments follow.
+
+
+```c
+/// A pointer to the function of a method implementation. 
+#if !OBJC_OLD_DISPATCH_PROTOTYPES
+typedef void (*IMP)(void /* id, SEL, ... */ ); 
+#else
+typedef id _Nullable (*IMP)(id _Nonnull, SEL _Nonnull, ...); 
+#endif
+```
+
+### `SEL`
+### `id`
+### `Protocol`
+### `Method`
+### `Class`
 
 ## runtime
 * the first two parameters passed to all Objective-C methods are `self` and `_cmd`
@@ -145,3 +170,12 @@ For an example and more info, see The `__block` Storage Type in Apple's Blocks P
 
 ### `objc_property_t`
 * An opaque type that represents an Objective-C declared property.
+
+
+### `objc_selector`
+
+```c
+// objc.h
+/// An opaque type that represents a method selector.
+typedef struct objc_selector *SEL;
+```

@@ -1,4 +1,8 @@
 
+[subscription HIG](https://developer.apple.com/app-store/subscriptions/)
+
+https://developer.apple.com/videos/play/tech-talks/803/
+
 ## StoreKit 2018 WWDC
 
 # expirations

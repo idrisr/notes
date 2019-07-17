@@ -2,6 +2,25 @@ go read [this](http://www.codingexplorer.com/property-attributes-in-objective-c/
 
 # ARC
 
+## `assign` vs. `weak`
+Use assign to set a property's pointer to the address of
+the object without retaining it or otherwise curating it; use weak to have
+the property point to nil automatically if the object assigned to it is
+deallocated. In most cases you'll want to use weak so you're not trying to
+access a deallocated object (illegal access of a memory address -
+"EXC_BAD_ACCESS") if you don't perform proper cleanup.
+
+## `retain` vs. `copy` 
+Declared properties use retain by default (so you can
+simply omit it altogether) and will manage the object's reference count
+automatically whether another object is assigned to the property or it's set
+to nil; Use copy to automatically send the newly-assigned object a -copy
+message (which will create a copy of the passed object and assign that copy
+to the property instead - useful (even required) in some situations where the
+assigned object might be modified after being set as a property of some other
+object (which would mean that modification/mutation would apply to the
+property as well).
+
 ## weak
 
 * gives a pointer to an object, but does not claim ownership,

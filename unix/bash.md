@@ -6,6 +6,10 @@ read me https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bas
 
 google style [guide](https://google.github.io/styleguide/shell.xml)
 
+[parameter expansion](https://mywiki.wooledge.org/BashGuide/Parameters#Parameter_Expansion)
+
+[wiki](https://wiki.bash-hackers.org/start)
+
 ## `1>&2`
 `1` is `stdout`
 `2` is `stderr`

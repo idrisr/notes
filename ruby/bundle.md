@@ -2,5 +2,9 @@
 
 from [here](http://bundler.io/v1.5/gemfile.html)
 
-* Bundler provides a consistent environment for Ruby projects by tracking and
-installing the exact gems and versions that are needed.
+* `bundler` provides a consistent environment for Ruby projects by tracking and
+installing the exact `gem`s and versions that are needed.
+
+```
+bundle exec fastlane test
+```

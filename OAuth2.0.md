@@ -65,9 +65,9 @@ may be the same server as the resource server or a separate entity.
 A single authorization server may issue access tokens accepted by
 multiple resource servers.
 
-# My dumb notes
+# My Dumb Notes
 
-## terms
+## Terms
 * `authorization grants`
 * `access tokens`
 * `id tokens`

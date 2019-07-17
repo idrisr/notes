@@ -25,3 +25,7 @@ Artboards allow you to create fixed frames on Sketch’s infinite Canvas, but th
 from [here](https://www.sketchapp.com/docs/layer-basics/constraints/)
 
 Applying constraints to layers allows you to determine how they should behave when you resize the Symbol, Artboard, or group those layers are in.
+
+
+### slice
+type of layer that you can draw over an area in the Canvas that will export the content within as an image.

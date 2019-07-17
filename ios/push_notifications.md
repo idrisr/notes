@@ -1,16 +1,15 @@
 # Push Notifications
 
-A push notification is a message that pops up on a mobile device.
+* message that pops up on a mobile device.
 
-On initial launch of your app on a user’s device, the system automatically
-establishes an accredited, encrypted, and persistent IP connection between your
+* On initial launch of your app on a user’s device, 
+* system automatically establishes an accredited, encrypted, and persistent IP connection between your
 app and APNs.
 
-With push notification setup complete on your providers and in your app, your
-providers can then send notification requests to APNs. APNs conveys
-corresponding notification payloads to each targeted device. On receipt of a
-notification, the system delivers the payload to the appropriate app on the
-device, and manages interactions with the user.
+* can send notification requests to APNs. 
+* APNs conveys corresponding notification payloads to each targeted device. 
+* On receipt of a notification, the system delivers the payload to the appropriate app on the device
+* and manages interactions with the user.
 
 If a notification for your app arrives with the device powered on but with the
 app not running, the system can still display the notification.

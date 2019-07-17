@@ -63,12 +63,19 @@ from [here](https://developer.apple.com/library/content/documentation/Security/C
 
 * `code signing identity` = `private key` + `plus a digital certificate`
 
-You sign code using a code signing identity, which consists of a private key
-plus a digital certificate. The private key is an encryption key that only you
+sign code using a code signing identity
+* consists of a private key
+* plus a digital certificate. 
+
+The private key is an encryption key that only you
 have, making it impossible for anyone to forge your signature, as long as you
-keep the key secure. The digital certificate has a usage extension that enables
+keep the key secure. 
+
+The digital certificate has a usage extension that enables
 it to be used for signing, and it contains the public key that complements your
-private key. The certificate is not secret, and is itself generally signed by a
+private key. 
+
+The certificate is not secret, and is itself generally signed by a
 certificate authority, which effectively vouches for your identity. The simple
 act of code signing does not require a certificate authority’s signature on your
 certificate, but your signature is much more useful this way because anyone
@@ -76,3 +83,13 @@ encountering your signature can be confident of its origin.
 
 ## resign .ipa with new distribution certificate
 * [here](https://coderwall.com/p/cea3fw/resign-ipa-with-new-distribution-certificate)
+
+## show code signing identities on mac
+* queries the macOS system keychain, looking for valid identities that 
+* contain a private key `-v`
+* and whose type can codesign `-p codesigning`.
+
+```bash
+# show code public/private key code signing identities
+security find-identity -p codesigning -v
+```

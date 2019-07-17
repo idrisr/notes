@@ -13,6 +13,8 @@ You can use the notifications sent by UIKit to pass data to the new view control
 
 ## Segue types
 
+### Show (Embed)
+
 ### Show (Push)
 
 This segue displays the new content using the `showViewController:sender:` method

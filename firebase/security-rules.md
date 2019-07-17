@@ -1,4 +1,8 @@
 # Security Rules
+
+https://fireship.io/snippets/firestore-rules-recipes/
+
+
 * can grab a document and read its contents
 
 
