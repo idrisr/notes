@@ -38,3 +38,10 @@ gsutil cp -r dir gs://my-bucket
 # make a bucket
 gsutil mb -c nearline gs://some-bucket
 ```
+
+# Terms and Miscellany
+* base CPU
+* base GPU
+
+## GCloud Command Line
+* https://cloud.google.com/sdk/gcloud/?authuser=1

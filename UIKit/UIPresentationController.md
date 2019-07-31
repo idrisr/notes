@@ -47,8 +47,7 @@ _UIFullscreenPresentationController
 * for example the `UIPopoverPresentationController` manages whether it's a popover or full screen based on traits
 
 ## `UIContentContainer`
-* coordinate between presentation controllers and its presenting and presented
-
+* methods for adapting the contents of your view controllers to size and trait changes.
 
 ## The Presentation Process
 The presentation process managed by a presentation controller is divided into three phases:

@@ -10,7 +10,6 @@
 * spacing in between individual characters. 
 * Most fonts will have specific default kerning for individual character sets so that the spacing in between the letters in words feels more natural.
 
-
 ## Tracking
 * space between groups of letters rather than individual letters
 * affects the overall character density of the copy
