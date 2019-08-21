@@ -25,16 +25,49 @@ amazon resource names
 - google
 - facebook, etc
 
+## Policy
+
+### PARC model
+#### `Effect`
+* allow
+* deny
+
+#### `Principal`
+* if attaching to a user/role, you dont need it, cause it goes with the user/role
+* if attaching to a resourece like a bucke, use it
+* entity that is allowed access
+* `arn`
+
+![img](../images/aws-principle.png)
+
+#### `Action`
+* type of access that is allowed or denied
+
+![img](../images/aws-action.png)
+
+![img](../images/aws-notaction.png)
+
+#### `Resource`
+* `arn`
+
+![img](../images/aws-resource.png)
+
+#### `Condition`
+* conditions under what this is true
+
+![img](../images/aws-condition.png)
+
+
+### Variables
+![img](../images/aws-policy-variable.png)
+
 ## FAQ
 Q: What is a user?
-A user is a unique identity recognized by AWS services and applications. Similar
-to a login user in an operating system like Windows or UNIX, a user has a unique
-name and can identify itself using familiar security credentials such as a
-password or access key. A user can be an individual, system, or application
-requiring access to AWS services. IAM supports users (referred to as "IAM
-users") managed in AWS's identity management system, and it also enables you to
-grant access to AWS resources for users managed outside of AWS in your corporate
-directory (referred to as "federated users").
+* unique identity recognized by AWS services and applications. 
+* Similar to a login user in an operating system like Windows or UNIX, 
+* has a unique name and can identify itself using familiar security credentials such as a password or access key. 
+* can be an individual, system, or application requiring access to AWS services. 
+* IAM supports users (referred to as "IAM users") managed in AWS's identity management system, and it also enables you to grant access to AWS resources for users managed outside of AWS in your corporate directory (referred to as "federated users").
 
 Q: What can a user do?
 A user can place requests to web services such as Amazon S3 and Amazon EC2. A
