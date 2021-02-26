@@ -1,4 +1,3 @@
-# Homebrew
 
 * Homebrew installs packages to their own directory and then symlinks their files
 into `/usr/local`.

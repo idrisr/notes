@@ -27,7 +27,6 @@ command script clear
 ## reload `.lldbinit`
 
 ```bash
-(lldb) command source ~/.lldbinit
 ```
 
 ## `@import`

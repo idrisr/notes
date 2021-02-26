@@ -40,7 +40,7 @@ reference to it, the `petOwner`’s `pet` property will be automatically set to 
 ## strong
 
 This is also a default attribute, and must be overridden if you want to change
-it.  In ARC, its opposite is the “weak” attribute.  I started post-ARC, so my
+it.  In ARC, its opposite is the “weak” attribute.  I started post-ARC, sock my
 first-hand knowledge is better with strong and weak, compared to the pre-ARC
 ones listed later.  Strong is generally used by a class to establish ownership
 of an object.  It increases the retain count (something ARC deals with for you),

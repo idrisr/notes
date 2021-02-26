@@ -1,0 +1,14 @@
+The autocomplete function works differently in AppCode as function of whether the IdeaVim plugin is enabled.
+
+I want autocomplete to work the way it does when IdeaVim is disabled, regardless of whether IdeaVim is enabled or not.
+
+For example, when IdeaVim is enabled and I start typing out a method name and use autocomplete, the result is this:
+
+        listenButton.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector##ObjectiveC.Selector#>, for: <#T##Event##UIKit.UIControl.Event#>)
+
+AppCode has added all those <#? symbols, and then AppCode renders those symbols differently. I have no idea what do with those placeholders, as nothing seems to replace them other than just deleting them. Is there a better way to deal with those placeholders?
+
+Absent a solution to the above question, I would accept configuing AppCode's autocomplete to behave the same way it does when IdeaVim is disabled.
+
+The same method with autocomplete would render as:
+    
