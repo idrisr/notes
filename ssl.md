@@ -1,3 +1,0 @@
-# SSL
-
-## Client SSL Certificate
